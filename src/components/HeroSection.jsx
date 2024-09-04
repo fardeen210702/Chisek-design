@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Button, Box } from '@mui/material';
 import EastIcon from '@mui/icons-material/East';
-import Frame from '../assets/imageFiles/Frame 24.png'
+import Frame from '../assets/imageFiles/Frame24.png'
 
 const HeroSection = () => {
   return (
