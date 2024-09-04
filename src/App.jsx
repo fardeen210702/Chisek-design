@@ -1,5 +1,7 @@
 import Navbar from "./components/Navbar"
 import Landingpage from "./pages/Landingpage"
+import '@fontsource/inter';
+
 
 
 

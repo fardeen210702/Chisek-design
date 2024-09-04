@@ -175,25 +175,25 @@ function AITechnologies() {
                                 Automate repetitive tasks and streamline business processes.
                             </Typography>
                             <List sx={{ padding: 0, margin: 0 }}>
-                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'Roboto, sans-serif' }}>
+                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'inter' }}>
                                     <ListItemIcon sx={{ minWidth: 'auto' }}>
                                         <span role="img" aria-label="star">✨</span>
                                     </ListItemIcon>
                                     Multi-language support with over 50 languages and dialects
                                 </ListItem>
-                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'Roboto, sans-serif' }}>
+                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'inter' }}>
                                     <ListItemIcon sx={{ minWidth: 'auto' }}>
                                         <span role="img" aria-label="star">✨</span>
                                     </ListItemIcon>
                                     Real-time transcription for live captioning and interactive applications
                                 </ListItem>
-                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'Roboto, sans-serif' }}>
+                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'inter' }}>
                                     <ListItemIcon sx={{ minWidth: 'auto' }}>
                                         <span role="img" aria-label="star">✨</span>
                                     </ListItemIcon>
                                     Speaker diarization to distinguish between multiple speakers
                                 </ListItem>
-                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'Roboto, sans-serif' }}>
+                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'inter' }}>
                                     <ListItemIcon sx={{ minWidth: 'auto' }}>
                                         <span role="img" aria-label="star">✨</span>
                                     </ListItemIcon>

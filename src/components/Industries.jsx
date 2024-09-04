@@ -56,7 +56,11 @@ const Industries = () => {
                         <Typography
                             variant="body1"
                             sx={{
-                                color: '#ffffff85', // Description color
+                                color: '#ffffff85', fontSize:{
+                                    xs:'12px',
+                                    md:'14px',
+                                    lg:'20px'
+                                }
                             }}
                         >
                             Explore the industries we serve, from healthcare and finance to manufacturing and retail, and see how our AI solutions drive efficiency, enhance customer experiences, and foster innovation across diverse sectors.

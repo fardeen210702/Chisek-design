@@ -5,7 +5,7 @@ import Frame from '../assets/imageFiles/Frame24.png'
 
 const HeroSection = () => {
   return (
-    <Box
+    <Box 
       sx={{
         display: 'flex',
         flexDirection: 'column',
