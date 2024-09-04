@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Typography, Grid2, Paper, Button, Box } from '@mui/material';
-import frame28 from '../assets/imageFiles/frame28.png';
-import frame23 from '../assets/imageFiles/frame23.png';
-import frame25 from '../assets/imageFiles/frame25.png';
-import frame26 from '../assets/imageFiles/frame26.png';
+import frameone from '../assets/imageFiles/frameone.png'
+import frametwo from '../assets/imageFiles/frametwo.png'
+import framethree from '../assets/imageFiles/framethree.png'
+import framefour from '../assets/imageFiles/framefour.png'
 import EastIcon from '@mui/icons-material/East';
 
 
@@ -12,25 +12,25 @@ const Industries = () => {
         {
             title: 'Healthcare',
             description: "Enhance patient care with AI-driven symptom checkers, virtual assistants, and mental health support, while using predictive modeling for risk stratification, disease prevention, and treatment optimization, and streamline clinical documentation with speech-to-text technology.",
-            img: frame28,
+            img: frameone,
             btn: 'Learn More'
         },
         {
             title: 'E-Commerce and Retail',
             description: "Boost shopping with AI-driven recommendations, abandoned cart recovery, and customer service, while using image recognition for visual search and inventory management, and predictive modeling for demand forecasting and pricing optimization.",
-            img: frame23,
+            img: frametwo,
             btn: 'Learn More'
         },
         {
             title: 'Finance',
             description: "Leverage AI for personalized financial advice, document analysis, and automated customer support, while using predictive modeling for credit risk and fraud detection, and text-to-speech for accessibility and enhanced IVR systems.",
-            img: frame25,
+            img: framethree,
             btn: 'Learn More'
         },
         {
             title: 'Manufacturing & Logistics',
             description: "Utilize predictive modeling for equipment maintenance, quality control, and supply chain optimization, while employing speech-to-text for hands-free operation and efficient quality inspections.",
-            img: frame26,
+            img: framefour ,
             btn: 'Learn More'
         },
     ];

@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { Box, Button, Typography, Card, CardMedia, CardContent, List, ListItem, ListItemIcon } from '@mui/material';
 import EastIcon from '@mui/icons-material/East';
-
 import image from '../assets/imageFiles/image1.png';
-import frame22 from '../assets/imageFiles/frame 22.png';
+import frame22 from '../assets/imageFiles/frame22.png';
 
 function AITechnologies() {
     const [activeButton, setActiveButton] = useState(null);
