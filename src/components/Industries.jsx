@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Typography, Grid2, Paper, Button, Box } from '@mui/material';
-import frame28 from '../assets/imageFiles/frame 28.png';
-import frame23 from '../assets/imageFiles/frame 23.png';
-import frame25 from '../assets/imageFiles/frame 25.png';
-import frame26 from '../assets/imageFiles/frame 26.png';
+import frame28 from '../assets/imageFiles/frame28.png';
+import frame23 from '../assets/imageFiles/frame23.png';
+import frame25 from '../assets/imageFiles/frame25.png';
+import frame26 from '../assets/imageFiles/frame26.png';
 import EastIcon from '@mui/icons-material/East';
 
 
