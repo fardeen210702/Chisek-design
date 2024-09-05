@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, Divider, Button, Grid2, IconButton } from '@mui/material';
-import vector from '../assets/imageFiles/vector.jpg';
+import vector from '../assets/imageFiles/Vector.jpg';
 import casestudy from '../assets/imageFiles/casestudy.png';
 import leftarrow from '../assets/imageFiles/leftarrow.png';
 import rightarrow from '../assets/imageFiles/rightarrow.png';
