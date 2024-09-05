@@ -15,7 +15,7 @@ import CaseStudy from '../components/CaseStudy'
 const Landingpage = () => {
   return (
     <Box sx={{ width:'100%', display:'flex', flexDirection:'column' , alignItems:'center'}}>
-    <Box sx={{maxWitdh:'1600px', border:'1px solid pink' , display:'flex', flexDirection:'column' , alignItems:'center'}}>
+    <Box sx={{maxWitdh:'1600px' , display:'flex', flexDirection:'column' , alignItems:'center'}}>
 
     <Navbar/>
       <HeroSection/>
