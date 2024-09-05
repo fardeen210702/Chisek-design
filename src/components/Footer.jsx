@@ -13,7 +13,7 @@ const Footer = () => {
                 backgroundColor: '#0d0d0d',
                 boxShadow: 'inset 0px 0px 10px rgba(0,0,0,0.5)',
                 padding: { xs: '20px', sm: '30px', md: '40px 60px', lg: '40px 120px' },
-                color: 'white',
+                color: 'white',zIndex:'1',
                 overflow: 'hidden', // Prevents any overflow from absolute elements
             }}
         >
@@ -85,7 +85,7 @@ const Footer = () => {
                                 opacity: 0.25,
                                 borderColor: 'white',
                                 position: 'absolute',
-                            
+
                                 top: '40px',
                             }}
                         />
@@ -109,20 +109,21 @@ const Footer = () => {
                         display: { xs: 'block', sm: 'flex' },
                         justifyContent: { sm: 'space-between' },
                         flexDirection: { xs: 'column', sm: 'row' },
+                        textAlign:{xs:'center', md:'start'},
                         width: '100%',
                         maxWidth: { xs: 'none', sm: '600px' },
                         mb: { xs: 4, sm: 0 },
                     }}
                 >
-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '8px',}}>
                         <Typography
                             sx={{
                                 fontSize: '16px',
                                 fontFamily: 'Poppins',
                                 fontWeight: 'bold',
                                 marginY: {
-                                    xs:'30px',
-                                    md:1
+                                    xs: '30px',
+                                    md: 1
                                 },
                             }}
                         >
@@ -142,8 +143,8 @@ const Footer = () => {
                                 fontFamily: 'Poppins',
                                 fontWeight: 'bold',
                                 marginY: {
-                                    xs:'30px',
-                                    md:1
+                                    xs: '30px',
+                                    md: 1
                                 },
                             }}
                         >
@@ -165,10 +166,10 @@ const Footer = () => {
                                 fontFamily: 'Poppins',
                                 fontWeight: 'bold',
                                 marginY: {
-                                    xs:'30px',
-                                    md:1
+                                    xs: '30px',
+                                    md: 1
                                 },
-                                
+
                             }}
                         >
                             Company
@@ -183,16 +184,17 @@ const Footer = () => {
                 </Box>
             </Box>
 
+            {/* hr line */}
             <Box
                 sx={{
                     position: 'absolute',
                     width: '100%',
                     left: '0px',
-                    bottom: { xs: '100px', sm: '80px' ,  }, // Adjusted for smaller screens
+                    bottom: { xs: '100px', sm: '80px', }, // Adjusted for smaller screens
                     height: '0',
                     marginY: '2%',
                     border: '0.2px solid gray',
-                    
+
                     zIndex: 1, // Ensures it stays on top of other elements
                 }}
             />
@@ -222,7 +224,7 @@ const Footer = () => {
                         justifyContent: { xs: 'center', sm: 'flex-end' },
                     }}
                 >
-                   <IconButton
+                    <IconButton
                         sx={{
                             backgroundColor: '#117dcc',
                             borderRadius: '50%',
