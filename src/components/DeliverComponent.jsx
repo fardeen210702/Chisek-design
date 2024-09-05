@@ -23,7 +23,7 @@ const DeliverComponent = () => {
         <Container
 
             sx={{
-                my: '12%', // Added vertical margin (top and bottom)
+                my: '10%', // Added vertical margin (top and bottom)
                 width: { xs: '100%', xl: '1200px' },
                 height: 'auto',
                 display: 'flex',

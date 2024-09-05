@@ -54,8 +54,9 @@ const ServicesComponent = () => {
         sx={{
           position: 'absolute',
           width: '100%', // Adjust size as needed
-          height: '100%', // Adjust size as needed
+          height: '200%', // Adjust size as needed
           top: 0,
+          // opacity:10,
           left: 0,
           zIndex: -1,
           transform: 'rotate(180deg)',  // Rotate the image by 45 degrees
@@ -93,7 +94,7 @@ const ServicesComponent = () => {
             xs: '14px',  // Extra small screens
             sm: '16px',  // Small screens
             md: '18px',  // Medium screens
-            lg: '1px',  // Large screens
+            lg: '18px',  // Large screens
           },
           maxWidth: '1200px',
           marginBottom: '48px',

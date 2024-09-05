@@ -27,6 +27,26 @@ const testimonialsData = [
     {
         tags: [
             {
+                color: '#564519',
+                title: 'ERP Tool',
+                border: '#564519'
+            },
+            {
+                color: '#7b1d92',
+                title: 'Cloud Management',
+                border: '#4B035D'
+            }
+
+        ],
+        text: "The team's AI strategy turned our data into actionable insights. Our productivity has never been better.",
+        name: 'David M',
+        title: 'Business Owner',
+        avatar: '/path/to/avatar1.png',
+
+    },
+    {
+        tags: [
+            {
                 color: '#8f7120',
                 title: 'ERP Tool',
                 border: '#564519'
@@ -80,6 +100,25 @@ const testimonialsData = [
         name: 'David M',
         title: 'Business Owner',
         avatar: '/path/to/avatar1.png',
+    },
+    {
+        tags: [
+            {
+                color: '#8f7120',
+                title: 'ERP Tool',
+                border: '#564519'
+            },
+            {
+                color: '#035D58',
+                title: 'AI/ML',
+                border: '#035D58'
+            }
+
+        ],
+        text: 'Our business transformed overnight with their AI solutions. Efficiency and customer satisfaction have skyrocketed!',
+        name: 'Jane Smith',
+        title: 'Business Owner',
+        avatar: '/path/to/avatar2.png',
     },
     {
         tags: [
@@ -161,23 +200,21 @@ const testimonialsData = [
 
 
 const Testimonials = () => {
-    const topTestimonials = testimonialsData.slice(0, 4);
-    const bottomTestimonials = testimonialsData.slice(4, 8);
+    const topTestimonials = testimonialsData.slice(0, 5);
+    const bottomTestimonials = testimonialsData.slice(5, 10);
 
     return (
-        <Container maxWidth="xl" sx={{  position: 'relative' ,zIndex:'1', }}>
+        <Container maxWidth={false} sx={{  position: 'relative' ,zIndex:'1',display:'flex',flexDirection:'column',alignItems:'center' }}>
  <Box
         component="img"
         src={bg2}
         sx={{
           position: 'absolute',
           width: '100%', // Adjust size as needed
-          height: '200%', // Adjust size as needed
+          height: '220%', // Adjust size as needed
           top: 0,
           left: 0,
           zIndex: '-1',
-          // transform: 'rotate( 290deg)',  // Rotate the image by 45 degrees
-          // transformOrigin: 'center', // Rotate around the center
           objectFit: 'cover ',
         }}
       />
@@ -195,7 +232,7 @@ const Testimonials = () => {
             </Typography>
 
             {/* Wrapper for both testimonial sections */}
-            <Box sx={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
+            <Box sx={{ position: 'relative', width: '100%' ,  overflow: 'hidden' }}>
                 {/* Left gradient box */}
                 <Box
                     sx={{
@@ -204,7 +241,7 @@ const Testimonials = () => {
                         left: 0,
                         width: '182px',
                         height: '100%',
-                        background: 'linear-gradient(to right, rgb(0, 0, 0), transparent)',
+                        background: 'linear-gradient(to right, black, transparent)',
                         zIndex: 1,
                         display: {
                             xs: 'none',
@@ -220,7 +257,7 @@ const Testimonials = () => {
                         right: 0,
                         width: '182px',
                         height: '100%',
-                        background: 'linear-gradient(to left, rgb(0, 0, 0), transparent)',
+                        background: 'linear-gradient(to left, black, transparent)',
                         zIndex: 1,
                         display: {
                             xs: 'none',

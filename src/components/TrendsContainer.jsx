@@ -47,7 +47,7 @@ const trends = [
 const TrendsContainer = () => {
   return (
     <Container
-    maxWidth='xl'
+    maxWidth={false}
 
       sx={{
         position:'relative',

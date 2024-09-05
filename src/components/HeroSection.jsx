@@ -8,21 +8,19 @@ import bg1 from '../assets/imageFiles/bg1.png'
 
 const HeroSection = () => {
   return (
-    <Box 
+    <Container  maxWidth={false}
       sx={{
+        // border:'1px solid red',
+        width:'100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
-        
-        marginTop:{xs:'-26%', lg:'-9%'},
+        marginTop:{xs:'-26%', lg:'-9%',xl:'-7%'},
         paddingTop:{xs:'80px',lg:'190px'},
-        // paddingBottom:{lg:'90px'},
-        // marginBottom:'5%',
         height:{
           xs:'100vh',
-          // lg:'730px',
           lg:'800px'
 
         }, backgroundImage: `url(${bg1})`,
@@ -46,11 +44,10 @@ const HeroSection = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: 1,background:'#a0a0a028' , color:'#117DCC',borderRadius:'8px',border:'1px solid gray' ,textTransform: 'capitalize', fontWeight:'bold',marginY:'20px'
+        gap: 1,background:'#a0a0a028' , color:'#117DCC',borderRadius:'8px',border:'0.5px solid gray',borderWidth:'0.2px' ,textTransform: 'capitalize', fontWeight:'bold',marginY:'20px'
       }}
     >
-      <Avatar
-        sx={{ width: 24, height: 24 }}
+      <Box component={'img'} sx={{ width: 24, height: 24 }}
         src={aiimage}
         alt="placeholder"
       />
@@ -84,7 +81,7 @@ const HeroSection = () => {
       >
         Accelerate Innovation and Optimize Your Business<br />
         with Tailored AI Solutions
-         <Box component={'img'}  src={vector} sx={{width:{xs:'15px' , md:'18px' , lg:'26px'}, position:'absolute',right:{ lg:'255px',xl:'274px'}}}/>
+         <Box component={'img'}  src={vector} sx={{width:{xs:'15px' , md:'18px' , lg:'26px'}, position:'absolute',right:{ lg:'255px',xl:'255px'}}}/>
       </Typography>
 
         <Typography
@@ -112,7 +109,7 @@ const HeroSection = () => {
       </Button>
 
       <Box component='img' src={Frame}  sx={{width:'84px' , height:'66px' , marginTop:'7%'}}/>
-    </Box>
+    </Container>
   )
 }
 

@@ -13,12 +13,12 @@ function AITechnologies() {
     };
 
     return (
-        <Container maxWidth='xl'
+        <Container maxWidth={false}
             sx={{
-                padding: { xs: 2, sm: 4 },
+                padding: { xs: 2, sm: 4, md:'0' },
                 
                 width:'100%',
-                margin: 'auto',
+                // margin: 'auto',
                 marginY: '5%',
                 borderRadius: '10px',
                 display: 'flex',
@@ -33,7 +33,7 @@ function AITechnologies() {
                 sx={{
                     position: 'absolute',
                     width: '100%', // Adjust size as needed
-                    height: '150%', // Adjust size as needed
+                    height: '200%', // Adjust size as needed
                     top: 0,
                     left: 0,
                     zIndex: '-1',
@@ -87,7 +87,7 @@ function AITechnologies() {
                         fontFamily: 'inter'
                     }}
                 >
-                    Discover our expertise in AI technologies, including predictive modeling, image recognition, speech-to-text, and conversational AI, tailored to boost efficiency and innovation.
+                    Discover our expertise in AI technologies, including predictive modeling, image recognition, speech-to-text, and conversational AI, tailored to <br /> boost efficiency and innovation.
                 </Typography>
             </Box>
 

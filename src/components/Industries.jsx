@@ -38,7 +38,7 @@ const Industries = () => {
     ];
 
     return (
-        <Container maxWidth='xl'  sx={{position:'relative', mt: 4, backgroundColor: 'transparent' , zIndex:'2', width:'100%' }}>
+        <Container maxWidth={false}  sx={{position:'relative', mt: 4, backgroundColor: 'transparent' , zIndex:'2', width:'100%' }}>
  {/* bg png */}
  <Box
                 component="img"
@@ -93,7 +93,7 @@ const Industries = () => {
                                 fontFamily:'inter'
                             }}
                         >
-                            Explore the industries we serve, from healthcare and finance to manufacturing and retail, and see how our AI solutions drive efficiency, enhance customer experiences, and foster innovation across diverse sectors.
+                            Explore the industries we serve, from healthcare and finance to manufacturing and retail, and see how our AI solutions drive efficiency, <br /> enhance customer experiences, and foster innovation across diverse sectors.
                         </Typography>
                     </Paper>
                 </Grid2>

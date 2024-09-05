@@ -3,6 +3,7 @@ import Landingpage from "./pages/Landingpage"
 import '@fontsource/inter';
 import '@fontsource/bebas-neue';
 import '@fontsource/poppins';
+import { Container } from "@mui/material";
 
 
 
@@ -10,10 +11,10 @@ import '@fontsource/poppins';
 const App = () => {
   return (
     < >
-    <div style={{ backgroundColor: '#000', minHeight:'100vh' }}>
+    <Container maxWidth={false} style={{ backgroundColor: '#000',padding:0,margin:0 }}>
 
     <Landingpage/>
-    </div>
+    </Container>
       
     </>
   )

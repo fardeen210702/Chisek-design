@@ -16,7 +16,7 @@ const MainComponent = () => {
                 md: '24px',
                 lg: '28px'
             },
-            marginTop: { xs: '100px', lg: '200px' }, marginBottom: { xs: '150px', lg: '240px' },
+         marginBottom: { xs: '150px', lg: '240px' },
         }}>
 
              {/* bg png */}
@@ -26,7 +26,7 @@ const MainComponent = () => {
                 sx={{
                     position: 'absolute',
                     width: '100%', // Adjust size as needed
-                    height: '180%', // Adjust size as needed
+                    height: '200%', // Adjust size as needed
                     top: 0,
                     left: 0,
                     zIndex: '-1',
