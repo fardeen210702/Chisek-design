@@ -18,7 +18,7 @@ const Industries = () => {
         {
             title: 'E-Commerce and Retail',
             description: "Boost shopping with AI-driven recommendations, abandoned cart recovery, and customer service, while using image recognition for visual search and inventory management, and predictive modeling for demand forecasting and pricing optimization.",
-            img: frametwo,
+            img: framefour,
             btn: 'Learn More'
         },
         {
@@ -30,7 +30,7 @@ const Industries = () => {
         {
             title: 'Manufacturing & Logistics',
             description: "Utilize predictive modeling for equipment maintenance, quality control, and supply chain optimization, while employing speech-to-text for hands-free operation and efficient quality inspections.",
-            img: framefour ,
+            img: frametwo ,
             btn: 'Learn More'
         },
     ];
@@ -47,6 +47,7 @@ const Industries = () => {
                             gutterBottom
                             sx={{
                                 fontFamily: 'Bebas Neue, Arial, sans-serif',
+                                letterSpacing: '1.6px',
                                 color: '#117DCC',
                                 fontWeight: 'bold', // Title Font Bold
                             }}
@@ -57,7 +58,7 @@ const Industries = () => {
                             variant="body1"
                             sx={{
                                 color: '#ffffff85', fontSize:{
-                                    xs:'12px',
+                                    xs:'14px',
                                     md:'14px',
                                     lg:'20px'
                                 }
@@ -163,6 +164,7 @@ const Industries = () => {
                                     overflow: 'hidden',
                                     textOverflow: 'ellipsis',
                                     display: '-webkit-box',
+                                    fontSize:{xs:'14px',lg:'19px    '}
                                     
                                    
                                 }}

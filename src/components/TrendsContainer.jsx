@@ -73,7 +73,7 @@ const TrendsContainer = () => {
               md: '40px',
             },
             lineHeight: '1.2',
-            letterSpacing: '4%',
+            letterSpacing: '1.6px',
             color: '#117DCC',
             mb: '10px',
             textAlign:'center'
@@ -185,7 +185,7 @@ const TrendsContainer = () => {
               <Typography
                 sx={{
                   fontSize: {
-                    xs: '12px',
+                    xs: '14px',
                     sm: '14px',
                     md: '14px',
                   },

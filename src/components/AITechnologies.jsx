@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Button, Typography, Card, CardMedia, CardContent, List, ListItem, ListItemIcon } from '@mui/material';
 import EastIcon from '@mui/icons-material/East';
 import image from '../assets/imageFiles/image1.png';
-import frame22 from '../assets/imageFiles/Frame22.png';
+import faceIcon from '../assets/imageFiles/faceIcon.png';
 
 function AITechnologies() {
     const [activeButton, setActiveButton] = useState(null);
@@ -15,10 +15,9 @@ function AITechnologies() {
         <Box
             sx={{
                 padding: { xs: 2, sm: 4 },
-                maxWidth: '1168px',
+                maxWidth: '1200px',
                 margin: 'auto',
-                marginY:'5%',
-
+                marginY: '5%',
                 borderRadius: '10px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -64,7 +63,7 @@ function AITechnologies() {
                     variant="body1"
                     sx={{
                         color: '#ffffff85',
-                        fontSize: { xs: '0.9rem', sm: '1rem', md: '1.2rem' },
+                        fontSize: { xs: '14px', sm: '1rem', md: '1.2rem' },
                         lineHeight: 1.5,
                     }}
                 >
@@ -73,7 +72,7 @@ function AITechnologies() {
             </Box>
 
             {/* Top Container with Buttons */}
-            <Box sx={{border:'1px solid #8080803b', padding:'20px 10px' , borderRadius:'10px' }}>
+            <Box sx={{ border: '1px solid #8080803b', padding: '24px 16px', borderRadius: '10px' }}>
 
 
                 <Box
@@ -84,7 +83,7 @@ function AITechnologies() {
 
                         mb: 4,
                         width: '100%',
-                        gap: { xs: 0.5, sm: 1 },
+                        gap: { xs: 0.5, sm: 1,md:1.3},
                         justifyContent: 'center',
                         flexWrap: 'wrap',
                     }}
@@ -99,12 +98,13 @@ function AITechnologies() {
                                 color: '#fff',
                                 textDecoration: 'none',
                                 position: 'relative',
-                                width: { xs: 'calc(100% - 1px)', sm: '173px' },
+                                width: { xs: 'calc(100% - 1px)', lg: '174.6px' },
                                 height: '62px',
                                 overflow: 'hidden',
+                                textTransform:'capitalize',
                                 paddingX: 2,
                                 paddingY: 1,
-                                fontSize: { xs: '0.9rem', sm: 'clamp(0.9rem, 1.5vw, 0.9rem)' },
+                                fontSize: { xs: '0.9rem', sm: 'clamp(0.9rem, 1.5vw, 0.9rem)', xl:'16px' },
                                 fontWeight: 'bold',
                                 mb: { xs: 1, sm: 0 },
                                 '&:before': {
@@ -130,127 +130,109 @@ function AITechnologies() {
                 {/* Bottom Container with Background */}
                 <Box
                     sx={{
-                        bgcolor: '#101010',
-                        borderRadius: '8px',
-                        padding: '10px 15px 10px 10px',
-                        paddingY: { xs: 2, sm: 3 },
                         width: '100%',
+                        height: '100%',
+                        p: 3,
+                        background: 'linear-gradient(0deg, #101010 0%, #101010 100%)',
+                        borderRadius: 2,
+                        border: '0.2px solid rgba(112.31, 112.31, 112.31, 0.70)',
                         display: 'flex',
-                        flexDirection: { xs: 'column', sm: 'row' },
-                        gap: 2,
+                        flexDirection: {xs:'column', lg:'row'},
+                        justifyContent: 'flex-start',
+                        alignItems: 'flex-start',
+                        gap: 3,
                     }}
                 >
-                    {/* Left Container */}
-                    <Card
+                    
+
+                    {/* Text and Icon Section */}
+                    <Box
                         sx={{
-                            bgcolor: 'transparent',
-                            borderRadius: '8px',
-                            flexGrow: 1,
-                            maxWidth: '586px', // 100px more than the right container
                             display: 'flex',
                             flexDirection: 'column',
-                            alignItems: 'stretch',
-                            justifyContent: 'space-between',
-                            width: 'calc(100% - 20px)', // Take the remaining width with 20px padding from the left
-                            height: '100%',
-                            boxShadow: 'none', // Remove any shadow if present
+                            gap: 3,
+                            alignItems: 'flex-start',
                         }}
                     >
-                        <CardMedia
-                            component="img"
-                            alt="Description"
-                            image={frame22}
-                            sx={{ width: '80px', height: '80px', borderRadius: '8px', marginLeft: '10px' }}
-                        />
-                        <CardContent
-                            sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}
-                        >
-                            <Typography
-                                variant="h4"
-                                sx={{ color: '#fff', mb: 0.5, fontWeight: 'bold', fontSize: { xs: '1.5rem', sm: 'clamp(1.5rem, 2.5vw, 2.5rem)' } }}
-                            >
-                                Heading
-                            </Typography>
-                            <Typography variant="body1" sx={{ color: '#ffffff85', mb: 2, fontSize: { xs: '0.9rem', sm: 'clamp(1rem, 1.5vw, 1.2rem)' } }}>
-                                Automate repetitive tasks and streamline business processes.
-                            </Typography>
-                            <List sx={{ padding: 0, margin: 0 }}>
-                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'inter' }}>
-                                    <ListItemIcon sx={{ minWidth: 'auto' }}>
-                                        <span role="img" aria-label="star">✨</span>
-                                    </ListItemIcon>
-                                    Multi-language support with over 50 languages and dialects
-                                </ListItem>
-                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'inter' }}>
-                                    <ListItemIcon sx={{ minWidth: 'auto' }}>
-                                        <span role="img" aria-label="star">✨</span>
-                                    </ListItemIcon>
-                                    Real-time transcription for live captioning and interactive applications
-                                </ListItem>
-                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'inter' }}>
-                                    <ListItemIcon sx={{ minWidth: 'auto' }}>
-                                        <span role="img" aria-label="star">✨</span>
-                                    </ListItemIcon>
-                                    Speaker diarization to distinguish between multiple speakers
-                                </ListItem>
-                                <ListItem sx={{ fontSize: '0.95rem', color: '#ffffff85', mb: 1, display: 'flex', alignItems: 'center', fontFamily: 'inter' }}>
-                                    <ListItemIcon sx={{ minWidth: 'auto' }}>
-                                        <span role="img" aria-label="star">✨</span>
-                                    </ListItemIcon>
-                                    Custom vocabulary integration for industry-specific terminology
-                                </ListItem>
-                            </List>
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                endIcon={<EastIcon/>}
+                        <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
+                            <Box
                                 sx={{
-                                    mt: 2,
-                                    width: '192px',
-                                    height: '56px',
-                                    paddingY: '8px',
-                                    paddingX: '24px',
-                                    fontWeight: 'bold',
-                                    color: '#117DCC',
-                                    backgroundColor: '#141414',
-                                    borderRadius: '10px',
-                                    '&:hover': {
-                                        backgroundColor: '#141414',
-                                    },
-                                    alignSelf: 'flex-start', // Align button at the start
+                                    width: 80,
+                                    height: 80,
+                                    p: 2,
+                                    background: 'linear-gradient(140deg, #141414 0%, #060606 100%)',
+                                    boxShadow: '1px 1.82px 7.82px rgba(188.54, 188.54, 188.54, 0.17) inset',
+                                    borderRadius: '50%',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
                                 }}
                             >
-                                View Demo
-                            </Button>
-                        </CardContent>
-                    </Card>
+                                <Box component={'img'} src={faceIcon} sx={{ width: 43.64, height: 43.64, }} />
+                            </Box>
+                            <Typography variant="h4" sx={{ color: 'rgba(255, 255, 255, 0.90)', fontWeight: 700,fontSize:{xs:'20px',md:'24px',lg:'32px'} }}>
+                                Speech to Text
+                            </Typography>
+                        </Box>
 
-                    {/* Right Container */}
-                    <Card
+                        <Typography variant="body1" sx={{ color: '#ADADAD', fontWeight: 500 ,fontSize:{xs:'15px',md:'16px',lg:'18px'}}}>
+                            Automate repetitive tasks and streamline business processes
+                        </Typography>
+
+                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize:{xs:'15px',md:'16px',lg:'18px'} }}>
+                            ✨ Multi-language support with over 50 languages and dialects
+                        </Typography>
+                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize:{xs:'15px',md:'16px',lg:'18px'} }}>
+                            ✨ Real-time transcription for live captioning and interactive applications
+                        </Typography>
+                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize:{xs:'15px',md:'16px',lg:'18px'} }}>
+                            ✨ Speaker diarization to distinguish between multiple speakers
+                        </Typography>
+                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize:{xs:'15px',md:'16px',lg:'18px'} }}>
+                            ✨ Custom vocabulary integration for industry-specific terminology
+                        </Typography>
+                        {/* Demo Button */}
+                    <Button
+                        variant="contained"
                         sx={{
-                            // bgcolor: '#141414',
-                            backgroundColor:'transparent',
-                            // borderRadius: '8px',
-                            padding: '16px',
-                            height: '100%',
-                            maxWidth: '486px',
+                            width:'192',height:'56',
+                            padding:'12px 24px', fontFamily: 'Poppins',
+                            fontWeight: '700',
+                            mt: 2,
+                            background: 'rgba(255, 255, 255, 0.04)',
+                            borderRadius: 1,
+                            color: '#117DCC',
+                            textTransform: 'none',
+                            display:'flex',gap:'5px',alignItems:'center'
+                        }}
+                    >
+                        View Demo <EastIcon/>
+                    </Button> 
+                    </Box>
+
+                    
+
+                        {/* Image Box */}
+                    <Box
+                        sx={{
+                            width: {xs:'100%',lg:505},
+                            height: {xs:'100%',lg:486},
+                            p: {xs:'0',lg:2},
+                            background: 'linear-gradient(0deg, #101010 0%, #101010 100%)',
+                            boxShadow: '0px 0px 4px rgba(255, 255, 255, 0.14) inset',
+                            borderRadius: 2,
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            // border: '1px solid #80808081',
+                            border: '0.1px solid rgba(112.31, 112.31, 112.31, 0.70)',
                         }}
                     >
-                        <CardMedia
-                            component="img"
-                            alt="Description"
-                            image={image}
-                            sx={{
-                                maxWidth: '100%',
-                                borderRadius: '8px',
-                                boxShadow: 'none', // Remove shadow if present
-                            }}
+                        <img
+                            style={{ width: '100%', height: '100%', objectFit: 'fill' }}
+                            src={image}
+                            alt="Speech to Text"
                         />
-                    </Card>
+                    </Box>
                 </Box>
             </Box>
         </Box>

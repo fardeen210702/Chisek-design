@@ -9,26 +9,30 @@ import DeliverComponent from '../components/DeliverComponent'
 import Testimonials from '../components/Testimonials'
 import TrendsContainer from '../components/TrendsContainer'
 import ExploreAI from '../components/ExploreAI'
-// import Footer from '../components/Footer'
+import Footer from '../components/Footer'
+import CaseStudy from '../components/CaseStudy'
 
 const Landingpage = () => {
   return (
-    <>
-    
+    <Box sx={{width:'100%', display:'flex', flexDirection:'column' , alignItems:'center'}}>
+    <Box sx={{maxWidth:'1440px' }}>
+
     <Navbar/>
       <HeroSection/>
       <ServicesComponent/>
       <AITechnologies/>
       <Industries/>
       <DeliverComponent/>
+      <CaseStudy/>
       <Testimonials/>
       <TrendsContainer/>
       <ExploreAI/>
-      {/* <Footer/> */}
+      <Footer/>
       
+    </Box>
 
       
-    </>
+    </Box>
   )
 }
 

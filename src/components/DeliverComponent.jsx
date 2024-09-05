@@ -31,11 +31,11 @@ const DeliverComponent = () => {
                 paddingX:'20px'
             }}
         >
-            <Typography variant="h4" component="h2" align="center" gutterBottom sx={{ color: '#117DCC', fontWeight: 'bold',fontFamily: 'Bebas Neue, Arial, sans-serif', }}>
+            <Typography variant="h4" component="h2" align="center" gutterBottom sx={{ color: '#117DCC', fontWeight: 'bold',fontFamily: 'Bebas Neue, Arial, sans-serif',letterSpacing: '1.6px', }}>
                 HOW WE DELIVER SUCCESS
             </Typography>
             <Typography variant="body1" align="center" sx={{ color: '#777777', mb: 4  , fontSize:{
-                xs:'12px',
+                xs:'14px',
                 md:'14px',
                 lg:'20px'
             }}}>
@@ -82,7 +82,7 @@ const DeliverComponent = () => {
                             <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold' }}>
                                 {step.title}
                             </Typography>
-                            <Typography variant="body1" sx={{ color: '#CCCCCC' }}>
+                            <Typography variant="body1" sx={{ color: '#CCCCCC' , fontSize:{xs:'15px'} }}>
                                 {step.description}
                             </Typography>
                         </Paper>

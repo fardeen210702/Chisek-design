@@ -13,7 +13,8 @@ const Navbar = () => {
 
     return (
         
-        <AppBar position="static" sx={{ paddingTop: '50px', backgroundColor: 'transparent' }}>
+        <AppBar position="static" sx={{ paddingTop: '50px', backgroundColor: 'transparent',  }}>
+            
             <Toolbar sx={{ display: 'flex', alignItems: 'center', height: '56px' }}>
                 {isMatch ? (
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%', paddingBottom: '40px' }}>
@@ -90,6 +91,7 @@ const Navbar = () => {
                     </>
                 )}
             </Toolbar>
+        
         </AppBar>
     );
 };

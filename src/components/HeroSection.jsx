@@ -1,7 +1,9 @@
-import React from 'react';
-import { Container, Typography, Button, Box } from '@mui/material';
-import EastIcon from '@mui/icons-material/East';
+import React from 'react'
+import { Container, Typography, Button, Box , Avatar } from '@mui/material'
+import EastIcon from '@mui/icons-material/East'
 import Frame from '../assets/imageFiles/Frame24.png'
+import aiimage from '../assets/imageFiles/aiimage.png'
+import vector from '../assets/imageFiles/Vector 1.png'
 
 const HeroSection = () => {
   return (
@@ -14,7 +16,7 @@ const HeroSection = () => {
         textAlign: 'center',
         height:{
           xs:'100vh',
-          lg:'120vh'
+          lg:'730px'
 
         },
         backgroundColor:'transparent',
@@ -22,13 +24,41 @@ const HeroSection = () => {
         gap:'20px'
       }}
     >
-      <Button
-        variant="contained"
-        color="primary"
-        sx={{ marginBottom: 2,padding:'4px 15px',borderRadius:'10px',border:'1px solid gray',background:'#a0a0a028',color:'#117DCC',textTransform: 'capitalize',  }}
+       <Box
+      sx={{
+        width: '230px',
+        height: '32px',
+        pl: 2,
+        pr: 2,
+        pt: 0.5,
+        pb: 0.5,
+        background: 'rgba(255, 255, 255, 0.05)',
+        // borderRadius: 1,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 1,background:'#a0a0a028' , color:'#117DCC',borderRadius:'8px',border:'1px solid gray' ,textTransform: 'capitalize', fontWeight:'bolder',marginY:'20px'
+      }}
+    >
+      <Avatar
+        sx={{ width: 24, height: 24 }}
+        src={aiimage}
+        alt="placeholder"
+      />
+      <Typography
+        sx={{
+          textAlign: 'center',
+          color: '#117DCC',
+          fontSize: '14px',
+          fontFamily: 'Inter',
+          fontWeight: 400,
+          lineHeight: '24px',
+          wordWrap: 'break-word',
+        }}
       >
-        AI Crafting Excellence
-      </Button>
+        Crafting AI Excellence
+      </Typography>
+    </Box>
 
       <Box sx={{ marginBottom: 4, }}>
       <Typography
@@ -41,10 +71,11 @@ const HeroSection = () => {
           md: '2rem',  
           lg: '3rem',  
           xl: '3.2rem'      
-        }  }}
+        },position:'relative'  }}
       >
         Accelerate Innovation and Optimize Your Business<br />
         with Tailored AI Solutions
+         <Box component={'img'}  src={vector} sx={{width:{xs:'15px' , md:'18px' , lg:'26px'}, position:'absolute',right:{ lg:'268px',xl:'287px'}}}/>
       </Typography>
 
         <Typography
@@ -66,14 +97,14 @@ const HeroSection = () => {
       <Button
        variant="outlined"
         color="secondary"
-        sx={{background:'#a0a0a028' , color:'#117DCC' , gap:'12px',padding:'15px',borderRadius:'8px',border:'1px solid gray' ,textTransform: 'capitalize', fontWeight:'bolder' ,}}
+        sx={{background:'#a0a0a028' , color:'#117DCC',marginTop:'48px' , gap:'12px',padding:'15px',borderRadius:'8px',border:'1px solid gray' ,textTransform: 'capitalize', fontWeight:'bolder' ,}}
       >
         Let's Get Started  <EastIcon/>
       </Button>
 
       <Box component='img' src={Frame}  sx={{width:'84px' , height:'66px' , marginTop:'7%'}}/>
     </Box>
-  );
-};
+  )
+}
 
 export default HeroSection;
