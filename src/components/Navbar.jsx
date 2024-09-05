@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Box, Tabs, Tab, Button, useTheme, useMediaQuery, Typography, IconButton } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
-import Logo from '../assets/imageFiles/Logo.png';
+import frame from '../assets/imageFiles/Frame.png';
 import DrawerComponent from './DrawerComponent';
 
 const Navbar = () => {
@@ -12,20 +12,34 @@ const Navbar = () => {
     const isExtraLarge = useMediaQuery(theme.breakpoints.up('2xl'));
 
     return (
-        
-        <AppBar position="static" sx={{ maxWidth:'1440px', marginTop: '50px',boxShadow:'0' ,backgroundColor:'transparent' }}>
-            
+
+        <AppBar position="static" sx={{ maxWidth: '1440px', marginTop: '50px', boxShadow: '0', backgroundColor: 'transparent' }}>
+
             <Toolbar sx={{ display: 'flex', alignItems: 'center', height: '56px' }}>
                 {isMatch ? (
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%', paddingBottom: '40px' }}>
-                        <Box component="img" alt="Logo" src={Logo} sx={{ height: '56px' }} />
+                        <Box sx={{  width: {xs:'250px',md:'242px'}, height: '72px', display: 'inline-flex', justifyContent: 'flex-start', alignItems: 'center', }}>
+                            <Box sx={{ width: 72, height: 72, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <img src={frame} alt="Decorative" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </Box>
+                            <Box sx={{ textAlign: 'center', color: 'rgba(255, 255, 255, 0.90)', fontSize:{xs:'18px',md:20}, fontFamily: 'Poppins', fontWeight: 700, lineHeight: '30px', wordWrap: 'break-word' }}>
+                                Chisel Solutions
+                            </Box>
+                        </Box>
                         <Box sx={{ display: 'flex', alignItems: 'center' }}>
                             <DrawerComponent />
                         </Box>
                     </Box>
                 ) : (
                     <>
-                        <Box component="img" alt="Logo" src={Logo} sx={{ height: '56px' }} />
+                        <Box sx={{ width: '242px', height: '72px', display: 'inline-flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+                            <Box sx={{ width: 72, height: 72, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <img src={frame} alt="Decorative" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </Box>
+                            <Box sx={{ textAlign: 'center', color: 'rgba(255, 255, 255, 0.90)', fontSize: 20, fontFamily: 'Poppins', fontWeight: 700, lineHeight: '30px', wordWrap: 'break-word' }}>
+                                Chisel Solutions
+                            </Box>
+                        </Box>
                         <Tabs
                             value={value}
                             onChange={(e, value) => setValue(value)}
@@ -43,8 +57,8 @@ const Navbar = () => {
                                 '.MuiTab-root': {
                                     color: '#fff',
                                     fontWeight: 'bold',
-                                    fontFamily:'poppins'
-,                                    textTransform: 'capitalize',
+                                    fontFamily: 'poppins'
+                                    , textTransform: 'capitalize',
                                     fontSize: {
                                         xs: '12px', // Extra small screens
                                         sm: '14px', // Small screens
@@ -92,7 +106,7 @@ const Navbar = () => {
                     </>
                 )}
             </Toolbar>
-        
+
         </AppBar>
     );
 };
