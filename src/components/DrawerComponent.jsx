@@ -16,7 +16,8 @@ const DrawerComponent = () => {
             width: '250px', // Width of the drawer
             backgroundColor: 'black', // Black background
             color: 'white', 
-            paddingTop:'50px'// White text color
+            paddingTop:'50px',// White text color
+             fontFamily: 'Poppins', 
           },
         }}
       >
@@ -33,7 +34,7 @@ const DrawerComponent = () => {
                 },
               }}
             >
-              <ListItemIcon sx={{ color: 'inherit' }}>
+              <ListItemIcon sx={{ color: 'inherit' , }}>
                 <ListItemText>{el}</ListItemText>
               </ListItemIcon>
             </ListItemButton>

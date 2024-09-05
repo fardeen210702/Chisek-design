@@ -5,6 +5,8 @@ import frametwo from '../assets/imageFiles/Frametwo.png'
 import framethree from '../assets/imageFiles/Framethree.png'
 import framefour from '../assets/imageFiles/Framefour.png'
 import EastIcon from '@mui/icons-material/East';
+import bg2 from '../assets/imageFiles/bg2.png'
+
 
 
 const Industries = () => {
@@ -36,7 +38,25 @@ const Industries = () => {
     ];
 
     return (
-        <Container maxWidth="lg" sx={{ mt: 4, backgroundColor: 'transparent' }}>
+        <Container maxWidth='xl'  sx={{position:'relative', mt: 4, backgroundColor: 'transparent' , zIndex:'2', width:'100%' }}>
+ {/* bg png */}
+ <Box
+                component="img"
+                src={bg2}
+                sx={{
+                    position: 'absolute',
+                    width: '100%', // Adjust size as needed
+                    height: '150%', // Adjust size as needed
+                    top: 0,
+                    left: 0,
+                    zIndex: '-1',
+                    transform: 'rotate(180deg)',  // Rotate the image by 45 degrees
+                    // transformOrigin: 'center', // Rotate around the center
+                    objectFit: 'cover ',
+                }}
+            />
+
+
             {/* First Container */}
             <Grid2 container spacing={3} sx={{ backgroundColor: 'transparent', justifyContent: 'center', alignItems: 'center' }}>
                 <Grid2 item xs={12} md={8} lg={6}>
@@ -50,6 +70,13 @@ const Industries = () => {
                                 letterSpacing: '1.6px',
                                 color: '#117DCC',
                                 fontWeight: 'bold', // Title Font Bold
+                                fontSize: {
+                                    xs: '24px',  // Extra small screens
+                                    sm: '28px',  // Small screens
+                                    md: '32px',  // Medium screens
+                                    lg: '36px',  // Large screens
+                                    xl: '40px',  // Extra large screens
+                                  }
                             }}
                         >
                             Industries We Deal In
@@ -57,11 +84,13 @@ const Industries = () => {
                         <Typography
                             variant="body1"
                             sx={{
-                                color: '#ffffff85', fontSize:{
+                                color: '#ADADAD', fontSize:{
                                     xs:'14px',
                                     md:'14px',
-                                    lg:'20px'
-                                }
+                                    lg:'16px',
+                                    xl:'18px'
+                                },
+                                fontFamily:'inter'
                             }}
                         >
                             Explore the industries we serve, from healthcare and finance to manufacturing and retail, and see how our AI solutions drive efficiency, enhance customer experiences, and foster innovation across diverse sectors.
@@ -109,7 +138,7 @@ const Industries = () => {
                                 justifyContent: 'space-between',
                                 marginBottom: 2,
                                 backgroundColor: '#101010',
-                                border: '1px solid #80808025',
+                                border: '0.2px solid #80808025',
                                 borderRadius: '10px',
                                 boxShadow: 'none',
                             }}
@@ -150,13 +179,20 @@ const Industries = () => {
                                         overflow: 'hidden',
                                         textOverflow: 'ellipsis',
                                         whiteSpace: 'nowrap',
+                                        fontFamily:'poppins',
                                         fontWeight: 'bold', // Title Font Bold
+                                        fontSize: {
+                                            xs: '14px',  // Extra small screens
+                                             md:'16px',
+                                            lg: '20px',  // Large screens
+                                            xl: '22px',  // Extra large screens
+                                          }
                                     }}
                                 >
                                     {item.title}
                                 </Typography>
                             </div>
-                            <Typography
+                            <Typography sx={{fontSize:{xs:'14px', xl:'16px'}}}
                                 variant="body1"
                                 style={{
                                     width: '100%',
@@ -164,9 +200,8 @@ const Industries = () => {
                                     overflow: 'hidden',
                                     textOverflow: 'ellipsis',
                                     display: '-webkit-box',
-                                    fontSize:{xs:'14px',lg:'19px    '}
-                                    
-                                   
+                                        fontFamily:'poppins',
+ 
                                 }}
                             >
                                 {item.description}
@@ -175,12 +210,14 @@ const Industries = () => {
                             endIcon={<EastIcon />}
                                
                                 style={{
+                                    fontFamily:'poppins',
                                     marginTop: '2%', // Push the button to the bottom
                                     width: '143px', // Button width
                                     height: '32px', // Button height
                                     backgroundColor: 'transparent', // Button background color
                                     color: '#117DCC', // Button text color
                                      // Add border for better visibility
+                                     fontSize:{xs:'14px',md:'16px',xl:'18px'}
                                 }}
                             >
                                 {item.btn}

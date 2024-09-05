@@ -46,7 +46,7 @@ const ExploreAI = () => {
                     gap: {
                         xs: '16px',
                         lg: '56px'
-                    },
+                    },zIndex:'1'
                 }}
             >
                 {/* First Container */}
@@ -140,6 +140,8 @@ const ExploreAI = () => {
                             width: '424px',
                             fontWeight: 'bold',
                             color: '#ADADAD',
+                            fontFamily:'inter',
+                            fontSize:{xs:'14px',xl:'18px'},
                             '& input': {
                                 padding: '8px',
                                 color: '#ADADAD',
@@ -169,8 +171,8 @@ const ExploreAI = () => {
                             height: '56px',
                             borderRadius: '8px',
                             backgroundColor: '#117DCC',
-                            color: '#FFFFFF',
-                            fontWeight: 700
+                            color: 'white',
+                            fontWeight: 700,fontFamily:'poppins',fontSize:{xs:'14px',xl:'18px'}
                         }}
                     >
                         Submit

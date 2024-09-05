@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Typography, Box, Paper, Chip, Avatar } from '@mui/material';
+import bg2 from '../assets/imageFiles/bg2.png'
+
 
 const testimonialsData = [
     {
@@ -163,13 +165,30 @@ const Testimonials = () => {
     const bottomTestimonials = testimonialsData.slice(4, 8);
 
     return (
-        <Container maxWidth="xl" sx={{ py: 8, position: 'relative' }}>
-            <Typography variant="h4" component="h2" sx={{ color: '#00A3FF', fontWeight: 'bold', textAlign: 'center', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px' }}>
+        <Container maxWidth="xl" sx={{  position: 'relative' ,zIndex:'1', }}>
+ <Box
+        component="img"
+        src={bg2}
+        sx={{
+          position: 'absolute',
+          width: '100%', // Adjust size as needed
+          height: '200%', // Adjust size as needed
+          top: 0,
+          left: 0,
+          zIndex: '-1',
+          // transform: 'rotate( 290deg)',  // Rotate the image by 45 degrees
+          // transformOrigin: 'center', // Rotate around the center
+          objectFit: 'cover ',
+        }}
+      />
+
+
+            <Typography variant="h4" component="h2" sx={{ color: '#00A3FF', fontWeight: 'bold', textAlign: 'center', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px',fontSize: {xs: '28px',sm: '32px',md: '40px',} }}>
                 TESTIMONIALS
             </Typography>
             <Typography variant="body1" sx={{
                 color: '#CCCCCC', my: 3, textAlign: 'center', fontSize: {
-                    xs: '14px', sm: '16px', md: '20px'
+                    xs: '14px', sm: '16px', md: '18px'
                 } , fontFamily:'inter'
             }}>
                 Don't just take our word for it—hear from our satisfied clients. Our testimonials highlight the positive experiences and <br />outcomes that businesses have achieved by partnering with us.
@@ -279,21 +298,22 @@ const Testimonials = () => {
                                             borderStyle: 'solid',
                                             marginRight: 1,
                                             marginBottom: 1,
-                                            borderRadius: '4px'
+                                        fontFamily:'inter',
+                                        borderRadius: '4px',fontSize:'12px'
                                         }}
                                     />
                                 ))}
                             </Box>
-                            <Typography variant="body1" sx={{ mb: 2, color: '#ADADAD' }}>
+                            <Typography variant="body1" sx={{ mb: 2, color: '#ADADAD' ,fontFamily:'inter', fontSize:{xs:'14px', xl:'16px'} }}>
                                 {testimonial.text}
                             </Typography>
                             <Box display="flex" alignItems="center">
                                 <Avatar src={testimonial.avatar} alt={testimonial.name} sx={{ mr: 2 }} />
                                 <Box>
-                                    <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
+                                    <Typography variant="body2" sx={{ fontWeight: 'bold',fontFamily:'poppins' , fontSzie:{xs:'16px',xl:'18px'}}}>
                                         {testimonial.name}
                                     </Typography>
-                                    <Typography variant="caption" sx={{ color: '#777777' }}>
+                                    <Typography variant="caption" sx={{ color: '#777777',fontFamily:'inter', fontSize:{xs:'14px'} }}>
                                         {testimonial.title}
                                     </Typography>
                                 </Box>
@@ -367,6 +387,7 @@ const Testimonials = () => {
                                              // backgroundColor: tag.color,
                                              borderColor: tag.border,
                                              color:tag.color,
+                                             fontFamily:'inter',
                                             borderWidth: '1px',
                                             borderStyle: 'solid',
                                             marginRight: 1,
@@ -376,16 +397,16 @@ const Testimonials = () => {
                                     />
                                 ))}
                             </Box>
-                            <Typography variant="body1" sx={{ mb: 2, color: '#ADADAD' }}>
+                            <Typography variant="body1" sx={{ mb: 2, color: '#ADADAD', fontFamily:'inter' }}>
                                 {testimonial.text}
                             </Typography>
                             <Box display="flex" alignItems="center">
                                 <Avatar src={testimonial.avatar} alt={testimonial.name} sx={{ mr: 2 }} />
                                 <Box>
-                                    <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
+                                    <Typography variant="body2" sx={{ fontWeight: 'bold' ,fontFamily:'poppins' }}>
                                         {testimonial.name}
                                     </Typography>
-                                    <Typography variant="caption" sx={{ color: '#777777' }}>
+                                    <Typography variant="caption" sx={{ color: '#777777',fontFamily:'inter' }}>
                                         {testimonial.title}
                                     </Typography>
                                 </Box>

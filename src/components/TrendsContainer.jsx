@@ -4,6 +4,8 @@ import EastIcon from '@mui/icons-material/East';
 import customer from '../assets/imageFiles/customer support.png';
 import AI from '../assets/imageFiles/AI.png';
 import cyber from '../assets/imageFiles/cyber security.png';
+import bg2 from '../assets/imageFiles/bg2.png'
+
 
 // Data
 const trends = [
@@ -45,17 +47,41 @@ const trends = [
 const TrendsContainer = () => {
   return (
     <Container
+    maxWidth='xl'
+
       sx={{
-        width: '100%',
-        maxWidth: '1200px',
+        position:'relative',
+        width: {xs:'100%',xl:'100%'},
+        
         height: 'auto',
         mt: '5%',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         gap: '48px',
+        zIndex:'1'
       }}
     >
+
+      {/* bg png */}
+      <Box
+        component="img"
+        src={bg2}
+        sx={{
+          position: 'absolute',
+          width: '100%', // Adjust size as needed
+          height: '200%', // Adjust size as needed
+          top: 0,
+          left: 0,
+          zIndex: '-1',
+          transform: 'rotate( 180deg)',  // Rotate the image by 45 degrees
+          // transformOrigin: 'center', // Rotate around the center
+          objectFit: 'cover ',
+        }}
+      />
+
+
+
       {/* First Container */}
       <div
         sx={{
@@ -76,7 +102,7 @@ const TrendsContainer = () => {
             letterSpacing: '1.6px',
             color: '#117DCC',
             mb: '10px',
-            textAlign:'center'
+            textAlign: 'center'
           }}
         >
           Explore the Latest Trends
@@ -88,11 +114,11 @@ const TrendsContainer = () => {
             fontSize: {
               xs: '16px',
               sm: '18px',
-              md: '20px',
+              md: '18px',
             },
             lineHeight: '1.5',
             color: '#ADADAD',
-            textAlign:'center'
+            textAlign: 'center'
 
           }}
         >
@@ -101,16 +127,17 @@ const TrendsContainer = () => {
       </div>
 
       {/* Second Container */}
-      <Grid2 container spacing={2} sx={{justifyContent:{
-        xs:'center',
-        sm:'start',
-        md:'center'
-      },
-        width:{
-            xs:'100%',
-            xl:'1200px'
+      <Grid2 container spacing={2} sx={{
+        justifyContent: {
+          xs: 'center',
+          sm: 'start',
+          md: 'center'
         },
-     
+        width: {
+          xs: '100%',
+          xl: '1200px'
+        },
+
       }}>
         {trends.map((trend, index) => (
           <Grid2 item xs={12} sm={6} md={4} key={index}>
@@ -120,10 +147,10 @@ const TrendsContainer = () => {
                 maxWidth: {
                   xs: '330px',
                   sm: '350px',
-                  lg:'370px',
+                  lg: '370px',
                   xl: '378.67px',
                 },
-                height: 'auto',
+                height: { xs: 'auto', md: '553px', lg: '553px' },
                 borderRadius: '16px',
                 border: '0.2px solid #707070',
                 p: '24px 16px',
@@ -163,6 +190,7 @@ const TrendsContainer = () => {
                     fontSize: '12px',
                     lineHeight: '18px',
                     fontWeight: 400,
+                    fontFamily: 'inter'
                   }}
                 >
                   {trend.button.title}
@@ -176,6 +204,7 @@ const TrendsContainer = () => {
                     xs: '16px',
                     sm: '18px',
                     md: '20px',
+                    xl:'22px'
                   },
                   lineHeight: '1.5',
                 }}
@@ -187,10 +216,11 @@ const TrendsContainer = () => {
                   fontSize: {
                     xs: '14px',
                     sm: '14px',
-                    md: '14px',
+                    md: '16px',
                   },
                   lineHeight: '1.5',
                   color: '#ADADAD',
+                  fontFamily: 'inter'
                 }}
               >
                 {trend.desc}
@@ -202,12 +232,14 @@ const TrendsContainer = () => {
                   width: 'fit-content',
                   height: '32px',
                   mt: '8px',
-                  marginX:'-7px',
+                  marginX: '-7px',
                   fontWeight: 'bold',
+                  fontFamily: 'poppins',
                   fontSize: {
                     xs: '12px',
                     sm: '14px',
                     md: '16px',
+                    xl:'18px'
                   },
                 }}
               >

@@ -5,17 +5,38 @@ import casestudy from '../assets/imageFiles/casestudy.png';
 import leftarrow from '../assets/imageFiles/leftarrow.png';
 import rightarrow from '../assets/imageFiles/rightarrow.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import bg2 from '../assets/imageFiles/bg2.png'
+
 
 const MainComponent = () => {
     return (
-        <Box sx={{
-            width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingX: {
+        <Box sx={{position:'relative',
+            width: '100%',zIndex:'1', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingX: {
                 xs: '10px',
                 md: '24px',
                 lg: '28px'
             },
-            marginTop: { xs: '100px', lg: '200px' }, marginBottom: { xs: '150px', lg: '240px' }
+            marginTop: { xs: '100px', lg: '200px' }, marginBottom: { xs: '150px', lg: '240px' },
         }}>
+
+             {/* bg png */}
+             <Box
+                component="img"
+                src={bg2}
+                sx={{
+                    position: 'absolute',
+                    width: '100%', // Adjust size as needed
+                    height: '180%', // Adjust size as needed
+                    top: 0,
+                    left: 0,
+                    zIndex: '-1',
+                    transform: 'rotate( 180deg)',  // Rotate the image by 45 degrees
+                    // transformOrigin: 'center', // Rotate around the center
+                    objectFit: 'cover ',
+                }}
+            />
+
+
             <Box sx={{ width: { xs: '100%', xl: '1200px' }, textAlign: 'center', padding: '16px' }}>
                 {/* Title */}
                 <Typography
@@ -36,7 +57,7 @@ const MainComponent = () => {
                 <Typography
                     sx={{
                         color: '#ADADAD',
-                        fontSize: { xs: '14px', sm: '18px', lg: '20px' }, // Responsive font size
+                        fontSize: { xs: '14px', sm: '18px', lg: '18px' }, // Responsive font size
                         fontFamily: 'Inter',
                         fontWeight: '400',
                         lineHeight: { xs: '20px', sm: '26px', lg: '30px' },
@@ -83,7 +104,7 @@ const MainComponent = () => {
 
                             borderRadius: '16px',
                             boxShadow: 'inset 0 4px 8px rgba(0, 0, 0, 0.2)',
-                            border: '1px solid rgba(112, 112, 112, 0.7)',
+                            border: '0.2px solid rgba(112, 112, 112, 0.7)',
                             display: 'flex',
                             flexGrow: {
                                 md: 1
@@ -278,7 +299,7 @@ const MainComponent = () => {
                                     <Typography
                                         sx={{
                                             color: '#117DCC',
-                                            fontSize: { xs: '12px', md: '15px' }, // Responsive font size
+                                            fontSize: { xs: '12px', md: '15px',xl:'20px' }, // Responsive font size
                                             fontFamily: 'Poppins',
                                             // height:'64px',
                                             fontWeight: 700,
@@ -366,7 +387,7 @@ const MainComponent = () => {
                         position: 'relative',
                         backgroundColor: 'rgba(255, 255, 255, 0.15)',
                         borderRadius: '99px',
-                        border: '0.5px solid',
+                        border: '0.2px solid',
                     }}
                 /> <Box
                     sx={{
@@ -375,7 +396,7 @@ const MainComponent = () => {
                         position: 'relative',
                         backgroundColor: 'rgba(255, 255, 255, 0.15)',
                         borderRadius: '99px',
-                        border: '0.5px solid',
+                        border: '0.2px solid',
                     }}
                 />
 

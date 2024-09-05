@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Box, Button, Typography, Card, CardMedia, CardContent, List, ListItem, ListItemIcon } from '@mui/material';
+import { Box, Button, Typography,Container, Card, CardMedia, CardContent, List, ListItem, ListItemIcon } from '@mui/material';
 import EastIcon from '@mui/icons-material/East';
 import image from '../assets/imageFiles/image1.png';
+import bg2 from '../assets/imageFiles/bg2.png'
 import faceIcon from '../assets/imageFiles/faceIcon.png';
 
 function AITechnologies() {
@@ -12,18 +13,36 @@ function AITechnologies() {
     };
 
     return (
-        <Box
+        <Container maxWidth='xl'
             sx={{
                 padding: { xs: 2, sm: 4 },
-                maxWidth: '1200px',
+                
+                width:'100%',
                 margin: 'auto',
                 marginY: '5%',
                 borderRadius: '10px',
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center',
+                alignItems: 'center', position: 'relative',zIndex:'1'
             }}
         >
+            {/* bg png */}
+            <Box
+                component="img"
+                src={bg2}
+                sx={{
+                    position: 'absolute',
+                    width: '100%', // Adjust size as needed
+                    height: '150%', // Adjust size as needed
+                    top: 0,
+                    left: 0,
+                    zIndex: '-1',
+                    // transform: 'rotate( -80deg)',  // Rotate the image by 45 degrees
+                    // transformOrigin: 'center', // Rotate around the center
+                    objectFit: 'cover ',
+                }}
+            />
+
             {/* Header Container */}
             <Box
                 sx={{
@@ -62,9 +81,10 @@ function AITechnologies() {
                 <Typography
                     variant="body1"
                     sx={{
-                        color: '#ffffff85',
-                        fontSize: { xs: '14px', sm: '1rem', md: '1.2rem' },
+                        color: '#ADADAD',
+                        fontSize: { xs: '14px', sm: '1rem', md: '1.2rem',xl:'18px' },
                         lineHeight: 1.5,
+                        fontFamily: 'inter'
                     }}
                 >
                     Discover our expertise in AI technologies, including predictive modeling, image recognition, speech-to-text, and conversational AI, tailored to boost efficiency and innovation.
@@ -72,7 +92,7 @@ function AITechnologies() {
             </Box>
 
             {/* Top Container with Buttons */}
-            <Box sx={{ border: '1px solid #8080803b', padding: '24px 16px', borderRadius: '10px' }}>
+            <Box sx={{ border: '0.2px solid #8080803b', padding: '24px 16px', borderRadius: '10px' }}>
 
 
                 <Box
@@ -83,7 +103,7 @@ function AITechnologies() {
 
                         mb: 4,
                         width: '100%',
-                        gap: { xs: 0.5, sm: 1,md:1.3},
+                        gap: { xs: 0.5, sm: 1, md: 1.3 },
                         justifyContent: 'center',
                         flexWrap: 'wrap',
                     }}
@@ -94,17 +114,18 @@ function AITechnologies() {
                             onClick={() => handleButtonClick(index)}
                             sx={{
                                 borderRadius: '8px',
+                                fontFamily: 'poppins',
                                 border: '1px solid #80808081',
-                                color: '#fff',
+                                color: '#ADADAD',
                                 textDecoration: 'none',
                                 position: 'relative',
-                                width: { xs: 'calc(100% - 1px)', lg: '174.6px' },
+                                width: { xs: 'calc(100% - 1px)', sm: '174.6px' },
                                 height: '62px',
                                 overflow: 'hidden',
-                                textTransform:'capitalize',
-                                paddingX: 2,
+                                textTransform: 'capitalize',
+                                paddingX: 1,
                                 paddingY: 1,
-                                fontSize: { xs: '0.9rem', sm: 'clamp(0.9rem, 1.5vw, 0.9rem)', xl:'16px' },
+                                fontSize: { xs: '0.9rem', sm: 'clamp(0.9rem, 1.5vw, 0.9rem)', xl: '16px' },
                                 fontWeight: 'bold',
                                 mb: { xs: 1, sm: 0 },
                                 '&:before': {
@@ -137,13 +158,13 @@ function AITechnologies() {
                         borderRadius: 2,
                         border: '0.2px solid rgba(112.31, 112.31, 112.31, 0.70)',
                         display: 'flex',
-                        flexDirection: {xs:'column', lg:'row'},
+                        flexDirection: { xs: 'column', lg: 'row' },
                         justifyContent: 'flex-start',
                         alignItems: 'flex-start',
                         gap: 3,
                     }}
                 >
-                    
+
 
                     {/* Text and Icon Section */}
                     <Box
@@ -170,61 +191,62 @@ function AITechnologies() {
                             >
                                 <Box component={'img'} src={faceIcon} sx={{ width: 43.64, height: 43.64, }} />
                             </Box>
-                            <Typography variant="h4" sx={{ color: 'rgba(255, 255, 255, 0.90)', fontWeight: 700,fontSize:{xs:'20px',md:'24px',lg:'32px'} }}>
+                            <Typography variant="h4" sx={{ fontFamily: 'poppins', color: 'rgba(255, 255, 255, 0.90)', fontWeight: 700, fontSize: { xs: '20px', md: '24px', lg: '26px' , xl:'28px' } }}>
                                 Speech to Text
                             </Typography>
                         </Box>
 
-                        <Typography variant="body1" sx={{ color: '#ADADAD', fontWeight: 500 ,fontSize:{xs:'15px',md:'16px',lg:'18px'}}}>
+                        <Typography variant="body1" sx={{ color: '#ADADAD', fontWeight: 500, fontSize: { xs: '15px', md: '16px', lg: '17px' ,xl:'18px' }, fontFamily: 'inter' }}>
                             Automate repetitive tasks and streamline business processes
                         </Typography>
 
-                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize:{xs:'15px',md:'16px',lg:'18px'} }}>
+                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize: { xs: '15px', md: '16px', lg: '17px' ,xl:'18px' }, fontFamily: 'inter' }}>
                             ✨ Multi-language support with over 50 languages and dialects
                         </Typography>
-                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize:{xs:'15px',md:'16px',lg:'18px'} }}>
+                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize: { xs: '15px', md: '16px', lg: '17px' ,xl:'18px' }, fontFamily: 'inter' }}>
                             ✨ Real-time transcription for live captioning and interactive applications
                         </Typography>
-                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize:{xs:'15px',md:'16px',lg:'18px'} }}>
+                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize: { xs: '15px', md: '16px', lg: '17px' ,xl:'18px' }, fontFamily: 'inter' }}>
                             ✨ Speaker diarization to distinguish between multiple speakers
                         </Typography>
-                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize:{xs:'15px',md:'16px',lg:'18px'} }}>
+                        <Typography variant="body2" sx={{ color: '#ADADAD', fontSize: { xs: '15px', md: '16px', lg: '17px' ,xl:'18px' }, fontFamily: 'inter' }}>
                             ✨ Custom vocabulary integration for industry-specific terminology
                         </Typography>
                         {/* Demo Button */}
-                    <Button
-                        variant="contained"
-                        sx={{
-                            width:'192',height:'56',
-                            padding:'12px 24px', fontFamily: 'Poppins',
-                            fontWeight: '700',
-                            mt: 2,
-                            background: 'rgba(255, 255, 255, 0.04)',
-                            borderRadius: 1,
-                            color: '#117DCC',
-                            textTransform: 'none',
-                            display:'flex',gap:'5px',alignItems:'center'
-                        }}
-                    >
-                        View Demo <EastIcon/>
-                    </Button> 
+                        <Button
+                            variant="contained"
+                            sx={{
+                                width: '192', height: '56',
+                                padding: '12px 24px', fontFamily: 'Poppins',
+                                fontWeight: '700',
+                                mt: 2,
+                                background: 'rgba(255, 255, 255, 0.04)',
+                                borderRadius: 1,
+                                color: '#117DCC',
+                                textTransform: 'none',
+                                display: 'flex', gap: '5px', alignItems: 'center',
+                                fontSize:'18px'
+                            }}
+                        >
+                            View Demo <EastIcon />
+                        </Button>
                     </Box>
 
-                    
 
-                        {/* Image Box */}
+
+                    {/* Image Box */}
                     <Box
                         sx={{
-                            width: {xs:'100%',lg:505},
-                            height: {xs:'100%',lg:486},
-                            p: {xs:'0',lg:2},
+                            width: { xs: '100%', lg: 505 },
+                            height: { xs: '100%', lg: 486 },
+                            p: { xs: '0', lg: 2 },
                             background: 'linear-gradient(0deg, #101010 0%, #101010 100%)',
                             boxShadow: '0px 0px 4px rgba(255, 255, 255, 0.14) inset',
                             borderRadius: 2,
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            border: '0.1px solid rgba(112.31, 112.31, 112.31, 0.70)',
+                            border: '0.2px solid rgba(112.31, 112.31, 112.31, 0.70)',
                         }}
                     >
                         <img
@@ -235,7 +257,7 @@ function AITechnologies() {
                     </Box>
                 </Box>
             </Box>
-        </Box>
+        </Container>
     );
 }
 
