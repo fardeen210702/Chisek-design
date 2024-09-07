@@ -43,16 +43,17 @@ const Navbar = () => {
               paddingBottom: "40px",
             }}
           >
-            <Box
+            <Box  component={Link} to='/'
               sx={{
                 width: { xs: "250px", md: "242px" },
                 height: "72px",
                 display: "inline-flex",
                 justifyContent: "flex-start",
                 alignItems: "center",
+                textDecoration:'none'
               }}
             >
-              <Box
+              <Box 
                 sx={{
                   width: 72,
                   height: 72,
@@ -87,16 +88,18 @@ const Navbar = () => {
           </Box>
         ) : (
           <>
-            <Box
+            <Box component={Link} to='/'
               sx={{
                 width: "242px",
                 height: "72px",
                 display: "inline-flex",
                 justifyContent: "flex-start",
                 alignItems: "center",
+                textDecoration:'none',
+
               }}
             >
-              <Box
+              <Box 
                 sx={{
                   width: 72,
                   height: 72,
@@ -131,6 +134,7 @@ const Navbar = () => {
               textColor="inherit"
               TabIndicatorProps={{
                 style: {
+                  
                   backgroundColor: "#117DCC",
                   height: "3px",
                 },
@@ -138,7 +142,7 @@ const Navbar = () => {
               sx={{
                 marginLeft: "auto",
                 marginRight: "auto",
-                width: { md: "800px", xl: "840px" },
+                width: { lg: "800px", xl: "890px" },
                 ".MuiTab-root": {
                   color: "#fff",
                   fontWeight: "bold",
@@ -176,6 +180,8 @@ const Navbar = () => {
               />
               <Tab
                 label="Technologies"
+                 component={Link}
+                to="/technologies"
                 icon={<KeyboardArrowDownIcon />}
                 iconPosition="end"
               />

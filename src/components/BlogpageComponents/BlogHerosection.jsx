@@ -86,7 +86,7 @@ const BlogHeroSection = () => {
             <Container maxWidth={false} sx={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', marginBottom: '197px', paddingTop: { xs: '150px' , sm:'230px', lg: '190px' } }}>
                 <Box sx={{ width: '100%', height: '116px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '24px' }}>
                     <Box sx={{ alignSelf: 'stretch', height: '70px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '16px' }}>
-                        <Typography sx={{ width: { xs: '100%', lg: '1048px' },position:'relative', textAlign: 'center', color: '#F9F9F9', fontSize: { xs: '28px', lg: '40px' }, fontFamily: 'Inter', fontWeight: '600', lineHeight: { xs: '48px', lg: '70px' }, wordWrap: 'break-word' }}>
+                        <Typography sx={{ width: { xs: '100%', lg: '1048px' },position:'relative', textAlign: 'center', color: '#F9F9F9', fontSize: { xs: '24px', lg: '40px' }, fontFamily: 'Inter', fontWeight: '600', lineHeight: { xs: '48px', lg: '70px' }, wordWrap: 'break-word' }}>
                             Get Updated with our Blogs
                              <Box src={vector} component={'img'} sx={{ width: '27.5px', height: '28.5px',position:'absolute' ,right:'auto'}} />
                         </Typography>

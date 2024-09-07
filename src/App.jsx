@@ -9,6 +9,7 @@ import Services from "./pages/Services";
 import Blogs from "./pages/Blogs";
 import Footer from "./components/Footer";
 import Industries from "./pages/Industries";
+import Technologies from "./pages/Technologies";
 
 
 
@@ -27,9 +28,9 @@ const App = () => {
               <Route path='/services' element={<Services/>} />
               <Route path="/blogs" element={<Blogs />} />
               <Route path="/industries" element={<Industries />} />
+              <Route path="/technologies" element={<Technologies />} />
               
               {/* 
-                <Route path="/technologies" element={<Technologies />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} /> */}
 
