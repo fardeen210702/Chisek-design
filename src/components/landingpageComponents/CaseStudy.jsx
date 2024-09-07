@@ -1,11 +1,11 @@
 import React from 'react';
 import { Box, Typography, Divider, Button, Grid2, IconButton } from '@mui/material';
-import vector from '../assets/imageFiles/Vector.jpg';
-import casestudy from '../assets/imageFiles/casestudy.png';
-import leftarrow from '../assets/imageFiles/leftarrow.png';
-import rightarrow from '../assets/imageFiles/rightarrow.png';
+import vector from '../../assets/imageFiles/Vector.jpg';
+import casestudy from '../../assets/imageFiles/casestudy.png';
+import leftarrow from '../../assets/imageFiles/leftarrow.png';
+import rightarrow from '../../assets/imageFiles/rightarrow.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import bg2 from '../assets/imageFiles/bg2.png'
+import bg2 from '../../assets/imageFiles/bg2.png'
 
 
 const MainComponent = () => {
@@ -279,7 +279,7 @@ const MainComponent = () => {
                                     marginTop: {
                                         md: '1%',
                                         lg: '-2%',
-                                        xl: '0%'
+                                        xl: '9%'
                                     }
                                 }}
                             >
@@ -305,15 +305,17 @@ const MainComponent = () => {
                                             fontWeight: 700,
                                             lineHeight: '30px',
                                             wordWrap: 'break-word',
-                                            width: '112px',
+                                            width: {xs:'112px' , xl:'160px'},
+                                        // border:'1px solid green',
                                         }}
                                     >
                                         Read more
                                     </Typography>
                                     <IconButton
                                         sx={{
-
+                                            color: '#117DCC',
                                             position: 'relative',
+                                            marginRight:'5px',
                                             backgroundColor: 'transparent',
                                             '&:hover': {
                                                 backgroundColor: 'transparent',
@@ -321,10 +323,6 @@ const MainComponent = () => {
                                         }}
                                     >
                                         <ArrowForwardIcon
-                                            sx={{
-
-                                                color: '#117DCC',
-                                            }}
                                         />
                                     </IconButton>
                                 </Box>

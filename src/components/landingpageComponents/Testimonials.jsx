@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Box, Paper, Chip, Avatar } from '@mui/material';
-import bg2 from '../assets/imageFiles/bg2.png'
+import bg2 from '../../assets/imageFiles/bg2.png'
 
 
 const testimonialsData = [
@@ -205,7 +205,7 @@ const Testimonials = () => {
 
     return (
         <Container maxWidth={false} sx={{  position: 'relative' ,zIndex:'1',display:'flex',flexDirection:'column',alignItems:'center' }}>
- <Box
+       <Box
         component="img"
         src={bg2}
         sx={{
@@ -218,8 +218,6 @@ const Testimonials = () => {
           objectFit: 'cover ',
         }}
       />
-
-
             <Typography variant="h4" component="h2" sx={{ color: '#00A3FF', fontWeight: 'bold', textAlign: 'center', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px',fontSize: {xs: '28px',sm: '32px',md: '40px',} }}>
                 TESTIMONIALS
             </Typography>
@@ -274,7 +272,6 @@ const Testimonials = () => {
                         position: 'relative',
                         marginBottom: '24px',
                         gap: '10px',
-
                         display: {
                             xs: 'flex',
                             sm: 'flex',
@@ -302,8 +299,7 @@ const Testimonials = () => {
                                 padding: 3,
                                 borderRadius: '10px',
                                 width: '100%',
-                        border:'0.2px solid #707070',
-
+                                border:'0.2px solid #707070',
                                 maxWidth: '383px',
                                 height: '222px',
                                 display: 'flex',
@@ -395,7 +391,7 @@ const Testimonials = () => {
                                 color: '#FFFFFF',
                                 padding: 3,
                                 borderRadius: '10px',
-                        border:'0.2px solid #707070',
+                                border:'0.2px solid #707070',
                                 width: '100%',
                                 maxWidth: '383px',
                                 height: '222px',

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Grid2, Typography, Button, Paper, Box } from '@mui/material';
 import EastIcon from '@mui/icons-material/East';
-import customer from '../assets/imageFiles/customer support.png';
-import AI from '../assets/imageFiles/AI.png';
-import cyber from '../assets/imageFiles/cyber security.png';
-import bg2 from '../assets/imageFiles/bg2.png'
+import customer from '../../assets/imageFiles/customer support.png';
+import AI from '../../assets/imageFiles/AI.png';
+import cyber from '../../assets/imageFiles/cyber security.png';
+import bg2 from '../../assets/imageFiles/bg2.png'
 
 
 // Data

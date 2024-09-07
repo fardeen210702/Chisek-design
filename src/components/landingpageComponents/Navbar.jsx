@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Box, Tabs, Tab, Button, useTheme, useMediaQuery, Typography, IconButton } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
-import frame from '../assets/imageFiles/Frame.png';
+import frame from '../../assets/imageFiles/Frame.png';
 import DrawerComponent from './DrawerComponent';
+import Landingpage from '../../pages/Landingpage';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [value, setValue] = useState(0);
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.down('lg'));
-    const isExtraLarge = useMediaQuery(theme.breakpoints.up('2xl'));
+  
 
     return (
 
-        <AppBar position="static" sx={{ maxWidth: '1440px', marginTop: '50px', boxShadow: '0', backgroundColor: 'transparent' }}>
+        <AppBar position="static" sx={{ maxWidth: '1440px', paddingTop: '50px', boxShadow: '0', backgroundColor: 'transparent' }}>
 
             <Toolbar sx={{ display: 'flex', alignItems: 'center', height: '56px' }}>
                 {isMatch ? (
@@ -75,12 +77,12 @@ const Navbar = () => {
                                 },
                             }}
                         >
-                            <Tab label="Home" />
-                            <Tab label="Services" />
-                            <Tab label="Industries" icon={<KeyboardArrowDownIcon />} iconPosition="end" />
-                            <Tab label="Technologies" icon={<KeyboardArrowDownIcon />} iconPosition="end" />
+                            <Tab label="Home" component={Link} to="/"/>
+                            <Tab label="Services" component={Link} to='/services'/>
+                            <Tab label="Industries"  icon={<KeyboardArrowDownIcon />} iconPosition="end" />
+                            <Tab label="Technologies"    icon={<KeyboardArrowDownIcon />} iconPosition="end" />
                             <Tab label="Blogs" />
-                            <Tab label="About Us" />
+                            <Tab label="About Us"  />
                         </Tabs>
 
                         <Button
