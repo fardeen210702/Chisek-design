@@ -10,7 +10,7 @@ const ServiceHeroSection = () => {
   return (
     <Container
       maxWidth={false}
-      sx={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', marginTop: { xs: '-30%',md:'-12%', lg: '-9%', xl: '-8%' }, paddingTop: { xs: '80px', lg: '190px' }, height: { xs: '100vh', lg: '800px' }, backgroundImage: `url(${bg1})`, backgroundSize: { xs: '280% 170%', sm: '160% 170%', md: '100% 160%', lg: '100% 165%' }, backgroundPosition: 'center', backgroundColor: 'transparent', gap: '20px' }}
+      sx={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', paddingTop: { xs: '80px', lg: '190px' }, height: { xs: '100vh',md:'130vh', lg: '800px' }, gap: '20px' }}
     >
       <Box
         sx={{ width: '149px', height: '32px', pl: 2, pr: 2, pt: 0.5, pb: 0.5, background: '#a0a0a028', color: '#117DCC', borderRadius: '8px', border: '0.5px solid gray', borderWidth: '0.2px', textTransform: 'capitalize', fontWeight: 'bold', marginY: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 1 }}
@@ -35,7 +35,7 @@ const ServiceHeroSection = () => {
         <Typography
           variant="body1"
           component="p"
-          sx={{ lineHeight: 1.6, color: '#ADADAD', fontSize: { xs: '14px', sm: '16px', md: '18px', lg: '18px' } }}
+          sx={{width:'100%', lineHeight: 1.6, color: '#ADADAD', fontSize: { xs: '14px', sm: '16px', md: '18px', lg: '18px' } }}
         >
          Revolutionize Your Operations, Enhance Customer Experiences, and drive Innovation with Chisel's <br /> Tailored AI Solutions
         </Typography>

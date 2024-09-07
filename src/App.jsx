@@ -1,4 +1,4 @@
-import Navbar from "./components/landingpageComponents/Navbar";
+import Navbar from "./components/Navbar";
 import Landingpage from "./pages/Landingpage"
 import '@fontsource/inter';
 import '@fontsource/bebas-neue';
@@ -6,7 +6,9 @@ import '@fontsource/poppins';
 import { Container, Box } from "@mui/material";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./pages/Services";
+import Blogs from "./pages/Blogs";
 import Footer from "./components/Footer";
+import Industries from "./pages/Industries";
 
 
 
@@ -23,9 +25,11 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Landingpage />} />
               <Route path='/services' element={<Services/>} />
-              {/* <Route path="/industries" element={<Industries />} />
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/industries" element={<Industries />} />
+              
+              {/* 
                 <Route path="/technologies" element={<Technologies />} />
-                <Route path="/blogs" element={<Blogs />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} /> */}
 

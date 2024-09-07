@@ -10,6 +10,8 @@ import CheckIcon from '@mui/icons-material/Check';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
+
+
 const AiCasestudy = () => {
 
     const caseData = {
@@ -134,6 +136,39 @@ const AiCasestudy = () => {
                     <Box component={'img'} src={rightarrow} sx={{height:{xs:'22px' ,xl:'30px'}}} />
 
                 </Box>
+
+            </Box>
+
+            <Box sx={{ width: '100%', height: '6px', display: 'flex', justifyContent: 'center', gap: '16px' }}>
+                <Box
+                    sx={{
+                        width: '61.3px',
+                        height: '100%',
+                        position: 'relative',
+                        backgroundColor: 'rgba(255, 255, 255, 0.80)',
+                        borderRadius: '99px',
+                    }}
+                />
+                <Box
+                    sx={{
+                        width: '61.3px',
+                        height: '100%',
+                        position: 'relative',
+                        backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                        borderRadius: '99px',
+                        border: '0.2px solid',
+                    }}
+                /> <Box
+                    sx={{
+                        width: '61.3px',
+                        height: '100%',
+                        position: 'relative',
+                        backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                        borderRadius: '99px',
+                        border: '0.2px solid',
+                    }}
+                />
+
 
             </Box>
             

@@ -127,128 +127,30 @@ const TrendsContainer = () => {
       </div>
 
       {/* Second Container */}
-      <Grid2 container spacing={2} sx={{
-        justifyContent: {
-          xs: 'center',
-          sm: 'start',
-          md: 'center'
-        },
-        width: {
-          xs: '100%',
-          xl: '1200px'
-        },
+      <Grid2 container spacing={2} sx={{ justifyContent: { xs: 'center', sm: 'start', md: 'center' }, width: { xs: '100%', xl: '1200px' } }}>
+  {trends.map((trend, index) => (
+    <Grid2 item xs={12} sm={6} md={4} key={index}>
+      <Paper sx={{ width: '100%', maxWidth: { xs: '330px', sm: '350px', lg: '370px', xl: '378.67px' }, height: { xs: 'auto', md: '553px', lg: '553px' }, borderRadius: '16px', border: '0.2px solid #707070', p: '24px 16px', display: 'flex', flexDirection: 'column', backgroundColor: '#101010', color: 'white', gap: '6px' }} elevation={3}>
+        <img src={trend.img} alt={trend.text} style={{ width: '100%', height: 'auto', maxHeight: '211.49px', borderRadius: '8px', objectFit: 'cover' }} />
+        <Box sx={{ height: '26px', width: 'fit-content', borderRadius: '4px', marginY: '8px', display: 'flex', alignItems: 'center', border: trend.button.border }}>
+          <Button sx={{ color: trend.button.color, fontSize: '12px', lineHeight: '18px', fontWeight: 400, fontFamily: 'inter' }}>
+            {trend.button.title}
+          </Button>
+        </Box>
+        <Typography sx={{ fontFamily: 'Poppins, sans-serif', fontWeight: 700, fontSize: { xs: '16px', sm: '18px', md: '20px', xl: '22px' }, lineHeight: '1.5' }}>
+          {trend.text}
+        </Typography>
+        <Typography sx={{ fontSize: { xs: '14px', sm: '14px', md: '16px' }, lineHeight: '1.5', color: '#ADADAD', fontFamily: 'inter' }}>
+          {trend.desc}
+        </Typography>
+        <Button endIcon={<EastIcon />} sx={{ color: '#117DCC', width: 'fit-content', height: '32px', mt: '8px', marginX: '-7px', fontWeight: 'bold', fontFamily: 'poppins', fontSize: { xs: '12px', sm: '14px', md: '16px', xl: '18px' } }}>
+          {trend.btn2}
+        </Button>
+      </Paper>
+    </Grid2>
+  ))}
+</Grid2>
 
-      }}>
-        {trends.map((trend, index) => (
-          <Grid2 item xs={12} sm={6} md={4} key={index}>
-            <Paper
-              sx={{
-                width: '100%',
-                maxWidth: {
-                  xs: '330px',
-                  sm: '350px',
-                  lg: '370px',
-                  xl: '378.67px',
-                },
-                height: { xs: 'auto', md: '553px', lg: '553px' },
-                borderRadius: '16px',
-                border: '0.2px solid #707070',
-                p: '24px 16px',
-                display: 'flex',
-                flexDirection: 'column',
-                backgroundColor: '#101010',
-                color: 'white',
-                gap: '6px',
-              }}
-              elevation={3}
-            >
-              <img
-                src={trend.img}
-                alt={trend.text}
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  maxHeight: '211.49px',
-                  borderRadius: '8px',
-                  objectFit: 'cover',
-                }}
-              />
-              <Box
-                sx={{
-                  height: '26px',
-                  width: 'fit-content',
-                  borderRadius: '4px',
-                  marginY: '8px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  border: trend.button.border,
-                }}
-              >
-                <Button
-                  sx={{
-                    color: trend.button.color,
-                    fontSize: '12px',
-                    lineHeight: '18px',
-                    fontWeight: 400,
-                    fontFamily: 'inter'
-                  }}
-                >
-                  {trend.button.title}
-                </Button>
-              </Box>
-              <Typography
-                sx={{
-                  fontFamily: 'Poppins, sans-serif',
-                  fontWeight: 700,
-                  fontSize: {
-                    xs: '16px',
-                    sm: '18px',
-                    md: '20px',
-                    xl:'22px'
-                  },
-                  lineHeight: '1.5',
-                }}
-              >
-                {trend.text}
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: {
-                    xs: '14px',
-                    sm: '14px',
-                    md: '16px',
-                  },
-                  lineHeight: '1.5',
-                  color: '#ADADAD',
-                  fontFamily: 'inter'
-                }}
-              >
-                {trend.desc}
-              </Typography>
-              <Button
-                endIcon={<EastIcon />}
-                sx={{
-                  color: '#117DCC',
-                  width: 'fit-content',
-                  height: '32px',
-                  mt: '8px',
-                  marginX: '-7px',
-                  fontWeight: 'bold',
-                  fontFamily: 'poppins',
-                  fontSize: {
-                    xs: '12px',
-                    sm: '14px',
-                    md: '16px',
-                    xl:'18px'
-                  },
-                }}
-              >
-                {trend.btn2}
-              </Button>
-            </Paper>
-          </Grid2>
-        ))}
-      </Grid2>
     </Container>
   );
 };
