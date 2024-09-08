@@ -12,16 +12,67 @@ import {
   IconButton,
 } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import MenuIcon from "@mui/icons-material/Menu";
 import frame from "../assets/imageFiles/Frame.png";
+import Polygon from "../assets/imageFiles/Polygon.png";
 import DrawerComponent from "./DrawerComponent";
-import Landingpage from "../pages/Landingpage";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ display, setDisplay }) => {
   const [value, setValue] = useState(0);
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
+
+  const obj = {
+    Others: [{ path: 'Privacy policy', link: '/privacypolicy', brColor: '3px solid #C73F2F' },
+    { path: 'Terms & conditions', link: '/terms&conditions', brColor: '3px solid orange' }],
+
+    Services: [{ path: 'AI-Powered Transformation', link: '/ai-transformation', brColor: '3px solid #0BFFF0' },
+    { path: 'Intelligent Automation', link: '/intelligent-automation', brColor: '3px solid #C73F2F' },
+    { path: 'Technology Consulting', link: '/technology-consulting', brColor: '3px solid #C88C0F' },
+    { path: 'AI Research & Development', link: '/ai-research-development', brColor: '3px solid pink' },
+    { path: 'End-to-End Product Development', link: '/product-development', brColor: '3px solid yellow' },
+    { path: 'Customer Experience Solutions', link: '/customer-experience', brColor: '3px solid #00DA23' }],
+
+    Industries: [
+      { path: 'Marketing', link: '/marketing', brColor: '3px solid #0BFFF0' },
+      { path: 'Banking and Finance', link: '/banking-finance', brColor: '3px solid #C73F2F' },
+      { path: 'Healthcare', link: '/healthcare', brColor: '3px solid yellow' },
+      { path: 'Ecommerce & Retail', link: '/ecommerce-retail', brColor: '3px solid #00DA23' },
+      { path: 'Contact Center', link: '/contact-center', brColor: '3px solid #C88C0F' }
+    ],
+
+    Technologies: [
+      { path: 'Text-to-Speech', link: '/text-to-speech', brColor: '3px solid #C73F2F' },
+      { path: 'Speech-to-Text', link: '/speech-to-text', brColor: '3px solid pink' },
+      { path: 'Chatbot', link: '/chatbot', brColor: '3px solid #00DA23' },
+      { path: 'NLP Sentiment Analysis', link: '/nlp-sentiment-analysis', brColor: '3px solid #0BFFF0' },
+      { path: 'NLP Computer Vision', link: '/nlp-computer-vision', brColor: '3px solid #C88C0F' }
+    ]
+  };
+
+
+
+  const [route, setRoute] = useState([])
+  const [left, setLeft] = useState(null)
+
+
+  function handleShow(e) {
+    setDisplay(true)
+    // console.log(e.target.offsetHeight, e.target.offsetLeft);
+    const value = e.target.textContent;
+    const key = Object.keys(obj).find(el => el === value)
+    setLeft(e.target.offsetLeft - 50)
+
+    if (key) {
+      setRoute(obj[key]);
+    } else {
+      console.log('No matching key found');
+      setRoute([]);
+    }
+  }
+
+
+
 
   return (
     <AppBar
@@ -33,6 +84,7 @@ const Navbar = () => {
         backgroundColor: "transparent",
       }}
     >
+
       <Toolbar sx={{ display: "flex", alignItems: "center", height: "56px" }}>
         {isMatch ? (
           <Box
@@ -43,17 +95,17 @@ const Navbar = () => {
               paddingBottom: "40px",
             }}
           >
-            <Box  component={Link} to='/'
+            <Box component={Link} to='/'
               sx={{
                 width: { xs: "250px", md: "242px" },
                 height: "72px",
                 display: "inline-flex",
                 justifyContent: "flex-start",
                 alignItems: "center",
-                textDecoration:'none'
+                textDecoration: 'none'
               }}
             >
-              <Box 
+              <Box
                 sx={{
                   width: 72,
                   height: 72,
@@ -87,19 +139,40 @@ const Navbar = () => {
             </Box>
           </Box>
         ) : (
-          <>
-            <Box component={Link} to='/'
+          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
+
+
+            {
+              display && <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', borderRadius:'16px', position: 'absolute', top: '100%', left: left, width: '578px', height: 'fit-content', padding: '24px', backgroundColor: '#101010', zIndex: '999' }} >
+                <Box component={'img'} src={Polygon} sx={{ width: '16px', height: '16px', marginLeft: '100px', position: 'absolute', top: '-15px' }} />
+                <Box sx={{ display: 'flex', flexWrap: 'wrap',gap:'24px' }}>
+
+                  {
+                    route.map((el, id) => {
+                      return <Typography key={id} onClick={() => setDisplay(false)} sx={{ flexShrink: '0', width: '250px', color: 'white', fontSize: 16, fontFamily: 'Inter', fontWeight: '600', lineHeight: '24px', wordWrap: 'break-word',paddingX:'10px',borderTopLeftRadius:'1px',borderBottomLeftRadius:'1px', borderLeft:el.brColor , cursor:'pointer' ,textDecoration:'none'}} component={Link} to={el.link} >
+                        {el.path}
+                      </Typography>
+                    })
+                  }
+                </Box>
+
+              </Box>
+
+
+            }
+
+            <Box component={Link} to='/' onClick={() => setDisplay(false)}
               sx={{
                 width: "242px",
                 height: "72px",
                 display: "inline-flex",
                 justifyContent: "flex-start",
                 alignItems: "center",
-                textDecoration:'none',
+                textDecoration: 'none',
 
               }}
             >
-              <Box 
+              <Box
                 sx={{
                   width: 72,
                   height: 72,
@@ -134,7 +207,6 @@ const Navbar = () => {
               textColor="inherit"
               TabIndicatorProps={{
                 style: {
-                  
                   backgroundColor: "#117DCC",
                   height: "3px",
                 },
@@ -142,7 +214,7 @@ const Navbar = () => {
               sx={{
                 marginLeft: "auto",
                 marginRight: "auto",
-                width: { lg: "800px", xl: "890px" },
+                width: { lg: "800px", xl: "900px" },
                 ".MuiTab-root": {
                   color: "#fff",
                   fontWeight: "bold",
@@ -155,41 +227,50 @@ const Navbar = () => {
                     lg: "16px", // Large screens
                     xl: "18px", // Extra large screens
                   },
-                  mr: { md: 1, xl: 2 },
+                  mr: { md: 1, xl: 1 },
                   paddingBottom: "10px",
+
                 },
                 ".Mui-selected": {
                   color: "#117DCC",
                 },
               }}
             >
-              <Tab label="Home" component={Link} to="/" />
+
+
+
+              <Tab label="Home" component={Link} to="/" onClick={() => setDisplay(false)} />
               <Tab
                 label="Services"
-                component={Link}
-                to="/services"
+                // component={Link}
+                onClick={handleShow}
+                // to="/services"
                 icon={<KeyboardArrowDownIcon />}
                 iconPosition="end"
               />
               <Tab
                 label="Industries"
-                component={Link}
-                to="/industries"
+                onClick={handleShow}
+                // component={Link}
+                // to="/industries"
                 icon={<KeyboardArrowDownIcon />}
                 iconPosition="end"
               />
               <Tab
                 label="Technologies"
-                 component={Link}
-                to="/technologies"
+                onClick={handleShow}
+                // component={Link}
+                // to="/technologies"
                 icon={<KeyboardArrowDownIcon />}
                 iconPosition="end"
               />
-              <Tab label="Blogs" component={Link} to="/blogs" />
-              <Tab label="About Us" />
+              <Tab label="Blogs" component={Link} to="/blogs" onClick={() => setDisplay(false)} />
+
+              <Tab label="Others" onClick={handleShow} icon={<KeyboardArrowDownIcon />}
+                iconPosition="end" />
             </Tabs>
 
-            <Button
+            <Button onClick={() => setDisplay(false)}
               variant="contained"
               size="large"
               sx={{
@@ -209,7 +290,7 @@ const Navbar = () => {
             >
               Contact Us
             </Button>
-          </>
+          </Box>
         )}
       </Toolbar>
     </AppBar>
