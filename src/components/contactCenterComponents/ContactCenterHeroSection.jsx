@@ -3,7 +3,7 @@ import { Container, Typography, Button, Box } from '@mui/material';
 import EastIcon from '@mui/icons-material/East';
 import Frame from '../../assets/imageFiles/Frame24.png';
 import cc1 from '../../assets/imageFiles/cc1.png';
-import vector from '../../assets/imageFiles/vector 1.png';
+import vector from '../../assets/imageFiles/Vector1.png';
 
 
 
