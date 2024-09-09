@@ -1,26 +1,26 @@
 import React, { useState } from 'react';
 import { Box, Button, Typography, Container } from '@mui/material';
-import EastIcon from '@mui/icons-material/East';
-import image from '../../assets/imageFiles/I8.png';
-import I9 from '../../assets/imageFiles/I9.png';
-import s6 from '../../assets/imageFiles/s6.png'
+import ec11 from '../../assets/imageFiles/ec11.png';
+import ec12 from '../../assets/imageFiles/ec12.png';
 import I10 from '../../assets/imageFiles/I10.png'
+import s6 from '../../assets/imageFiles/yellowicon.png'
+
+const EcommerceUseCase = () => {
 
 
-function AIbankingandFinance() {
     const [activeButton, setActiveButton] = useState(null);
     const arr = [
-        { title: 'Challenge  :', description: 'A financial services firm faced challenges in meeting regulatory deadlines due to the complexity and volume of compliance reporting' },
-        { title: 'Solution :', description: 'Chisel utilized AI for document understanding and automated reporting, ensuring accurate and timely compliance submissions' },
-        { title: 'Outcome :', description: 'The firm achieved a 50% reduction in reporting time, a 40% decrease in compliance-related errors, and maintained full regulatory compliance' },
+        { title: 'Challenge  :', description: 'An online fashion retailer wanted to enhance the shopping experience by providing personalized product recommendations and styling advice' },
+        { title: 'Solution :', description: 'Chisel implemented conversational AI and recommendation systems that tailored product suggestions based on individual customer preferences and behavior' },
+        { title: 'Outcome :', description: '  The retailer saw a 25% increase in conversion rates and a 20% boost in average order value, with customers reporting higher satisfaction levels' },
     ]
 
     const handleButtonClick = (index) => {
         setActiveButton(index);
     };
 
-    return (
-        <Container
+  return (
+    <Container
             maxWidth={false}
             sx={{ padding: { xs: 2, sm: 4, md: 0 }, width: '100%', marginY: '5%', borderRadius: '10px', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative', zIndex: 1 }}
         >
@@ -33,14 +33,14 @@ function AIbankingandFinance() {
                     variant="h2"
                     sx={{ color: '#117DCC', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px', fontSize: { xs: '24px', sm: '28px', md: '32px', lg: '36px', xl: '40px' }, fontWeight: 'bold', mb: 1 }}
                 >
-                    AI TECHNOLOGIES WE MASTER
+                  Use Cases of AI in E-commerce & Retail
                 </Typography>
 
                 <Typography
                     variant="body1"
                     sx={{ color: '#ADADAD', fontSize: { xs: '14px', sm: '1rem', md: '1.2rem', xl: '18px' }, lineHeight: 1.5, fontFamily: 'inter' }}
                 >
-                    Discover our expertise in AI technologies, including predictive modeling, image recognition, speech-to-text, and conversational AI, tailored to <br /> boost efficiency and innovation.
+                   Discover our expertise in AI technologies, including predictive modeling, image recognition, speech-to-text, and conversational <br /> AI, tailored to boost efficiency and innovation
                 </Typography>
             </Box>
 
@@ -48,7 +48,7 @@ function AIbankingandFinance() {
                 <Box
                     sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, alignItems: 'center', mb: 4, width: '100%', gap: { xs: 0.5, sm: 1, md: 1.3 }, justifyContent: 'center', flexWrap: 'wrap' }}
                 >
-                    {['Automating Customer Support','Enhancing Fraud Detection','Streamlining Compliance Reporting'].map((label, index) => (
+                    {['Personalized Shopping Assistants','Image Recognition for Inventory Management','Abandoned Cart Recovery'].map((label, index) => (
                         <Button
                             key={index}
                             onClick={() => handleButtonClick(index)}
@@ -69,10 +69,10 @@ function AIbankingandFinance() {
                             <Box
                                 sx={{ width: 80, height: 80, p: 2, background: 'linear-gradient(140deg, #141414 0%, #060606 100%)', boxShadow: '1px 1.82px 7.82px rgba(188.54, 188.54, 188.54, 0.17) inset', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                             >
-                                <Box component={'img'} src={I9} sx={{ width: 43.64, height: 43.64 }} />
+                                <Box component={'img'} src={ec11} sx={{ width: 43.64, height: 43.64 }} />
                             </Box>
                             <Typography variant="h4" sx={{ fontFamily: 'poppins', color: 'rgba(255, 255, 255, 0.90)', fontWeight: 700, fontSize: { xs: '20px', md: '24px', lg: '26px', xl: '28px' } }}>
-                            Automating Customer Support
+                            Personalized Shopping Assistants
                             </Typography>
                         </Box>
 
@@ -95,7 +95,7 @@ function AIbankingandFinance() {
                         >
                             <Box component={'img'} src={I10} />
 
-                            Key Technologies  : LLMs, AI-powered chatbots
+                            Key Technologies  : Conversational AI, Recommendation systems
                         </Button>
                     </Box>
 
@@ -104,14 +104,14 @@ function AIbankingandFinance() {
                     >
                         <img
                             style={{ width: '100%', height: '100%', objectFit: 'fill' }}
-                            src={image}
+                            src={ec12}
                             alt="Sample"
                         />
                     </Box>
                 </Box>
             </Box>
         </Container>
-    );
+  )
 }
 
-export default AIbankingandFinance;
+export default EcommerceUseCase
