@@ -9,7 +9,7 @@ import '@fontsource/poppins';
 import Services from "./pages/Services";
 import Blogs from "./pages/Blogs";
 import Footer from "./components/Footer";
-import Industries from "./pages/Industries";
+import Marketing from "./pages/Marketing";
 import Technologies from "./pages/Technologies";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
@@ -18,7 +18,10 @@ import TechConsulting from "./pages/TechConsulting";
 import EndtoEndProductdev from "./pages/EndtoEndProductdev";
 import CustomerSolution from "./pages/CustomerSolution";
 import AiResearch from './pages/Airesearch';
-
+import BankingAndFinance from "./pages/BankingAndFinance";
+import HealthCare from "./pages/HealthCare";
+import EcommerceRetail from "./pages/EcommerceRetail";
+import ContactCenter from "./pages/ContactCenter";
 
 
 
@@ -40,7 +43,10 @@ const App = () => {
               <Route path="/" element={<Landingpage handlehideDisplay={handlehideDisplay} />} />
               <Route path='/ai-transformation' element={<Services handlehideDisplay={handlehideDisplay} />}  />
               <Route path="/blogs" element={<Blogs handlehideDisplay={handlehideDisplay}/>} />
-              <Route path="/marketing" element={<Industries handlehideDisplay={handlehideDisplay} />} />
+              <Route path="/marketing" element={<Marketing handlehideDisplay={handlehideDisplay} />} />
+              <Route path="/healthcare" element={<HealthCare handlehideDisplay={handlehideDisplay} />} />
+              <Route path="/ecommerce-retail" element={<EcommerceRetail handlehideDisplay={handlehideDisplay} />} />
+              <Route path="/contact-center" element={<ContactCenter handlehideDisplay={handlehideDisplay} />} />
               <Route path="/text-to-speech" element={<Technologies handlehideDisplay={handlehideDisplay}/>} />
               <Route path="/privacypolicy" element={<PrivacyPolicy handlehideDisplay={handlehideDisplay}/>} />
               <Route path="/terms&conditions" element={<Terms  handlehideDisplay={handlehideDisplay}/>} />
@@ -49,6 +55,7 @@ const App = () => {
               <Route path="/ai-research-development" element={<AiResearch  handlehideDisplay={handlehideDisplay}/>} />
               <Route path="/product-development" element={<EndtoEndProductdev  handlehideDisplay={handlehideDisplay}/>} />
               <Route path="/customer-experience" element={<CustomerSolution  handlehideDisplay={handlehideDisplay}/>} />
+              <Route path="/banking-finance" element={<BankingAndFinance  handlehideDisplay={handlehideDisplay}/>} />
 
             </Routes>
             <Footer/>
