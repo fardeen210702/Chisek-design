@@ -4,10 +4,10 @@ import bg1 from '../assets/imageFiles/bg1.png';
 import { Box } from '@mui/material'
 import TechHeroSection from '../components/TechConsultingComponents/TechHeroSection'
 import Technology from '../components/TechConsultingComponents/Technology'
-import TechImplement from '../components/TechConsultingComponents/TechImplement'
 import TechTransformation from '../components/TechConsultingComponents/TechTransformation'
 import TechWithAi from '../components/TechConsultingComponents/TechWithAi'
 import TechTransforming from '../components/TechConsultingComponents/TechTransforming'
+import TechImplementation from '../components/TechConsultingComponents/TechImplementation';
 
 
 
@@ -18,7 +18,7 @@ const TechConsulting = ({handlehideDisplay}) => {
         <TechHeroSection />
         <TechTransforming />
         <Technology />
-        <TechImplement/>
+        <TechImplementation/>
         <TechTransformation />
         <AiCasestudy />
         <TechWithAi/>
