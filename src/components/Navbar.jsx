@@ -23,9 +23,6 @@ const Navbar = ({ display, setDisplay }) => {
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
 
   const obj = {
-    // Others: [{ path: 'Privacy policy', link: '/privacypolicy', brColor: '3px solid #C73F2F' },
-    // { path: 'Terms & conditions', link: '/terms&conditions', brColor: '3px solid orange' }],
-
     Services: [{ path: 'AI-Powered Transformation', link: '/ai-transformation', brColor: '3px solid #0BFFF0' },
     { path: 'Intelligent Automation', link: '/intelligent-automation', brColor: '3px solid #C73F2F' },
     { path: 'Technology Consulting', link: '/technology-consulting', brColor: '3px solid #C88C0F' },

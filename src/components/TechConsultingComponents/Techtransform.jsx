@@ -5,7 +5,7 @@ import tt2 from '../../assets/imageFiles/tt2.png'
 import  tt3 from '../../assets/imageFiles/tt3.png'
 import tt4 from '../../assets/imageFiles/tt4.png'
 
-const Techtransform = () => {
+const TechTransform = () => {
     const steps = [
         {
             img: tt2,
@@ -100,4 +100,4 @@ const Techtransform = () => {
     );
 };
 
-export default Techtransform;
+export default TechTransform;
