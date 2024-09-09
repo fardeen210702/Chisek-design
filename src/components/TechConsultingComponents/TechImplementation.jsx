@@ -5,7 +5,7 @@ import tt7 from '../../assets/imageFiles/tt7.png'
 import tt8 from '../../assets/imageFiles/tt8.png'
 import tt9 from '../../assets/imageFiles/tt9.png'
 
-const TechImplement = () => {
+const TechImplementation = () => {
 
     const steps = [
         {
@@ -89,4 +89,4 @@ const TechImplement = () => {
     )
 }
 
-export default TechImplement
+export default TechImplementation
