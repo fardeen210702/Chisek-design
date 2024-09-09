@@ -1,27 +1,27 @@
 import { Container, Box, Typography } from '@mui/material'
 import React from 'react'
-import ai6 from '../../assets/imageFiles/ai6.png'
-import ai7 from '../../assets/imageFiles/ai7.png'
-import ai8 from '../../assets/imageFiles/ai8.png'
-import ai9 from '../../assets/imageFiles/ai9.png'
+import c6 from '../../assets/imageFiles/c6.png'
+import c7 from '../../assets/imageFiles/c7.png'
+import c8 from '../../assets/imageFiles/c8.png'
+import c9 from '../../assets/imageFiles/c9.png'
 
-const AiImplementation = () => {
+const CustomerEngagement = () => {
 
     const steps = [
         {
-            img: ai7,
-            title: 'Ongoing Research',
-            description: 'Stay ahead of the curve with ongoing research into the latest AI trends and innovations',
+            img: c7,
+            title: 'Predictive Analytics',
+            description: 'Leverage AI to predict customer behavior and identify opportunities for proactive engagement',
         },
         {
-            img: ai8,
-            title: 'Solution Enhancement',
-            description: 'Regularly update and enhance AI solutions to maintain their effectiveness and relevance',
+            img: c8,
+            title: 'Targeted Retention Strategies',
+            description: 'Develop and implement retention strategies based on AI-driven insights',
         },
         {
-            img: ai9,
-            title: 'Scalability Planning',
-            description: 'Design AI solutions with scalability in mind, allowing your business to grow without technological constraints',
+            img: c9,
+            title: 'Feedback Loops',
+            description: 'Use AI to gather and analyze customer feedback, driving continuous improvement in customer experience',
         },
     ];
     return (
@@ -45,13 +45,13 @@ const AiImplementation = () => {
                             component="span"
                             sx={{ color: '#FFFFFF', fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: { xs: '36px', sm: '42px', md: '51.20px' }, wordWrap: 'break-word' }}
                         >
-                            {'[heading not present]'}
+                             Proactive Engagement and Retention
                         </Typography>
                     </Box>
                     <Box
                         sx={{ width: '100%', maxWidth: '541px', color: '#ADADAD', fontSize: { xs: '14px', sm: '16px', md: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', sm: '30px', md: '34px' }, wordWrap: 'break-word' }}
                     >
-                       We foster a culture of continuous innovation, ensuring your AI solutions evolve with industry trends and technological advancements
+                        Use AI to anticipate customer needs and proactively engage them, increasing retention and loyalty
                     </Box>
 
 
@@ -60,7 +60,7 @@ const AiImplementation = () => {
                 {/* image component */}
                 <Box sx={{ width: '100%', maxWidth: '487px', height: '100%', padding: '16px', background: 'linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%)', boxShadow: '0px 0px 0px #FFFFFF inset', borderRadius: '16px', overflow: 'hidden', border: '0.20px solid #707070', display: 'inline-flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '16px' }}>
                     <Box sx={{ alignSelf: 'stretch', flex: '1 1 0', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                        <img style={{ alignSelf: 'stretch', flex: '1 1 0' }} src={ai6} alt="Placeholder" />
+                        <img style={{ alignSelf: 'stretch', flex: '1 1 0' }} src={c6} alt="Placeholder" />
                     </Box>
                 </Box>
 
@@ -89,4 +89,4 @@ const AiImplementation = () => {
     )
 }
 
-export default AiImplementation
+export default CustomerEngagement

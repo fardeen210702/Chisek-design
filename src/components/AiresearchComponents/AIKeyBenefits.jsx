@@ -6,7 +6,7 @@ import ai11 from '../../assets/imageFiles/ai11.png'
 import ai12 from '../../assets/imageFiles/ai12.png'
 import s6 from '../../assets/imageFiles/s6.png'
 
-const AiTransformation = () => {
+const AIKeyBenefits = () => {
 
     const arr = [
         { title: 'Stay Ahead :', description: ' Be the first to adopt and benefit from the latest AI technologies' },
@@ -147,4 +147,4 @@ const AiTransformation = () => {
     )
 }
 
-export default AiTransformation
+export default AIKeyBenefits

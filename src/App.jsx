@@ -17,7 +17,7 @@ import IntelligentAutomation from "./pages/IntelligentAutomation";
 import TechConsulting from "./pages/TechConsulting";
 import EndtoEndProductdev from "./pages/EndtoEndProductdev";
 import CustomerSolution from "./pages/CustomerSolution";
-import Airesearch from "./pages/Airesearch";
+import AiResearch from './pages/Airesearch';
 
 
 
@@ -46,7 +46,7 @@ const App = () => {
               <Route path="/terms&conditions" element={<Terms  handlehideDisplay={handlehideDisplay}/>} />
               <Route path="/intelligent-automation" element={<IntelligentAutomation  handlehideDisplay={handlehideDisplay}/>} />
               <Route path="/technology-consulting" element={<TechConsulting  handlehideDisplay={handlehideDisplay}/>} />
-              <Route path="/ai-research-development" element={<Airesearch  handlehideDisplay={handlehideDisplay}/>} />
+              <Route path="/ai-research-development" element={<AiResearch  handlehideDisplay={handlehideDisplay}/>} />
               <Route path="/product-development" element={<EndtoEndProductdev  handlehideDisplay={handlehideDisplay}/>} />
               <Route path="/customer-experience" element={<CustomerSolution  handlehideDisplay={handlehideDisplay}/>} />
 

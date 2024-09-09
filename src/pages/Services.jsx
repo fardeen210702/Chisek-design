@@ -20,7 +20,6 @@ const Services = ({handlehideDisplay}) => {
         <AiImplementation />
         <AiTransformation />
         <AiCasestudy />
-
         <BusinessWithAi />
       </Box>
     </Box>

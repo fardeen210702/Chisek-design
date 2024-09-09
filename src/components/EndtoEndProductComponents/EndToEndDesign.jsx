@@ -3,7 +3,7 @@ import e5 from '../../assets/imageFiles/e5.png'
 import React from 'react'
 import s6 from '../../assets/imageFiles/s6.png'
 
-const EndToEnd3 = () => {
+const EndToEndDesign = () => {
 
     const arr = [
         { title: 'User-Centric Design  :', description: 'Create intuitive and engaging designs that resonate with your target audience' },
@@ -59,4 +59,4 @@ const EndToEnd3 = () => {
     )
 }
 
-export default EndToEnd3
+export default EndToEndDesign

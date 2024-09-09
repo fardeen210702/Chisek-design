@@ -12,22 +12,22 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 
-const AiCasestudy = () => {
+const EndToEndCaseStudy = () => {
 
     const caseData = {
-        title: "Transforming  E-commerce Industry",
+        title: "Technology Startup",
         sections: [
             {
                 label: "Challenge :",
-                description: "An e-commerce platform needed to improve customer engagement and reduce cart abandonment rates."
+                description: " A tech startup needed to develop and launch an innovative mobile app within a tight timeline"
             },
             {
                 label: "Solution :",
-                description: "Chisel implemented AI-driven personalized recommendations and an automated cart recovery system"
+                description: "Chisel managed the entire product development process, from initial concept design to final app launch, ensuring all milestones were met on time"
             },
             {
                 label: "Outcome :",
-                description: " The platform saw a 25% reduction in cart abandonment and a 30% increase in average order value"
+                description: "The app was successfully launched within 6 months, gaining over 100,000 users in the first quarter"
             }
         ],
         stats: [
@@ -58,10 +58,10 @@ const AiCasestudy = () => {
             }}>
 
             <Typography variant="h4" component="h2" align="center" gutterBottom sx={{ color: '#117DCC', fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px', md: '40px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}>
-            Case Studies: AI-Powered Customer Experience Success Stories
+            Case Studies: End-to-End Product Development Success Stories
             </Typography>
             <Typography variant="body1" align="center" sx={{ color: '#ADADAD', mb: 4, fontFamily: 'inter', fontSize: { xs: '14px', md: '14px', lg: '18px' } }}>
-            To demonstrate the effectiveness of our AI-powered customer experience solutions, here are a few case studies from clients <br /> who have successfully transformed their customer engagement
+            To illustrate the impact of our End-to-End Product Development services, here are a few case studies from clients who have <br /> successfully brought their ideas to life.
             </Typography>
 
 
@@ -177,4 +177,4 @@ const AiCasestudy = () => {
     )
 }
 
-export default AiCasestudy
+export default EndToEndCaseStudy

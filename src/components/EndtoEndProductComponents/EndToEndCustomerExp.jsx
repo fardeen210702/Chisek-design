@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Box, Typography, InputBase, Button } from '@mui/material';
 
 
-const Customer6 = () => {
+const EndToEndCustomerExp = () => {
     return (
         <Container sx={{ width: { xs: '100%', xl: '1200px' }, marginY: '10%', height: { lg: '447px', xs: 'auto' }, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: { xs: '16px', lg: '56px' } }}>
             <Box sx={{ width: '100%', backgroundColor: '#101010', height: { lg: '447px', xs: 'auto' }, borderRadius: '16px', border: '0.20px solid #707070', padding: '56px 16px 32px 16px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: { xs: '16px', lg: '56px' }, zIndex: '1' }}>
@@ -29,4 +29,4 @@ const Customer6 = () => {
     );
 };
 
-export default Customer6;
+export default EndToEndCustomerExp;
