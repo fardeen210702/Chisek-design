@@ -1,25 +1,25 @@
 import React from 'react';
 import { Container, Typography, Paper, Box, Grid, Avatar } from '@mui/material';
-import ai1 from '../../assets/imageFiles/ai1.png'
-import ai3 from '../../assets/imageFiles/ai3.png'
-import ai4 from '../../assets/imageFiles/ai4.png'
-import ai5 from '../../assets/imageFiles/ai5.png'
-const Airesearch2 = () => {
+import e1 from '../../assets/imageFiles/e1.png'
+import e2 from '../../assets/imageFiles/e2.png'
+import e3 from '../../assets/imageFiles/e3.png'
+import e4 from '../../assets/imageFiles/e4.png'
+const EndToEndProductDevelopment = () => {
     const steps = [
         {
-            img: ai3,
-            title: 'Technology Scouting',
-            description: 'Identify promising AI technologies that align with your industry and business goals',
+            img: e2,
+            title: 'Collaborative Ideation',
+            description: 'Work closely with your team to brainstorm and refine product ideas',
         },
         {
-            img: ai4,
-            title: 'Feasibility Studies',
-            description: 'Conduct in-depth evaluations to determine the viability of new AI technologies for your organization',
+            img: e3,
+            title: 'Market Research',
+            description: 'Analyze market trends and consumer needs to validate concepts',
         },
         {
-            img: ai5,
-            title: 'Prototype Development',
-            description: 'Create prototypes to test and refine emerging AI technologies before full-scale implementation',
+            img: e4,
+            title: 'Concept Validation',
+            description: 'Develop prototypes and test ideas to ensure feasibility and market fit',
         },
     ];
 
@@ -30,10 +30,10 @@ const Airesearch2 = () => {
             }}
         >
             <Typography variant="h4" component="h2" align="center" gutterBottom sx={{ color: '#117DCC', fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px', md: '40px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}>
-            Our Approach to AI Research & Development
+            Our Approach to End-to-End Product Development
             </Typography>
             <Typography variant="body1" align="center" sx={{ color: '#ADADAD', mb: 4, fontFamily: 'inter', fontSize: { xs: '14px', md: '14px', lg: '18px' } }}>
-            We explore emerging technologies, develop custom AI solutions tailored to your needs, and drive <br /> continuous innovation
+            Transform your ideas into market-ready products with Chisel’s end-to-end product development <br />approach. Let us help you bring your vision to life with a process that’s both innovative and efficient
             </Typography>
 
 
@@ -52,13 +52,13 @@ const Airesearch2 = () => {
                             component="span"
                             sx={{ color: '#FFFFFF', fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: { xs: '36px', sm: '42px', md: '51.20px' }, wordWrap: 'break-word' }}
                         >
-                             Exploring Emerging <br /> Technologies
+                             Ideation and Concept Development
                         </Typography>
                     </Box>
                     <Box
                         sx={{ width: '100%', maxWidth: '541px', color: '#ADADAD',paddingX:{xs:'15px'}, fontSize: { xs: '14px', sm: '16px', md: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', sm: '30px', md: '34px' }, wordWrap: 'break-word' }}
                     >
-                       We continuously scan the AI landscape to identify and evaluate the latest technologies, ensuring your business leverages cutting-edge advancements
+                       We begin by transforming your vision into a solid concept, ensuring alignment with market needs and business objectives
                     </Box>
 
 
@@ -67,7 +67,7 @@ const Airesearch2 = () => {
                 {/* image component */}
                 <Box sx={{ width: '100%', maxWidth: '511px', height: '100%', padding: '16px', background: 'linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%)', boxShadow: '0px 0px 0px #FFFFFF inset', borderRadius: '16px', overflow: 'hidden', border: '0.20px solid #707070', display: 'inline-flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '16px' }}>
                     <Box sx={{ alignSelf: 'stretch', flex: '1 1 0', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                        <img style={{ alignSelf: 'stretch', flex: '1 1 0' }} src={ai1} alt="Placeholder" />
+                        <img style={{ alignSelf: 'stretch', flex: '1 1 0' }} src={e1} alt="Placeholder" />
                     </Box>
                 </Box>
 
@@ -99,4 +99,4 @@ const Airesearch2 = () => {
     );
 };
 
-export default Airesearch2;
+export default EndToEndProductDevelopment;

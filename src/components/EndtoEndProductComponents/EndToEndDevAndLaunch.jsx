@@ -1,27 +1,27 @@
 import { Container, Box, Typography } from '@mui/material'
 import React from 'react'
-import c6 from '../../assets/imageFiles/c6.png'
-import c7 from '../../assets/imageFiles/c7.png'
-import c8 from '../../assets/imageFiles/c8.png'
-import c9 from '../../assets/imageFiles/c9.png'
+import e6 from '../../assets/imageFiles/e6.png'
+import e7 from '../../assets/imageFiles/e7.png'
+import e8 from '../../assets/imageFiles/e8.png'
+import e9 from '../../assets/imageFiles/e9.png'
 
-const Customer4 = () => {
+const EndToEndDevAndLaunch = () => {
 
     const steps = [
         {
-            img: c7,
-            title: 'Predictive Analytics',
-            description: 'Leverage AI to predict customer behavior and identify opportunities for proactive engagement',
+            img: e7,
+            title: 'Agile Development',
+            description: 'Utilize agile methodologies for efficient, iterative product development.',
         },
         {
-            img: c8,
-            title: 'Targeted Retention Strategies',
-            description: 'Develop and implement retention strategies based on AI-driven insights',
+            img: e8,
+            title: 'Quality Assurance',
+            description: 'Conduct rigorous testing to ensure product reliability and performance',
         },
         {
-            img: c9,
-            title: 'Feedback Loops',
-            description: 'Use AI to gather and analyze customer feedback, driving continuous improvement in customer experience',
+            img: e9,
+            title: 'Go-to-Market Strategy',
+            description: 'Develop and execute a comprehensive launch plan, including marketing and distribution',
         },
     ];
     return (
@@ -45,13 +45,13 @@ const Customer4 = () => {
                             component="span"
                             sx={{ color: '#FFFFFF', fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: { xs: '36px', sm: '42px', md: '51.20px' }, wordWrap: 'break-word' }}
                         >
-                             Proactive Engagement and Retention
+                            Development and Launch
                         </Typography>
                     </Box>
                     <Box
                         sx={{ width: '100%', maxWidth: '541px', color: '#ADADAD', fontSize: { xs: '14px', sm: '16px', md: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', sm: '30px', md: '34px' }, wordWrap: 'break-word' }}
                     >
-                        Use AI to anticipate customer needs and proactively engage them, increasing retention and loyalty
+                        We handle every aspect of product development, from coding to quality assurance, ensuring a smooth launch and market entry
                     </Box>
 
 
@@ -60,7 +60,7 @@ const Customer4 = () => {
                 {/* image component */}
                 <Box sx={{ width: '100%', maxWidth: '487px', height: '100%', padding: '16px', background: 'linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%)', boxShadow: '0px 0px 0px #FFFFFF inset', borderRadius: '16px', overflow: 'hidden', border: '0.20px solid #707070', display: 'inline-flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '16px' }}>
                     <Box sx={{ alignSelf: 'stretch', flex: '1 1 0', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                        <img style={{ alignSelf: 'stretch', flex: '1 1 0' }} src={c6} alt="Placeholder" />
+                        <img style={{ alignSelf: 'stretch', flex: '1 1 0' }} src={e6} alt="Placeholder" />
                     </Box>
                 </Box>
 
@@ -89,4 +89,4 @@ const Customer4 = () => {
     )
 }
 
-export default Customer4
+export default EndToEndDevAndLaunch
