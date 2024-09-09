@@ -23,8 +23,6 @@ import HealthCare from "./pages/HealthCare";
 import EcommerceRetail from "./pages/EcommerceRetail";
 import ContactCenter from "./pages/ContactCenter";
 
-
-
 const App = () => {
   const [display, setDisplay] = useState(false)
   function handlehideDisplay(){
@@ -35,8 +33,6 @@ const App = () => {
     < >
       <Container  maxWidth={false} style={{ backgroundColor: '#000', padding: 0, margin: 0, display: 'flex', flexDirection:'column' , alignItems:'center' }}>
         {/* <Box sx={{ maxWidth:'1600px', display: 'flex', flexDirection: "column", alignItems: 'center', }}> */}
-
-
           <Router>
             <Navbar display = {display}   setDisplay={setDisplay}/>
             <Routes >
@@ -56,7 +52,6 @@ const App = () => {
               <Route path="/product-development" element={<EndtoEndProductdev  handlehideDisplay={handlehideDisplay}/>} />
               <Route path="/customer-experience" element={<CustomerSolution  handlehideDisplay={handlehideDisplay}/>} />
               <Route path="/banking-finance" element={<BankingAndFinance  handlehideDisplay={handlehideDisplay}/>} />
-
             </Routes>
             <Footer/>
           </Router>

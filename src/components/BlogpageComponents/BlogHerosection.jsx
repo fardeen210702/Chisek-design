@@ -5,7 +5,7 @@ import customer from '../../assets/imageFiles/customer support.png';
 import AI from '../../assets/imageFiles/AI.png';
 import cyber from '../../assets/imageFiles/cyber security.png';
 import bg2 from '../../assets/imageFiles/bg2.png'
-import vector from '../../assets/imageFiles/Vector 1.png';
+import vector from '../../assets/imageFiles/Vector1.png';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 

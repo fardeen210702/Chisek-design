@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Button, Box, Grid2, Paper } from '@mui/material';
-import vector from '../../assets/imageFiles/Vector 1.png';
+import vector from '../../assets/imageFiles/Vector1.png';
 
 
 

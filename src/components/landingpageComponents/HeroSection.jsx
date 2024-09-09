@@ -3,7 +3,7 @@ import { Container, Typography, Button, Box } from '@mui/material';
 import EastIcon from '@mui/icons-material/East';
 import Frame from '../../assets/imageFiles/Frame24.png';
 import aiimage from '../../assets/imageFiles/aiimage.png';
-import vector from '../../assets/imageFiles/Vector 1.png';
+import vector from '../../assets/imageFiles/Vector1.png';
 import bg1 from '../../assets/imageFiles/bg1.png';
 
 const HeroSection = () => {

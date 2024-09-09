@@ -8,7 +8,7 @@ import t14 from '../../assets/imageFiles/t14.png'
 import t12 from '../../assets/imageFiles/t12.png'
 import t13 from '../../assets/imageFiles/t13.png'
 import t16 from '../../assets/imageFiles/t16.png'
-import vector from '../../assets/imageFiles/Vector 1.png';
+import vector from '../../assets/imageFiles/Vector1.png';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 
