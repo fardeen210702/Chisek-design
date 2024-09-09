@@ -27,8 +27,8 @@ const ServiceHeroSection = () => {
           gutterBottom
           sx={{ fontWeight: 'bold', marginBottom: 3, color: 'white', fontSize: { xs: '1.8rem', md: '2rem', lg: '3rem', xl: '48px' }, position: 'relative', width: '100%', fontFamily: 'inter' }}
         >
-          AI-Powered Business Transformation  <br />Services
-          <Box component={'img'} src={vector} sx={{ width: { xs: '15px', md: '18px', lg: '26px' }, position: 'absolute', right: { lg: '295px' } }} />
+          End-to-End AI-Powered Product <br /> Development Services
+          <Box component={'img'} src={vector} sx={{ width: { xs: '15px', md: '18px', lg: '26px' }, position: 'absolute', right: { lg: '165px' } }} />
         </Typography>
 
         <Typography
@@ -36,7 +36,7 @@ const ServiceHeroSection = () => {
           component="p"
           sx={{width:'100%', lineHeight: 1.6, color: '#ADADAD', fontSize: { xs: '14px', sm: '16px', md: '18px', lg: '18px' } }}
         >
-         Revolutionize Your Operations, Enhance Customer Experiences, and drive Innovation with Chisel's <br /> Tailored AI Solutions
+         From concept to launch, Chisel’s end-to-end product development ensures your ideas become successful, <br /> market-ready products
         </Typography>
       </Box>
 
@@ -45,7 +45,7 @@ const ServiceHeroSection = () => {
         color="secondary"
         sx={{ background: '#a0a0a028', color: '#117DCC', marginTop: '48px', gap: '12px', padding: '15px', borderRadius: '8px', border: '1px solid gray', textTransform: 'capitalize', fontWeight: 'bolder', fontSize: { xl: '18px' } }}
       >
-        Let's Get Started <EastIcon />
+         Get Started Today <EastIcon />
       </Button>
 
       <Box component='img' src={Frame} sx={{ width: '84px', height: '66px', marginTop: '7%' }} />

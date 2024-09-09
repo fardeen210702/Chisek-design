@@ -7,7 +7,6 @@ import { Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText, C
 
 const DrawerComponent = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
-  const [openOthers, setOpenOthers] = useState(false);
   const [openServices, setOpenServices] = useState(false);
   const [openIndustries, setOpenIndustries] = useState(false);
   const [openTechnologies, setOpenTechnologies] = useState(false);
@@ -15,11 +14,6 @@ const DrawerComponent = () => {
   const pages = [
     { path: 'Home', link: '/' },
     { path: 'Blogs', link: '/blogs' },
-  ];
-
-  const others = [
-    { path: 'Privacy', link: '/privacypolicy' },
-    { path: 'Terms', link: '/terms&conditions' },
   ];
 
   const services = [
@@ -54,10 +48,10 @@ const DrawerComponent = () => {
         onClose={() => setOpenDrawer(false)}
         sx={{
           '& .MuiDrawer-paper': {
-            width: '250px', // Width of the drawer
-            backgroundColor: 'black', // Black background
+            width: '250px',
+            backgroundColor: 'black',
             color: 'white',
-            paddingTop: '50px', // White text color
+            paddingTop: '50px',
             fontFamily: 'Poppins',
           },
         }}
@@ -71,13 +65,13 @@ const DrawerComponent = () => {
               onClick={() => setOpenDrawer(false)}
               sx={{
                 '&:hover': {
-                  backgroundColor: '#117DCC', // Blue background on hover
+                  backgroundColor: '#117DCC',
                   color: 'white',
                 },
               }}
             >
               <ListItemIcon sx={{ color: 'inherit' }}>
-                <ListItemText >{el.path}</ListItemText>
+                <ListItemText>{el.path}</ListItemText>
               </ListItemIcon>
             </ListItemButton>
           ))}
@@ -87,7 +81,7 @@ const DrawerComponent = () => {
             onClick={() => setOpenServices(!openServices)}
             sx={{
               '&:hover': {
-                backgroundColor: '#117DCC', // Blue background on hover
+                backgroundColor: '#117DCC',
                 color: 'white',
               },
             }}
@@ -105,7 +99,7 @@ const DrawerComponent = () => {
                   onClick={() => setOpenDrawer(false)}
                   sx={{
                     '&:hover': {
-                      backgroundColor: '#117DCC', // Blue background on hover
+                      backgroundColor: '#117DCC',
                       color: 'white',
                     },
                   }}
@@ -123,7 +117,7 @@ const DrawerComponent = () => {
             onClick={() => setOpenIndustries(!openIndustries)}
             sx={{
               '&:hover': {
-                backgroundColor: '#117DCC', // Blue background on hover
+                backgroundColor: '#117DCC',
                 color: 'white',
               },
             }}
@@ -141,7 +135,7 @@ const DrawerComponent = () => {
                   onClick={() => setOpenDrawer(false)}
                   sx={{
                     '&:hover': {
-                      backgroundColor: '#117DCC', // Blue background on hover
+                      backgroundColor: '#117DCC',
                       color: 'white',
                     },
                   }}
@@ -159,7 +153,7 @@ const DrawerComponent = () => {
             onClick={() => setOpenTechnologies(!openTechnologies)}
             sx={{
               '&:hover': {
-                backgroundColor: '#117DCC', // Blue background on hover
+                backgroundColor: '#117DCC',
                 color: 'white',
               },
             }}
@@ -177,43 +171,7 @@ const DrawerComponent = () => {
                   onClick={() => setOpenDrawer(false)}
                   sx={{
                     '&:hover': {
-                      backgroundColor: '#117DCC', // Blue background on hover
-                      color: 'white',
-                    },
-                  }}
-                >
-                  <ListItemIcon sx={{ color: 'inherit' }}>
-                    <ListItemText>{el.path}</ListItemText>
-                  </ListItemIcon>
-                </ListItemButton>
-              ))}
-            </List>
-          </Collapse>
-
-          {/* Others Dropdown */}
-          <ListItemButton
-            onClick={() => setOpenOthers(!openOthers)}
-            sx={{
-              '&:hover': {
-                backgroundColor: '#117DCC', // Blue background on hover
-                color: 'white',
-              },
-            }}
-          >
-            <ListItemText primary="Others" />
-            {openOthers ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-          </ListItemButton>
-          <Collapse in={openOthers}>
-            <List>
-              {others.map((el, id) => (
-                <ListItemButton
-                  key={id}
-                  LinkComponent={Link}
-                  to={el.link}
-                  onClick={() => setOpenDrawer(false)}
-                  sx={{
-                    '&:hover': {
-                      backgroundColor: '#117DCC', // Blue background on hover
+                      backgroundColor: '#117DCC',
                       color: 'white',
                     },
                   }}

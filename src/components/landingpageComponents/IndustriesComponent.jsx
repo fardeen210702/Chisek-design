@@ -97,7 +97,7 @@ const Industries = () => {
                             </Typography>
                             <Button
                                 endIcon={<EastIcon />}
-                                sx={{ fontFamily: 'poppins', marginTop: '2%', width: '143px', height: '32px', backgroundColor: 'transparent', color: '#117DCC', fontSize: { xs: '14px', md: '16px', xl: '18px' } }}
+                                sx={{fontFamily: 'poppins', marginTop: '2%', width: '170px', height: '32px', backgroundColor: 'transparent', color: '#117DCC', fontSize: { xs: '14px', md: '16px', xl: '18px' } }}
                             >
                                 {item.btn}
                             </Button>

@@ -23,8 +23,8 @@ const Navbar = ({ display, setDisplay }) => {
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
 
   const obj = {
-    Others: [{ path: 'Privacy policy', link: '/privacypolicy', brColor: '3px solid #C73F2F' },
-    { path: 'Terms & conditions', link: '/terms&conditions', brColor: '3px solid orange' }],
+    // Others: [{ path: 'Privacy policy', link: '/privacypolicy', brColor: '3px solid #C73F2F' },
+    // { path: 'Terms & conditions', link: '/terms&conditions', brColor: '3px solid orange' }],
 
     Services: [{ path: 'AI-Powered Transformation', link: '/ai-transformation', brColor: '3px solid #0BFFF0' },
     { path: 'Intelligent Automation', link: '/intelligent-automation', brColor: '3px solid #C73F2F' },
@@ -85,7 +85,7 @@ const Navbar = ({ display, setDisplay }) => {
       }}
     >
 
-      <Toolbar sx={{ display: "flex", alignItems: "center", height: "56px" }}>
+      <Toolbar sx={{ display: "flex", alignItems: "center", height: "56px" ,justifyContent:'center'}}>
         {isMatch ? (
           <Box
             sx={{
@@ -201,7 +201,7 @@ const Navbar = ({ display, setDisplay }) => {
                 Chisel Solutions
               </Box>
             </Box>
-            <Tabs
+            <Tabs 
               value={value}
               onChange={(e, value) => setValue(value)}
               textColor="inherit"
@@ -211,9 +211,7 @@ const Navbar = ({ display, setDisplay }) => {
                   height: "3px",
                 },
               }}
-              sx={{
-                marginLeft: "auto",
-                marginRight: "auto",
+              sx={{               
                 width: { lg: "800px", xl: "900px" },
                 ".MuiTab-root": {
                   color: "#fff",
@@ -227,7 +225,7 @@ const Navbar = ({ display, setDisplay }) => {
                     lg: "16px", // Large screens
                     xl: "18px", // Extra large screens
                   },
-                  mr: { md: 1, xl: 1 },
+                  mr: { md: 4, xl: 6 },
                   paddingBottom: "10px",
 
                 },
@@ -266,8 +264,6 @@ const Navbar = ({ display, setDisplay }) => {
               />
               <Tab label="Blogs" component={Link} to="/blogs" onClick={() => setDisplay(false)} />
 
-              <Tab label="Others" onClick={handleShow} icon={<KeyboardArrowDownIcon />}
-                iconPosition="end" />
             </Tabs>
 
             <Button onClick={() => setDisplay(false)}
