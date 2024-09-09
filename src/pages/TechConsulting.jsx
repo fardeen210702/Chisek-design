@@ -1,7 +1,7 @@
 import React from 'react'
 import AiCasestudy from '../components/ServicePageComponents/AiCasestudy'
 import bg1 from '../assets/imageFiles/bg1.png';
-import { Box, Container } from '@mui/material'
+import { Box } from '@mui/material'
 import TechHeroSection from '../components/TechConsultingComponents/TechHeroSection'
 import TechTransform from '../components/TechConsultingComponents/TechTransform'
 import Technology from '../components/TechConsultingComponents/Technology'
