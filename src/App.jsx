@@ -1,63 +1,64 @@
-import Navbar from "./components/Navbar";
+import Navbar from "../src/components/Common/Navbar/Navbar";
 import { Container, Box } from "@mui/material";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landingpage from "./pages/Landingpage"
 import { useState } from "react";
 import '@fontsource/inter';
 import '@fontsource/bebas-neue';
 import '@fontsource/poppins';
-import Services from "./pages/Services";
-import Blogs from "./pages/Blogs";
-import Footer from "./components/Footer";
-import Marketing from "./pages/Marketing";
-import Technologies from "./pages/Technologies";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Terms from "./pages/Terms";
-import IntelligentAutomation from "./pages/IntelligentAutomation";
-import TechConsulting from "./pages/TechConsulting";
-import EndtoEndProductdev from "./pages/EndtoEndProductdev";
-import CustomerSolution from "./pages/CustomerSolution";
-import AiResearch from './pages/Airesearch';
-import BankingAndFinance from "./pages/BankingAndFinance";
-import HealthCare from "./pages/HealthCare";
-import EcommerceRetail from "./pages/EcommerceRetail";
-import ContactCenter from "./pages/ContactCenter";
-
+import Landingpage from "../src/pages/landingPage/Landingpage"
+import AiTransformation from "./pages/services/AiTransformation/AiTransformation";
+import Blogs from '../src/pages/Blogs/Blogs'
+import Footer from "../src/components/Common/Footer/Footer";
+import Marketing from '../src/pages/industries/marketing/Marketing';
+import Technologies from "./pages/Technologies/Technologies";
+import PrivacyPolicy from "../src/pages/Other/PrivacyPolicy/PrivacyPolicy";
+import Terms from "../src/pages/Other/Terms/Terms";
+import IntelligentAutomation from "../src/pages/services/intelligentAutomation/IntelligentAutomation";
+import TechConsulting from "../src/pages/services/TechConsulting/TechConsulting";
+import EndtoEndProductdev from "../src/pages/services/End-To-EndProductDevelopment/EndtoEndProductdev";
+import CustomerSolution from "../src/pages/services/CustomerExperience/CustomerSolution";
+import AiResearch from '../src/pages/services/AiResearchDevelopment/Airesearch';
+import BankingAndFinance from "../src/pages/industries/bankingAndFinance/BankingAndFinance";
+import HealthCare from "../src/pages/industries/HealthCare/HealthCare";
+import EcommerceRetail from "../src/pages/industries/EcommerceAndRetail/EcommerceRetail";
+import ContactCenter from "../src/pages/industries/ContactCenter/ContactCenter";
 const App = () => {
-  const [display, setDisplay] = useState(false)
-  function handlehideDisplay(){
-    setDisplay(false)
-  }
+
+
+
+
+
 
   return (
     < >
       <Container  maxWidth={false} style={{ backgroundColor: '#000', padding: 0, margin: 0, display: 'flex', flexDirection:'column' , alignItems:'center' }}>
-        {/* <Box sx={{ maxWidth:'1600px', display: 'flex', flexDirection: "column", alignItems: 'center', }}> */}
+              
           <Router>
-            <Navbar display = {display}   setDisplay={setDisplay}/>
+            <Navbar/>
             <Routes >
-              <Route path="/" element={<Landingpage handlehideDisplay={handlehideDisplay} />} />
-              <Route path='/ai-transformation' element={<Services handlehideDisplay={handlehideDisplay} />}  />
-              <Route path="/blogs" element={<Blogs handlehideDisplay={handlehideDisplay}/>} />
-              <Route path="/marketing" element={<Marketing handlehideDisplay={handlehideDisplay} />} />
-              <Route path="/healthcare" element={<HealthCare handlehideDisplay={handlehideDisplay} />} />
-              <Route path="/ecommerce-retail" element={<EcommerceRetail handlehideDisplay={handlehideDisplay} />} />
-              <Route path="/contact-center" element={<ContactCenter handlehideDisplay={handlehideDisplay} />} />
-              <Route path="/text-to-speech" element={<Technologies handlehideDisplay={handlehideDisplay}/>} />
-              <Route path="/privacypolicy" element={<PrivacyPolicy handlehideDisplay={handlehideDisplay}/>} />
-              <Route path="/terms&conditions" element={<Terms  handlehideDisplay={handlehideDisplay}/>} />
-              <Route path="/intelligent-automation" element={<IntelligentAutomation  handlehideDisplay={handlehideDisplay}/>} />
-              <Route path="/technology-consulting" element={<TechConsulting  handlehideDisplay={handlehideDisplay}/>} />
-              <Route path="/ai-research-development" element={<AiResearch  handlehideDisplay={handlehideDisplay}/>} />
-              <Route path="/product-development" element={<EndtoEndProductdev  handlehideDisplay={handlehideDisplay}/>} />
-              <Route path="/customer-experience" element={<CustomerSolution  handlehideDisplay={handlehideDisplay}/>} />
-              <Route path="/banking-finance" element={<BankingAndFinance  handlehideDisplay={handlehideDisplay}/>} />
+              <Route path="/" element={<Landingpage />} />
+              <Route path='/ai-transformation' element={<AiTransformation />}  />
+              <Route path="/blogs" element={<Blogs/>} />
+              <Route path="/marketing" element={<Marketing  />} />
+              <Route path="/services" element={<Marketing  />} />
+              <Route path="/healthcare" element={<HealthCare  />} />
+              <Route path="/ecommerce-retail" element={<EcommerceRetail  />} />
+              <Route path="/contact-center" element={<ContactCenter />} />
+              <Route path="/text-to-speech" element={<Technologies />} />
+              <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+              <Route path="/terms&conditions" element={<Terms  />} />
+              <Route path="/intelligent-automation" element={<IntelligentAutomation  />} />
+              <Route path="/technology-consulting" element={<TechConsulting />} />
+              <Route path="/ai-research-development" element={<AiResearch  />} />
+              <Route path="/product-development" element={<EndtoEndProductdev />} />
+              <Route path="/customer-experience" element={<CustomerSolution  />} />
+              <Route path="/banking-finance" element={<BankingAndFinance />} />
             </Routes>
             <Footer/>
           </Router>
 
 
-        {/* </Box> */}
+    
       </Container>
 
     </>

@@ -1,0 +1,35 @@
+/* DrawerComponent.css */
+
+.drawerPaper {
+    width: 250px;
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    height:100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .listItemButton {
+    &:hover {
+      background-color: #117DCC;
+      color: white;
+    }
+  }
+  
+  .iconColor {
+    color: inherit;
+  }
+  
+  .dropdownIcon {
+    cursor: pointer;
+  }
+  
+  .dropdownIconUp {
+    transform: rotate(180deg);
+  }
+  
+  .iconBtn {
+    color: white;
+    margin-left: auto;
+  }
+  
