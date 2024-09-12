@@ -48,40 +48,14 @@ const TrendsContainer = () => {
   return (
     <Container
     maxWidth={false}
-
-      sx={{
-        position:'relative',
-        width: {xs:'100%',xl:'100%'},
-        
-        height: 'auto',
-        mt: '5%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '48px',
-        zIndex:'1'
-      }}
-    >
+    className='trendscontainer' >
 
       {/* bg png */}
       <Box
         component="img"
+        className='bg-image2'
         src={bg2}
-        sx={{
-          position: 'absolute',
-          width: '100%', // Adjust size as needed
-          height: '200%', // Adjust size as needed
-          top: 0,
-          left: 0,
-          zIndex: '-1',
-          transform: 'rotate( 180deg)',  // Rotate the image by 45 degrees
-          // transformOrigin: 'center', // Rotate around the center
-          objectFit: 'cover ',
-        }}
       />
-
-
-
       {/* First Container */}
       <div
         sx={{
@@ -128,15 +102,20 @@ const TrendsContainer = () => {
 
       {/* Second Container */}
       <Grid2 container spacing={2} sx={{ justifyContent: { xs: 'center', sm: 'start', md: 'center' }, width: { xs: '100%', xl: '1200px' } }}>
+
   {trends.map((trend, index) => (
     <Grid2 item xs={12} sm={6} md={4} key={index}>
-      <Paper sx={{ width: '100%', maxWidth: { xs: '330px', sm: '350px', lg: '370px', xl: '378.67px' }, height: { xs: 'auto', md: '553px', lg: '553px' }, borderRadius: '16px', border: '0.2px solid #707070', p: '24px 16px', display: 'flex', flexDirection: 'column', backgroundColor: '#101010', color: 'white', gap: '6px' }} elevation={3}>
+      <Paper
+      // unable to add external css to paper,chip,button
+      sx={{ width: '100%', maxWidth: { xs: '330px', sm: '350px', lg: '370px', xl: '378.67px' }, height: { xs: 'auto', md: '553px', lg: '553px' }, borderRadius: '16px', border: '0.2px solid #707070', p: '24px 16px', display: 'flex', flexDirection: 'column', backgroundColor: '#101010', color: 'white', gap: '6px' }} elevation={3}>
         <img src={trend.img} alt={trend.text} style={{ width: '100%', height: 'auto', maxHeight: '211.49px', borderRadius: '8px', objectFit: 'cover' }} />
+
         <Box sx={{ height: '26px', width: 'fit-content', borderRadius: '4px', marginY: '8px', display: 'flex', alignItems: 'center', border: trend.button.border }}>
           <Button sx={{ color: trend.button.color, fontSize: '12px', lineHeight: '18px', fontWeight: 400, fontFamily: 'inter' }}>
             {trend.button.title}
           </Button>
         </Box>
+
         <Typography sx={{ fontFamily: 'Poppins, sans-serif', fontWeight: 700, fontSize: { xs: '16px', sm: '18px', md: '20px', xl: '22px' }, lineHeight: '1.5' }}>
           {trend.text}
         </Typography>

@@ -1,7 +1,5 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import bg1 from '../../../assets/imageFiles/bg1.png';
-import MarketingStrategies from '../../../components/MarketingComponents/MarketingStrategies'
 import HealthCareHeroSection from '../../../components/HealthCareComponents/HealthCareHeroSection';
 import HealthCareBenefits from '../../../components/HealthCareComponents/HealthCareBenefits';
 import HealthCareEfficiency from '../../../components/HealthCareComponents/HealthCareEfficiency'
@@ -10,12 +8,14 @@ import HealthCareAccess from '../../../components/HealthCareComponents/HealthCar
 import HealthCareUseCase from '../../../components/HealthCareComponents/HealthCareUseCase'
 import HealthCareServices from '../../../components/HealthCareComponents/HealthCareServices'
 import { useGLobalContext } from '../../../context/ContextApi';
+import '../../../components/Common/IndustryPagesCSS/style.css'
+import './HealthCare.css'
 
 const HealthCare = () => {
   const {handleHide} = useGLobalContext()
   return (
-    <Box onClick={handleHide} sx={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', backgroundImage: `url(${bg1})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'top', marginTop: { xs: '-29.5%', md: '-13%', lg: '-9%', xl: '-7.5%' }, backgroundColor: 'transparent', backgroundSize: { xs: '120vh', md: '100% ', xl: '100% 140vh' } }}>
-      <Box sx={{ width:'100%',maxWitdh:'1600px' , display:'flex', flexDirection:'column' , alignItems:'center'}} >
+    <Box onClick={handleHide}  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
+      <Box className="content-box">
        
        <HealthCareHeroSection/>
        <HealthCareBenefits/>

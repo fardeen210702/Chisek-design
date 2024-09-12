@@ -36,16 +36,15 @@ const Industries = () => {
     ];
 
     return (
-        <Container maxWidth={false} sx={{ position: 'relative', mt: 4, backgroundColor: 'transparent', zIndex: '2', width: '100%' }}>
+        <Container className='industrycontainer' maxWidth={false} >
             {/* bg png */}
-            <Box
+            <Box className='industrybg-image '
                 component="img"
                 src={bg2}
-                sx={{ position: 'absolute', width: '100%', height: '150%', top: 0, left: 0, zIndex: '-1', transform: 'rotate(180deg)', objectFit: 'cover' }}
             />
 
             {/* First Container */}
-            <Grid2 container spacing={3} sx={{ backgroundColor: 'transparent', justifyContent: 'center', alignItems: 'center' }}>
+            <Grid2 className='industry1container' container spacing={3} >
                 <Grid2 item xs={12} md={8} lg={6}>
                     <Paper elevation={3} sx={{ padding: 2, backgroundColor: 'transparent', textAlign: 'center' }}>
                         <Typography
@@ -56,6 +55,7 @@ const Industries = () => {
                         >
                             Industries We Deal In
                         </Typography>
+
                         <Typography
                             variant="body1"
                             sx={{ color: '#ADADAD', fontSize: { xs: '14px', md: '14px', lg: '16px', xl: '18px' }, fontFamily: 'inter' }}
@@ -69,13 +69,13 @@ const Industries = () => {
             {/* Second Container - Data Mapping */}
             <Grid2 container spacing={2} sx={{ flexWrap: 'wrap', justifyContent: 'center', marginY: '5%' }}>
                 {data.map((item, index) => (
-                    <Grid2
+                    <Grid2 className='grid-item'
                         item
                         key={index}
-                        sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', width: { xs: '300px', sm: '350px', md: '380px', lg: '530px', xl: '550px', '2xl': '584px' }, height: { xs: '340px', md: '320px', lg: '300px', xl: '322px' }, maxWidth: '584px' }}
+                        sx={{  width: { xs: '300px', sm: '350px', md: '380px', lg: '530px', xl: '550px', '2xl': '584px' }, height: { xs: '340px', md: '320px', lg: '300px', xl: '322px' }, maxWidth: '584px' }}
                     >
                         <Paper elevation={0} sx={{ width: '100%', height: '100%', padding: 2, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', marginBottom: 2, backgroundColor: '#101010', border: '0.2px solid #80808025', borderRadius: '10px', boxShadow: 'none' }}>
-                            <div style={{ width: '100%', height: '80px', display: 'flex', alignItems: 'center', gap: '16px' }}>
+                            <div className='paperinner-div' >
                                 <Box
                                     component='img'
                                     sx={{ width: { xs: '40px', sm: '50px', md: '60px', lg: '70px', xl: '80px' }, height: { xs: '40px', sm: '50px', md: '60px', lg: '70px', xl: '80px' } }}

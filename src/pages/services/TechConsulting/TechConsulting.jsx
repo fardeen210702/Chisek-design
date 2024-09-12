@@ -8,7 +8,7 @@ import TechTransformation from '../../../components/TechConsultingComponents/Tec
 import TechWithAi from '../../../components/TechConsultingComponents/TechWithAi'
 import TechTransforming from '../../../components/TechConsultingComponents/TechTransforming'
 import TechImplementation from '../../../components/TechConsultingComponents/TechImplementation';
-import '../../../components/Common/commonCSS/style.css'
+import '../../../components/Common/servicePagesCSS/style.css'
 import './TechConsulting.css'
 import { useGLobalContext } from '../../../context/ContextApi';
 

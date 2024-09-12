@@ -7,7 +7,7 @@ import CustomerEngagement from '../../../components/CustomerSolutionsComponents/
 import CustomerBenefits from '../../../components/CustomerSolutionsComponents/CustomerBenefits'
 import EleveateCustomerExperience from '../../../components/CustomerSolutionsComponents/EleveateCustomerExperience'
 import CustomerCaseStudy from '../../../components/CustomerSolutionsComponents/CustomerCaseStudy'
-import '../../../components/Common/commonCSS/style.css'
+import '../../../components/Common/servicePagesCSS/style.css'
 import './CustomerSolution.css'
 import { useGLobalContext } from '../../../context/ContextApi'
 

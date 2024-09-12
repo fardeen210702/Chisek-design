@@ -6,7 +6,7 @@ import AICustomDev from '../../../components/AiresearchComponents/AICustomDev';
 import AIHeading from '../../../components/AiresearchComponents/AIHeading';
 import AIKeyBenefits from '../../../components/AiresearchComponents/AIKeyBenefits';
 import AIInnovate from '../../../components/AiresearchComponents/AIInnovate';
-import '../../../components/Common/commonCSS/style.css'
+import '../../../components/Common/servicePagesCSS/style.css'
 import './airesearch.css'; // Import the CSS file
 import { useGLobalContext } from '../../../context/ContextApi';
 
