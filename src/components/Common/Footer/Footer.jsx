@@ -247,25 +247,25 @@ const Footer = () => {
                     sx={{
                         display: 'flex',
                         gap: '16px',
-                        justifyContent: { xs: 'center', sm: 'flex-end' },
+                        justifyContent: { xs: 'center', sm: 'flex-end' }
                     }}
                 >
-                    <IconButton className='iconButton'
+                    <IconButton className='iconButtononline' sx={{background:'#117DCC'}}
                     >
                         <Facebook sx={{ color: 'white', width: '15px', height: '15px' }} />
                     </IconButton>
-                    <IconButton className='iconButton'
+                    <IconButton className='iconButtononline' sx={{background:'#117DCC'}}
                        
                     >
                         <Twitter sx={{ color: 'white', width: '15px', height: '15px' }} />
                     </IconButton>
                     <IconButton
-                        className='iconButton'
+                        className='iconButtononline' sx={{background:'#117DCC'}}
                     >
                         <LinkedIn sx={{ color: 'white', width: '15px', height: '15px' }} />
                     </IconButton>
                     <IconButton
-                        className='iconButton'
+                        className='iconButtononline' sx={{background:'#117DCC'}}
                     >
                         <Instagram sx={{ color: 'white', width: '15px', height: '15px' }} />
                     </IconButton>

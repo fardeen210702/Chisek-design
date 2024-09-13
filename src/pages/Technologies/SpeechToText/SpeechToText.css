@@ -1,0 +1,238 @@
+.container-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../../assets/imageFiles/bg1.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: transparent;
+  margin-top: -7.5%;
+}
+
+@media (max-width: 1600px) {
+  .container-box {
+    margin-top: -9%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container-box {
+    margin-top: -12%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-box {
+    margin-top: -29.5%;
+  }
+}
+
+.content-box {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*HERO SECTION CSS */
+
+.texttospeech {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-bottom: 197px;
+}
+
+.boxone {
+  width: 100%;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  /* border: 1px solid red; */
+}
+
+.boxone .box-inner {
+  align-self: stretch;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.text-typo {
+  position: relative;
+  text-align: center;
+  color: #f9f9f9;
+  word-wrap: break-word;
+}
+
+.speechGenrerate {
+  width: 100%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #00000027;
+  padding-top: 2%;
+  margin-bottom: 50px;
+}
+
+.speechGenrerate .box-inner {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 16px 24px 16px;
+  height: fit-content;
+  width: 100%;
+  gap: 24px;
+  max-width: 1200px;
+}
+
+/* herosection 2nd content */
+
+.speech-info {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.speech-info .typograph {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.typoText {
+  color: #adadad;
+  text-align: center;
+}
+
+.speech-to-text {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 24px;
+}
+
+.left-speech-box {
+  gap: 32px;
+  height: 388px;
+  border-radius: 16px;
+  border: 0.2px solid rgba(112, 112, 112, 0.7);
+  background: linear-gradient(
+      142deg,
+      rgba(255, 255, 255, 0.01) 2.63%,
+      rgba(255, 255, 255, 0.01) 98.96%
+    ),
+    #101010;
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.01) inset;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+  padding: 32px 16px 24px 16px;
+}
+
+.img-typo{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+
+.select-speaker1{
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.select-tag{
+  width: 100%;
+  height: 40px;
+  padding: var(--Space-12, 12px) 16px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+border-radius: var(--Space-4, 4px);
+border: 0.2px solid #ADADAD;
+background-color: transparent;
+color: white;
+font-weight: bold;
+}
+.btnBox11{
+  width: 100%;
+}
+
+.buttons{
+  padding: 14px 16px;
+  width: 190px;
+  height: 55px;
+  ;
+}
+.reset{
+  margin-top: 24px;
+  width: 100%;
+  text-align: center;
+
+}
+
+
+.typing-box{
+  width: 100%;
+  border-radius: 16px;
+border: 0.2px solid rgba(112, 112, 112, 0.70);
+box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.01) inset;
+display: flex;
+padding: 24px 32px;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+align-self: stretch;
+}
+
+.imgtypography10{
+  color: #FFF;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.startspeech{
+  background-color: #101010;
+  width:  100%;
+  padding: 16px;
+  height: 100%;
+  border-radius: 16px;
+  /* border: 1px solid red; */
+}
+.textarea{
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+resize: none;
+background-color: transparent;
+color: #FFF;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%;
+}

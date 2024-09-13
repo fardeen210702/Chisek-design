@@ -2,17 +2,17 @@ import React from 'react';
 import { Container, Box, Typography, InputBase, Button } from '@mui/material';
 
 
-const MarketingStrategies = () => {
+const CommunicationWithAi = () => {
     return (
         <Container className="businesscontainer" sx={{ width: { xs: '100%', xl: '1200px' },  height: { lg: '447px', xs: 'auto' }, gap: { xs: '16px', lg: '56px' } }}>
         <Box className="styled-box" sx={{  height: { lg: '447px', xs: 'auto' }, gap: { xs: '16px', lg: '56px' } }}>
             <Box className="flex-content" sx={{  gap: { xs: '10px', lg: '24px' } }}>
                 
                 <Typography className="extraordinary-text" sx={{ width: { xs: '100%', lg: '1004px' }, height: { xs: '70px', lg: '140px' }, fontFamily: 'Inter, sans-serif', fontWeight: 600, fontSize: { xs: '20px', sm: '25px', lg: '48px' }, lineHeight: { xs: '30px', lg: '70px' }}}>
-                Ready to transform your marketing strategies?
+                Ready to enhance your communication <br /> with Speech to Text?
                 </Typography>
                 <Typography className="project-description"  sx={{ width: { xs: '100%', lg: '832px' }, height: { xs: '140px', lg: '60px' }, fontFamily: 'Inter, sans-serif', fontWeight: 400, fontSize: { xs: '14px', lg: '20px' }, lineHeight: '30px' }}>
-                Contact Chisel today to explore how our AI solutions can elevate your marketing efforts
+                Contact Chisel today to learn more about our Speech to Text solutions and how they can benefit your business.
                 </Typography>
             </Box>
             <Box className="response-box" sx={{ width: { xs: '350px', lg: '456px' }}}>
@@ -31,9 +31,4 @@ const MarketingStrategies = () => {
     );
 };
 
-export default MarketingStrategies;
-
-
-  
-
-
+export default CommunicationWithAi;

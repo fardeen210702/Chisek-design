@@ -10,7 +10,7 @@ import AiTransformation from "./pages/services/AiTransformation/AiTransformation
 import Blogs from '../src/pages/Blogs/Blogs'
 import Footer from "../src/components/Common/Footer/Footer";
 import Marketing from '../src/pages/industries/marketing/Marketing';
-import Technologies from "./pages/Technologies/Technologies";
+import TextToSpeech from "./pages/Technologies/TextToSpeech/TextToSpeech";
 import PrivacyPolicy from "../src/pages/Other/PrivacyPolicy/PrivacyPolicy";
 import Terms from "../src/pages/Other/Terms/Terms";
 import IntelligentAutomation from "../src/pages/services/intelligentAutomation/IntelligentAutomation";
@@ -22,11 +22,13 @@ import BankingAndFinance from "../src/pages/industries/bankingAndFinance/Banking
 import HealthCare from "../src/pages/industries/HealthCare/HealthCare";
 import EcommerceRetail from "../src/pages/industries/EcommerceAndRetail/EcommerceRetail";
 import ContactCenter from "../src/pages/industries/ContactCenter/ContactCenter";
+import SpeechToText from "./pages/Technologies/SpeechToText/SpeechToText";
+import NLPAnalysis from "./pages/Technologies/NLPAnalysis/NLPAnalysis";
+import Chatbot from "./pages/Technologies/Chatbot/Chatbot";
+import NLPComputerVision from "./pages/Technologies/NLPComputerVision/NLPComputerVision";
+
+
 const App = () => {
-
-
-
-
 
 
   return (
@@ -40,11 +42,14 @@ const App = () => {
               <Route path='/ai-transformation' element={<AiTransformation />}  />
               <Route path="/blogs" element={<Blogs/>} />
               <Route path="/marketing" element={<Marketing  />} />
-              <Route path="/services" element={<Marketing  />} />
               <Route path="/healthcare" element={<HealthCare  />} />
               <Route path="/ecommerce-retail" element={<EcommerceRetail  />} />
               <Route path="/contact-center" element={<ContactCenter />} />
-              <Route path="/text-to-speech" element={<Technologies />} />
+              <Route path="/text-to-speech" element={<TextToSpeech />} />
+              <Route path="/speech-to-text" element={<SpeechToText />} />
+              <Route path="/nlp-sentiment-analysis" element={<NLPAnalysis />} />
+              <Route path="/nlp-computer-vision" element={<NLPComputerVision />} />
+              <Route path="/chatbot" element={<Chatbot />} />
               <Route path="/privacypolicy" element={<PrivacyPolicy />} />
               <Route path="/terms&conditions" element={<Terms  />} />
               <Route path="/intelligent-automation" element={<IntelligentAutomation  />} />
