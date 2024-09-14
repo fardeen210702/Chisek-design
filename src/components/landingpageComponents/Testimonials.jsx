@@ -204,19 +204,10 @@ const Testimonials = () => {
     const bottomTestimonials = testimonialsData.slice(5, 10);
 
     return (
-        <Container maxWidth={false} sx={{  position: 'relative' ,zIndex:'1',display:'flex',flexDirection:'column',alignItems:'center' }}>
-       <Box
+        <Container className='testimonialcontainer' maxWidth={false} >
+       <Box sx={{height:'200%',top:'-20%'}}
         component="img"
         src={bg2}
-        sx={{
-          position: 'absolute',
-          width: '100%', // Adjust size as needed
-          height: '220%', // Adjust size as needed
-          top: 0,
-          left: 0,
-          zIndex: '-1',
-          objectFit: 'cover ',
-        }}
       />
             <Typography variant="h4" component="h2" sx={{ color: '#00A3FF', fontWeight: 'bold', textAlign: 'center', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px',fontSize: {xs: '28px',sm: '32px',md: '40px',} }}>
                 TESTIMONIALS
@@ -224,7 +215,7 @@ const Testimonials = () => {
             <Typography variant="body1" sx={{
                 color: '#CCCCCC', my: 3, textAlign: 'center', fontSize: {
                     xs: '14px', sm: '16px', md: '18px'
-                } , fontFamily:'inter'
+                } , fontFamily:'inter',mb:'50px'
             }}>
                 Don't just take our word for it—hear from our satisfied clients. Our testimonials highlight the positive experiences and <br />outcomes that businesses have achieved by partnering with us.
             </Typography>
@@ -232,15 +223,8 @@ const Testimonials = () => {
             {/* Wrapper for both testimonial sections */}
             <Box sx={{ position: 'relative', width: '100%' ,  overflow: 'hidden' }}>
                 {/* Left gradient box */}
-                <Box
+                <Box className='leftgradient-overlay'
                     sx={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '182px',
-                        height: '100%',
-                        background: 'linear-gradient(to right, black, transparent)',
-                        zIndex: 1,
                         display: {
                             xs: 'none',
                             md: 'block'
@@ -248,15 +232,8 @@ const Testimonials = () => {
                     }}
                 />
                 {/* Right gradient box */}
-                <Box
+                <Box className='right-gradient-overlay'
                     sx={{
-                        position: 'absolute',
-                        top: 0,
-                        right: 0,
-                        width: '182px',
-                        height: '100%',
-                        background: 'linear-gradient(to left, black, transparent)',
-                        zIndex: 1,
                         display: {
                             xs: 'none',
                             md: 'block'
@@ -265,18 +242,8 @@ const Testimonials = () => {
                 />
 
                 {/* Top testimonials */}
-                <Box
+                <Box className='toptestimonials'
                     sx={{
-                        width: '100%',
-                        overflow: 'hidden',
-                        position: 'relative',
-                        marginBottom: '24px',
-                        gap: '10px',
-                        display: {
-                            xs: 'flex',
-                            sm: 'flex',
-                            md: 'flex'
-                        },
                         flexDirection: {
                             xs: 'column',
                             sm: 'column',
@@ -290,7 +257,7 @@ const Testimonials = () => {
                     }}
                 >
                     {topTestimonials.map((testimonial, index) => (
-                        <Paper
+                        <Paper // can not apply external css on paper
                             key={index}
                             elevation={3}
                             sx={{
@@ -356,20 +323,12 @@ const Testimonials = () => {
                 </Box>
 
                 {/* Bottom testimonials */}
-                <Box
+                <Box className='bottomTestimonials'
                     sx={{
-                        position: 'relative',
-                        marginBottom: '24px',
                         marginLeft: {
                             md: '-10%'
                         },
-                        gap: '10px',
-                        width: '100%',
-                        display: {
-                            xs: 'flex',
-                            sm: 'flex',
-                            md: 'flex'
-                        },
+                        
                         flexDirection: {
                             xs: 'column',
                             sm: 'column',
@@ -383,7 +342,7 @@ const Testimonials = () => {
                     }}
                 >
                     {bottomTestimonials.map((testimonial, index) => (
-                        <Paper
+                        <Paper //unable to apply external css
                             key={index}
                             elevation={3}
                             sx={{

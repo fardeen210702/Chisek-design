@@ -1,0 +1,35 @@
+.Footercontainer {
+    width: 100%;
+    position: relative;
+    background-color: #0d0d0d;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+    color: white;
+    z-index: 1;
+    overflow: hidden;
+  }
+ 
+  .imgcomponent{
+    width: 18.68px;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+  }
+
+  .divider{
+    width: 100%;
+    opacity: 0.25;
+    border-color: white;
+    position: absolute;
+    top: 40px;
+  }
+  .iconButtononline{
+    background: #117DCC;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -53,7 +53,9 @@ const BlogHeroSection = () => {
         },
         {
             title: 'Contact Us',
-            desc: 'If you have any questions, concerns, or complaints regarding our Privacy Policy, please contact us at contact@chiselsolutions.ai'
+            desc: 'If you have any questions, concerns, or complaints regarding our Privacy Policy, please contact us at',
+            link:'contact@chiselsolutions.ai'
+            
         },
     ]
 
@@ -116,7 +118,7 @@ const BlogHeroSection = () => {
                                 <Typography
                                     sx={{ alignSelf: 'stretch', color: '#ADADAD', fontFamily: 'Inter', fontWeight: 400, lineHeight: '32px', wordWrap: 'break-word', fontSize: { xs: '16px', sm: '18px' } }}
                                 >
-                                    {el.desc}
+                                    {el.desc} <span style={{color:'blue',textDecoration:'underline',cursor:'pointer'}}>{el.link}</span>
                                 </Typography>
 
                             </Box>

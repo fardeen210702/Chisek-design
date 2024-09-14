@@ -19,10 +19,9 @@ const DeliverComponent = () => {
     ];
 
     return (
-        <Container
+        <Container className='delivercontainer'
             sx={{
-                my: '10%', width: { xs: '100%', xl: '1200px' }, height: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', px: '20px', position: 'relative', zIndex: 1, overflow: 'hidden'
-            }}
+               width: { xs: '100%', xl: '1200px' }}}
         >
             <Typography variant="h4" component="h2" align="center" gutterBottom sx={{ color: '#117DCC', fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px', md: '40px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}>
                 HOW WE DELIVER SUCCESS

@@ -1,0 +1,663 @@
+/* COMMON CSS FOR ALL TECHNOLOGIES PAGES */
+
+/* BENEFITS CSS STARTS HERE */
+.benefits-container {
+    margin-top: 3%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.typography-h4 {
+    color: #117DCC;
+}
+
+.box-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left-box{
+    height: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.opt-campaign {
+    color: #FFFFFF;
+    word-wrap: break-word;
+}
+.desc-text {
+    color: #ADADAD;
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}
+
+.flex-start-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.small-box {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-img {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 4px 0px 9px 2px #BCBCBC4D inset;
+    border-radius: 50%;
+}
+
+
+.right-container {
+    padding: 16px;
+    background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 0px 0px 0px #FFFFFF inset;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 0.1px solid rgba(112, 112, 112, 0.70);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-container {
+    align-self: stretch;
+    flex: 1 1 0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.engagement{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    /* border: 0.20px solid #707070; / */
+}
+
+.box-custom {
+    width: 100%;
+    max-width: 1200px;
+   margin-bottom: 56px;
+    display: flex;
+}
+
+.box-gradient {
+    width: 100%;
+    max-width: 472px;
+    height: 100%;
+    padding: 16px;
+    background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 0px 0px 0px #FFFFFF inset;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 0.20px solid #707070; /* Original border color */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.box-img {
+    align-self: stretch;
+    flex: 1 1 0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-img img {
+    align-self: stretch;
+    flex: 1 1 0;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.padding-box {
+    width: 100%;
+    max-width: 552px;
+    padding: 16px;
+}
+
+.text-highlight {
+    color: #FFFFFF;
+    word-wrap: break-word;
+}
+
+.text-box {
+    width: 100%;
+    max-width: 541px;
+    color: #ADADAD;
+    word-wrap: break-word;
+}
+
+.flex-box {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.box-card {
+    padding: 24px 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 0.10px solid #A0A0A0; 
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.flex-column-stretch {
+    align-self: stretch;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.inline-flex-center {
+    align-self: stretch;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatar-wrapper {
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    background: linear-gradient(140deg, #141414 0%, #060606 100%);
+    box-shadow: 0.6px 1.09px 4.69px rgba(188, 188, 188, 0.17) inset;
+    border-radius: 52.36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-wrapper img {
+    width: 32px;
+    height: 32px;
+}
+
+.typography-text {
+    flex: 1 1 0;
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.box-container1 {
+    align-self: stretch;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.typography-description {
+    color: #ADADAD;
+    word-wrap: break-word;
+}
+
+/* ENGAGEMENT CSS END HERE */
+
+/* FRAUD CSS STARTS  HERE(3RD COMPONENT) */
+
+
+
+.custom-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.responsive-box2 {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.responsive-box3 {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.customer-insights-text {
+    color: #FFFFFF;
+    word-wrap: break-word;
+}
+
+.insights-text {
+    color: #ADADAD;
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}
+
+.map-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.mapinnerbox{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapinnerbox img{
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 4px 0px 9px 2px #BCBCBC4D inset;
+    border-radius: 50%;
+}
+
+.box-container3 {
+   padding: 16px;
+    background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 0px 0px 0px #FFFFFF inset;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 0.20px solid #707070; /* Border color specified */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inner-box {
+    align-self: stretch;
+    flex: 1 1 0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-img {
+    align-self: stretch;
+    flex: 1 1 0;
+}
+
+/* FRAUD CSS END  HERE(3RD COMPONENT) */
+
+
+/* CONTENT CSS STARTS HERE (4TH COMPONENT) */
+
+
+.top-container{
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+    /* border:1px solid red; */
+    overflow: hidden;
+}
+.endcontainer{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 0px #FFFFFF inset;
+    /* border: 1px solid red;  */
+}
+
+.endcontainer > .firstcontainer , .nextcontainer{
+    width: 100%;
+    max-width: 588px;
+    height: 100%;
+    padding: 24px;
+    background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%);
+    border-radius: 16px;
+    box-shadow: 0px 0px 0px inset;
+    overflow: hidden;
+    border: 0.2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    /* border: 1px solid red;    */
+}
+
+.aspect-ratio-box {
+    align-self: stretch;
+    height: auto;
+    border-radius: 1px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.column-box {
+    align-self: stretch;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+.custom-typography {
+    color: #FFFFFFE6;
+    word-wrap: break-word;
+
+}
+.description-typography {
+    color: #ADADAD;
+    word-wrap: break-word;
+}
+
+.checkicon{
+    background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #ffffff 0%, #ffffff 100%);
+    box-shadow: 4px 0px 9px 2px #bcbcbc33 inset;
+    border-radius: 9999px;
+    border: 0.08px solid #000;
+    width: 24px;
+    height: 24px;
+
+}
+.checkbtn{
+    color: #117DCC;
+
+}
+
+.item-title {
+    color: #FFFFFFE6;
+}
+
+.item-description {
+    color: #ADADAD;
+
+}
+
+/* COSNTENT CSS ENDS HERE */
+
+/* USE CASE CSS STARTS HERE(COMPONENT 6)  */
+
+.usecase-container {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    /* border: 1px solid red;  */
+}
+
+.usecase-container .box44{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.typography-heading {
+    color: #117DCC;
+    margin-bottom: 8px; 
+}
+
+.typography-body {
+    color: #ADADAD;
+}
+
+.box-border {
+    border: 0.2px solid #8080803b;
+    padding: 24px 16px;
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; 
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.animatingBtn{
+    border-radius: 8px;
+    color: #ADADAD;
+    text-decoration: none;
+    position: relative;
+    height: 62px;
+    overflow: hidden;
+}
+
+.boxwrapper{
+    width: 100%;
+    height: 100%;
+    padding: 24px; 
+    background: linear-gradient(0deg, #101010 0%, #101010 100%);
+    border-radius: 8px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.boxwrapper 
+.innerbox1 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+    align-items: flex-start;
+
+}
+
+.flex-containerr {
+    display: flex;
+    gap: 8px; 
+    align-items: center;
+
+}
+
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    padding: 16px; 
+    background: linear-gradient(140deg, #141414 0%, #060606 100%);
+    box-shadow: 1px 1.82px 7.82px rgba(188.54, 188.54, 188.54, 0.17) inset;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typography-header {
+    color: rgba(255, 255, 255, 0.90);
+
+}
+
+.box-innercontainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    height: auto;
+}
+
+.box-inneritem {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* border-radius: 50%; */
+}
+
+.typography-title2 {
+    color: #FFFFFFE6;
+}
+
+.typography-description2 {
+    color: #ADADAD;
+}
+
+
+.boximgwrapper {
+    background: linear-gradient(0deg, #101010 0%, #101010 100%);
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.14) inset;
+    border-radius: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+
+/* USE CASE CSS ENDS HERE */
+
+
+/* COMPNENT 7 CSS STARTS HERE */
+
+
+.businesscontainer {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.styled-box {
+    background-color: #101010;
+    border-radius: 16px;
+    border: 0.20px solid #707070;
+    padding: 56px 16px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.flex-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.extraordinary-text {
+    text-align: center;
+    color: #FFFFFF;
+}
+.project-description {
+    color: #ADADAD;
+    text-align: center;
+}
+
+.styled-box .response-box9{
+        height: auto;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF0A;
+        /* border: 1px solid red; */
+}
+
+.email-input {
+    width: 424px;
+    color: #ADADAD;
+}
+
+.email-input input {
+    padding: 8px;
+    color: #ADADAD;
+}
+
+.submit-button {
+    width: 138px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: #117DCC;
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; /* Default font size for smaller screens */
+}
