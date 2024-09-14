@@ -7,7 +7,7 @@ import AiImplementation from '../../../components/AiTransformationComps/AiImplem
 import AiTransformation from '../../../components/AiTransformationComps/AiTransformation'
 import AiCasestudy from '../../../components/AiTransformationComps/AiCasestudy'
 import { Box, Container } from '@mui/material';
-import '../../../components/Common/servicepagesCSS/style.css'
+import '../../../components/Common/ServicepagesCSS/style.css'
 import './AiTransformation.css'
 
 import { useGLobalContext } from '../../../context/ContextApi'
