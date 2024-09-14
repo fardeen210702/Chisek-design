@@ -8,7 +8,7 @@ import IntelligentTransformation from '../../../components/IntelligentAutomation
 import IntelligentTech from '../../../components/IntelligentAutomation/IntelligentTech'
 import IntelligentCasestudy from '../../../components/IntelligentAutomation/IntelligentCasestudy'
 import './IntelligentAutomation.css'
-import '../../../components/Common/servicePagesCSS/style.css'
+import '../../../components/Common/ServicepagesCSS/style.css'
 import { useGLobalContext } from '../../../context/ContextApi'
 
 const Services = () => {

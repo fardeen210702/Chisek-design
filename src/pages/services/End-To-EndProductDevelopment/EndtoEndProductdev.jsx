@@ -8,8 +8,8 @@ import EndToEndDevAndLaunch from '../../../components/EndtoEndProductComponents/
 import EndToEndKeyBenefits from '../../../components/EndtoEndProductComponents/EndToEndKeyBenefits'
 import EndToEndCustomerExp from '../../../components/EndtoEndProductComponents/EndToEndCustomerExp'
 import EndToEndCaseStudy from '../../../components/EndtoEndProductComponents/EndToEndCaseStudy'
-import '../../../components/Common/servicePagesCSS/style.css'
-import './EndtoEndProductdev.css'
+import '../../../components/Common/ServicepagesCSS/style.css'
+import './EndToEndProductdev.css'
 import { useGLobalContext } from '../../../context/ContextApi';
 
 
