@@ -205,7 +205,7 @@ const Testimonials = () => {
 
     return (
         <Container className='testimonialcontainer' maxWidth={false} >
-       <Box sx={{height:'200%'}}
+       <Box sx={{height:'200%',top:'-20%'}}
         component="img"
         src={bg2}
       />

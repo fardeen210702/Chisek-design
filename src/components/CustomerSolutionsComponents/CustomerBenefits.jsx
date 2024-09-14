@@ -58,9 +58,9 @@ const CustomerBenefits = () => {
 
                 {/* rightContainer */}
 
-                <Box className='secondcontainer' sx={{ width: { xs: '100%', sm: '80%', md: '494px' }, height: { xs: '300px', sm: '320px', md: '342px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
+                <Box className='secondcontainer3' sx={{ width: { xs: '100%', sm: '80%', md: '494px' }, height: { xs: '300px', sm: '320px', md: '342px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
 
-                    <Box className='box'>
+                    <Box className='boxcontainer1'>
                         <Box component={'img'} style={{ alignSelf: 'stretch', flex: '1 1 0' }} sx={{ objectFit: { xs: 'contain' } }} src={c10} alt="Placeholder" />
                     </Box>
                 </Box>

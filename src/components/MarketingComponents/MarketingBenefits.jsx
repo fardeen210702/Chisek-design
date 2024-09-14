@@ -50,9 +50,11 @@ const MarketingBenefits = () => {
 
                 {/* rightContainer */}
                 <Box className="right-container" sx={{ width: { xs: '100%', sm: '80%', md: '505px' }, height: { xs: '300px', sm: '400px', md: '487px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
-                    <Box className="flex-container">
-                        <img className="image"  src={m3} alt="Placeholder" />
+                    <Box className='flex-container'>
+
+                        <img className='image' src={m3}  style={{height:'12%'}} alt="Placeholder" />
                     </Box>
+                    
                 </Box>
 
 

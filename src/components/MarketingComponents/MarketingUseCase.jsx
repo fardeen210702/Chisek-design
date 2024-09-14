@@ -26,7 +26,7 @@ const MarketingUseCase = () => {
         >
             
 
-            <Box className='box4'
+            <Box className='box46'
                 sx={{ padding: { xs: 2, sm: 4 }, marginBottom: { xs: 2, sm: 4 }, }}
             >
                 <Typography className="typography-heading"

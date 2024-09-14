@@ -28,7 +28,7 @@ const AiImplementation = () => {
     return (
         <Container maxWidth={false} className='implementcontainer'
         >
-            <Box className='box' sx={{ height: { xs: '500px', sm: '400px', lg: '362px' }, flexDirection: { xs: 'column', sm: 'row' } }}>
+            <Box className='implementbox' sx={{ height: { xs: '500px', sm: '400px', lg: '362px' }, flexDirection: { xs: 'column', sm: 'row' } }}>
 
 
                 <Box className='textdesc' sx={{ display: 'flex', flexDirection: 'column', paddingY: { xs: '20px', lg: '38px' }, gap: { xs: '20px', lg: '40px' }, flex: 1 }}>
@@ -53,8 +53,8 @@ const AiImplementation = () => {
                 </Box>
 
                 {/* image component */}
-                <Box className='imgbox' >
-                    <Box className='box' sx={{ alignSelf: 'stretch', flex: '1 1 0', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                <Box className='imgbox22' >
+                    <Box className='box11' sx={{ alignSelf: 'stretch', flex: '1 1 0', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', }}>
                         <img src={s7} alt="Placeholder" />
                     </Box>
                 </Box>

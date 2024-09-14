@@ -28,9 +28,8 @@ const ServiceHeroSection = () => {
         gutterBottom
         sx={{ fontWeight: 'bold',  fontSize: { xs: '1.8rem', md: '2rem', lg: '3rem', xl: '48px' }, fontFamily: 'inter' }}
       >
-     AI-Powered Business Transformation <br />
-     Services
-        <Box component={'img'} src={vector} sx={{ width: { xs: '15px', md: '18px', lg: '26px' }, position: 'absolute', right: { lg: '310px' } , bottom:{xs:'18px',lg:"30px"} }} />
+    End-to-End AI-Powered Product <br /> Development Services
+        <Box component={'img'} src={vector} sx={{ width: { xs: '15px', md: '18px', lg: '26px' }, position: 'absolute', right: { lg: 'auto' } , bottom:{xs:'18px',lg:"30px"} }} />
       </Typography>
 
       <Typography

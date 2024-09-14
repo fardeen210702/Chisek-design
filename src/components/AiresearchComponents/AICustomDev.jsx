@@ -14,7 +14,7 @@ const AICustomDev = () => {
         <Container maxWidth={false} className='maincontainer'
             sx={{marginY: {xs:'100px',lg:'240px'}}}>
 
-            <Box className='box' sx={{flexDirection:{xs:'column',md:'row'},gap:{xs:'20px', md:0} }}>
+            <Box className='box-of-main' sx={{flexDirection:{xs:'column',md:'row'},gap:{xs:'20px', md:0} }}>
 
 
                 {/* left container */}
@@ -27,7 +27,7 @@ const AICustomDev = () => {
 
 
                 {/* rightContainer */}
-                <Box className='right-container' sx={{ width: { xs: '100%', sm: '80%', md: '597px' }, height: { xs: 'auto', sm: 'auto', md: '541px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
+                <Box className='right-container1' sx={{ width: { xs: '100%', sm: '80%', md: '597px' }, height: { xs: 'auto', sm: 'auto', md: '541px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
                     <Box sx={{ width: '100%' }}>
                         
                     <Typography className='text' component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '51.20px' }}>✨ Custom AI Solution Development</Typography>

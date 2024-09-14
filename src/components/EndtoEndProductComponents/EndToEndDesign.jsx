@@ -14,7 +14,7 @@ const EndToEndDesign = () => {
         <Container maxWidth={false} className='maincontainer'
             sx={{marginY: {xs:'100px',lg:'240px'}}}>
 
-            <Box className='box' sx={{flexDirection:{xs:'column',md:'row'},gap:{xs:'20px', md:0} }}>
+            <Box className='box-of-main' sx={{flexDirection:{xs:'column',md:'row'},gap:{xs:'20px', md:0} }}>
 
                 {/* left container */}
                 <Box className='leftbox' sx={{ width: { xs: '100%', sm: '80%', md: '520px' }, height: { xs: '300px', sm: '400px', md: '541px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
@@ -26,7 +26,7 @@ const EndToEndDesign = () => {
 
 
                 {/* rightContainer */}
-                <Box className='right-container' sx={{ width: { xs: '100%', sm: '80%', md: '597px' }, height: { xs: 'auto', sm: 'auto', md: '541px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
+                <Box className='right-container1' sx={{ width: { xs: '100%', sm: '80%', md: '597px' }, height: { xs: 'auto', sm: 'auto', md: '541px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
 
                     <Box sx={{ width: '100%' }}>
 

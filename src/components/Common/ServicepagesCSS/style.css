@@ -306,7 +306,7 @@ padding-top: 20px ;
     /* border: 1px solid red; */
 }
 
-.implementcontainer .box{
+.implementcontainer .implementbox{
     width: 100%;
     max-width: 1200px;
     margin-bottom: 56px;
@@ -331,7 +331,7 @@ padding-top: 20px ;
     color: #ADADAD;
 }
 
-.imgbox .box{
+.imgbox22 .box11{
     width: 100%;
     max-width: 487px;
     height: 100%;
@@ -349,9 +349,10 @@ padding-top: 20px ;
     /* border: 1px solid red; */
 }
 
-.box img{
+.box11 img{
 align-self: stretch;
 flex: 1 1 0;
+height: 100%;
 }
 
 .mapbox{
@@ -413,7 +414,7 @@ flex: 1 1 0;
 
 /* technology css */
 
-.maincontainer {
+.maincontainer{
     margin-top: 10%;
     width: 100%;
     height: auto;
@@ -428,7 +429,7 @@ flex: 1 1 0;
     /* border: 1px solid red; */
 }
 
-.maincontainer .box {
+.maincontainer .box-of-main {
     width: 100%;
     max-width: 1200px;
     display: flex;
@@ -468,7 +469,7 @@ flex: 1 1 0;
     flex: 1 1 0;
 }
 
-.right-container {
+.right-container1 {
 
     padding: 16px;
     display: flex;
@@ -578,9 +579,9 @@ flex: 1 1 0;
 }
 
 
-.midcontainer .secondcontainer{
+.midcontainer .secondcontainer3{
 
-    padding: 16px;
+    /* padding: 16px; */
     border-radius: 16px;
     overflow: hidden;
     display: inline-flex;
@@ -589,7 +590,7 @@ flex: 1 1 0;
     align-items: center;
     /* border: 1px solid red; */
 }
-.secondcontainer .box{
+.secondcontainer3 .boxcontainer1{
     align-self: stretch;
     flex: 1 1 0;
     border-radius: 8px;
