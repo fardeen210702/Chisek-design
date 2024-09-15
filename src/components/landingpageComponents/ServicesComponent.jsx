@@ -30,7 +30,7 @@ const ServicesComponent = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: serviceComponent, // Trigger animation when entering the serviceComponent
-        start: '40% bottom', // Start animation when top of component reaches bottom of viewport
+        start: '30% bottom', // Start animation when top of component reaches bottom of viewport
       },
     });
 
@@ -48,7 +48,7 @@ const ServicesComponent = () => {
       <Box component="img" className='bg-img' src={bg2}  />
 
       {/* Title */}
-      <Typography className='serviceTitle' variant="h3" align="center" sx={{ mb: 2, fontWeight: 'bold', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px', fontSize: { xs: '24px', sm: '28px', md: '32px', lg: '36px', xl: '40px' } }}>
+      <Typography className='serviceTitle' variant="h3" align="center" sx={{ mb: 2, fontWeight: 'bold', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px', fontSize: { xs: '24px', sm: '28px', md: '32px', } }}>
         Services We Offer
       </Typography>
 

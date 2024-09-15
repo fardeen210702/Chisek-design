@@ -1,5 +1,5 @@
 import { Box } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeroSection from '../../components/landingpageComponents/HeroSection'
 import ServicesComponent from '../../components/landingpageComponents/ServicesComponent'
 import Industries from '../../components/landingpageComponents/IndustriesComponent'

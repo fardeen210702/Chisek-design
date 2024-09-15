@@ -24,6 +24,8 @@ const Navbar = () => {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
 
+
+
   const obj = {
     Services: [{ path: 'AI-Powered Transformation', link: '/ai-transformation', brColor: '3px solid #0BFFF0' },
     { path: 'Intelligent Automation', link: '/intelligent-automation', brColor: '3px solid #C73F2F' },
@@ -66,13 +68,13 @@ const Navbar = () => {
     }
   }
 
-
+  window.onload = window.scrollTo(0,0) // scroll to top of the window when page refreshes
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY  > 0);
-    };
+      window.scrollY == 0 ? setIsScrolled(false): setIsScrolled(true);
+    };  
 
     window.addEventListener('scroll', handleScroll);
 
@@ -80,6 +82,8 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  
   
 
   return (

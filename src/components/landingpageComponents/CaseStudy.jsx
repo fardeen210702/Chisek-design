@@ -57,7 +57,7 @@ const MainComponent = () => {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.casecontainer',
-                start: '40% bottom',
+                start: '30% bottom',
             }
         })
 
@@ -73,7 +73,7 @@ const MainComponent = () => {
         <Container maxWidth={false} className='casecontainer'>
             <Box component="img" className='bg-img' src={bg2} />
 
-            <Typography variant="h4" component="h2" align="center" gutterBottom sx={{ color: '#117DCC', fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}>
+            <Typography variant="h4" component="h2" align="center" gutterBottom sx={{ color: '#117DCC', fontWeight: 600, fontSize: { xs: '28px', sm: '32px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}>
                 Case Studies: AI Success Stories
             </Typography>
             <Typography variant="body1" align="center" sx={{ color: '#ADADAD', mb: 4, fontFamily: 'inter', fontWeight: 500, fontSize: { xs: '14px', md: '14px', lg: '16px' } }}>

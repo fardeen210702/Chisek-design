@@ -36,7 +36,7 @@ const HeroSection = () => {
           variant="h3"
           component="h2"
           gutterBottom
-          sx={{ fontWeight: 'bold',  fontSize: { xs:'32px',md:'36px',lg:'40px' }, fontFamily: 'inter' }}
+          sx={{ fontWeight: 'bold',  fontSize: { xs:'32px',md:'36px',lg:'40px' }, fontFamily: 'inter',linehegiht:1.9,marginBottom:'20px' }}
         >
           Accelerate Innovation and Optimize Your Business<br />
           with Tailored AI Solutions

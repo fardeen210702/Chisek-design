@@ -44,7 +44,7 @@ useEffect(() => {
   const tl = gsap.timeline({
     scrollTrigger:{
         trigger:'.industrycontainer',
-        start:'40% bottom',
+        start:'30% bottom',
     }
   })
 
@@ -75,7 +75,7 @@ useEffect(() => {
                             variant="h4"
                             component="h1"
                             gutterBottom
-                            sx={{ fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px', color: '#117DCC', fontWeight: 'bold', fontSize: { xs: '24px', sm: '28px', md: '32px', lg: '36px', xl: '40px' } }}
+                            sx={{ fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px', color: '#117DCC', fontWeight: 600, fontSize: { xs: '24px', sm: '28px', md: '32px' } }}
                         >
                             Industries We Deal In
                         </Typography>
@@ -84,7 +84,7 @@ useEffect(() => {
                             variant="body1"
                             sx={{ color: '#ADADAD', fontSize: {xs:'14px',md:'16px'}, fontFamily: 'inter' }}
                         >
-                            Explore the industries we serve, from healthcare and finance to manufacturing and retail, and see how our AI solutions drive efficiency, enhance customer experiences, and foster innovation across diverse sectors.
+                            Explore the industries we serve, from healthcare and finance to manufacturing and retail, and see how our AI solutions drive efficiency, <br /> enhance customer experiences, and foster innovation across diverse sectors.
                         </Typography>
                     
                 
@@ -108,7 +108,7 @@ useEffect(() => {
                                 />
                                 <Typography
                                     variant="h6"
-                                    sx={{ width: 'calc(100% - 96px)', color: '#ffffff', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', fontFamily: 'poppins', fontWeight: 600, fontSize: { xs: '14px', md: '16px', lg: '20px' } }}
+                                    sx={{ width: 'calc(100% - 96px)', color: 'white', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', fontFamily: 'poppins', fontWeight: 600, fontSize: { xs: '14px', md: '16px', lg: '20px' } }}
                                 >
                                     {item.title}
                                 </Typography>
