@@ -1,7 +1,8 @@
 /* Navbar.css */
 
 .appbar {
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    width: 100%;
     padding-top: 50px;
     box-shadow: 0;
     background-color: transparent;
