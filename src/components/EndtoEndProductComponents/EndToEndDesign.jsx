@@ -1,7 +1,8 @@
-import { Container, Box, Typography } from '@mui/material'
+import { Container, Box, Typography,IconButton } from '@mui/material'
 import e5 from '../../assets/imageFiles/e5.png'
 import React from 'react'
-import s6 from '../../assets/imageFiles/s6.png'
+import CheckIcon from '@mui/icons-material/Check';
+
 
 const EndToEndDesign = () => {
 
@@ -37,9 +38,10 @@ const EndToEndDesign = () => {
                     </Box>
                     {arr.map((el, id) => (
                         <Box  key={id}  className='mapcontainer'>
-                            <Box className='mapimg'>
-                                <img src={s6} alt="Icon"  />
-                            </Box>
+                             <IconButton
+                                className='checkicon'  >
+                                <CheckIcon className='checkbtn' sx={{ fontSize: 15, color: '#117DCC', }} />
+                            </IconButton>
                             <Box sx={{ flex: '1 1 0' }}>
                                 <Typography sx={{ fontSize: '18px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
                                     <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600' }}>{el.title}</Typography>

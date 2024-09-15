@@ -4,7 +4,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import ai10 from '../../assets/imageFiles/ai10.png'
 import ai11 from '../../assets/imageFiles/ai11.png'
 import ai12 from '../../assets/imageFiles/ai12.png'
-import s6 from '../../assets/imageFiles/s6.png'
+
 
 const AIKeyBenefits = () => {
 

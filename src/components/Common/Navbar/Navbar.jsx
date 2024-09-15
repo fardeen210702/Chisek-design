@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import {
   AppBar,
   Toolbar,
@@ -9,7 +9,6 @@ import {
   useTheme,
   useMediaQuery,
   Typography,
-  IconButton,
 } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import frame from "../../../assets/imageFiles/Frame.png";
@@ -17,10 +16,10 @@ import Polygon from "../../../assets/imageFiles/Polygon.png";
 import DrawerComponent from "../DrawerComponent/DrawerComponent";
 import { Link } from "react-router-dom";
 import { useGLobalContext } from "../../../context/ContextApi";
-import './Navbar.css'; // Import the new CSS file
+import './Navbar.css'; // Import the updated CSS file
 
 const Navbar = () => {
-  const {show,setShow } = useGLobalContext()
+  const {show, setShow} = useGLobalContext();
   const [value, setValue] = useState(0);
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
@@ -54,11 +53,10 @@ const Navbar = () => {
   const [left, setLeft] = useState(null);
 
   function handleShow(e) {
-
-    setShow(true)
+    setShow(true);
     const value = e.target.textContent;
     const key = Object.keys(obj).find(el => el === value);
-    setLeft(e.target.offsetLeft + 50);
+    setLeft(e.target.offsetLeft  );
 
     if (key) {
       setRoute(obj[key]);
@@ -68,21 +66,30 @@ const Navbar = () => {
     }
   }
 
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY  > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
+
   return (
-    <AppBar
-      position="static"
-      className="appBar"
-      sx={{backgroundColor:'transparent' }}
-    >
+    <AppBar position="sticky" className="appbar" style={{ backgroundColor: isScrolled ? '#000' : 'transparent', }} sx={{backgroundColor:'transparent', boxShadow:'none'}}>
       <Toolbar className="toolbar">
         {isMatch ? (
           <Box className="drawerContainer">
             <Box component={Link} to='/' className="logoContainer">
-              <Box className="logoImage" >
-                <img
-                  src={frame}
-                  alt="Decorative"
-                />
+              <Box className="logoImage">
+                <img src={frame} alt="Decorative" />
               </Box>
               <Box className="logoText">
                 Chisel Solutions
@@ -95,7 +102,7 @@ const Navbar = () => {
         ) : (
           <Box className="tabsContainer">
             {show && (
-              <Box className="dropdownMenu">
+              <Box className="dropdownMenu" style={{ opacity: show ? 1 : 0, transition: 'opacity 0.5s' }}>
                 <Box component='img' src={Polygon} className="dropdownArrow" sx={{position:'absolute' , left:left,top:'-10px'}} />
                 <Box className="dropdownContent">
                   {route.map((el, id) => (
@@ -113,14 +120,9 @@ const Navbar = () => {
                 </Box>
               </Box>
             )}
-            <Box component={Link} to='/' onClick={() => setShow(false)} className="logoContainer" 
-               
-               >
+            <Box component={Link} to='/' onClick={() => setShow(false)} className="logoContainer">
               <Box className="logoImage">
-                <img
-                  src={frame}
-                  alt="Decorative"
-                />
+                <img src={frame} alt="Decorative" />
               </Box>
               <Box className="logoText">
                 Chisel Solutions
@@ -130,51 +132,48 @@ const Navbar = () => {
               value={value}
               onChange={(e, value) => setValue(value)}
               textColor="inherit"
+              
               TabIndicatorProps={{
                 style: {
-                  backgroundColor: "#117DCC",
+                  backgroundColor: "transparent",
                   height: "3px",
+                  
                 },
-
               }}
               className="tabStyles"
-            
-              
             >
               <Tab label="Home" component={Link} to="/" onClick={() => setShow(false)}
-              sx={{fontWeight:700,fontFamily:'poppins',textTransform:'capitalize',fontSize:'16px',lineHeight:'24px' }}
-              className='tab'
+                sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5,marginRight:'20px' }}
+                className='tab'
               />
               <Tab
                 label="Services"
                 onClick={handleShow}
                 icon={<KeyboardArrowDownIcon />}
                 iconPosition="end"
-               sx={{fontWeight:700,fontFamily:'poppins',textTransform:'capitalize',fontSize:'16px',lineHeight:'24px' }}
-               className='tab'
+                sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5,marginRight:'20px' }}
+                className='tab'
               />
               <Tab
                 label="Industries"
                 onClick={handleShow}
                 icon={<KeyboardArrowDownIcon />}
                 iconPosition="end"
-               sx={{fontWeight:700,textTransform:'capitalize',fontSize:'16px',lineHeight:'24px' }}
-               className='tab'
-
+                sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5,marginRight:'20px' }}
+                className='tab'
               />
               <Tab
                 label="Technologies"
                 onClick={handleShow}
                 icon={<KeyboardArrowDownIcon />}
                 iconPosition="end"
-               sx={{fontWeight:700,fontFamily:'poppins',textTransform:'capitalize',fontSize:'16px',lineHeight:'24px' }}
-               className='tab'
-
+                sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5,marginRight:'20px' }}
+                className='tab'
               />
               <Tab label="Blogs" component={Link} to="/blogs" onClick={() => setShow(false)} 
-               sx={{fontWeight:700,fontFamily:'poppins',textTransform:'capitalize',fontSize:'16px',lineHeight:'24px' }}
-               className='tab'
-               />
+                sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5,marginRight:'20px' }}
+                className='tab'
+              />
             </Tabs>
             <Button
               variant="contained"
@@ -182,9 +181,7 @@ const Navbar = () => {
               component={Link}
               to="/contact"
               onClick={() => setShow(false)}
-              sx={{fontWeight:700,fontFamily:'poppins',textTransform:'capitalize',fontSize:'16px',lineHeight:'24px'  , borderRadius:'8px'}}
-              
-
+              sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5}}
             >
               Contact Us
             </Button>
