@@ -19,7 +19,6 @@ const Landingpage = () => {
     <Box onClick={handleHide}  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
       <Box className="content-box">
 
-    
       <HeroSection/>
       <ServicesComponent/>
       <AITechnologies/>

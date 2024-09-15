@@ -41,7 +41,7 @@ const Footer = () => {
                             sx={{
                                 fontSize: { xs: '18px', sm: '24px' },
                                 fontFamily: 'Poppins',
-                                fontWeight: 'bold',
+                                fontWeight: 600,
                                 mb: 2,
                             }}
                         >
@@ -50,7 +50,7 @@ const Footer = () => {
                     </Box>
                     <Typography
                         sx={{
-                            fontSize: { xs: '16px', sm: '22px' },
+                            fontSize: { xs: '16px', sm: '18px' },
                             fontFamily: 'Poppins',
                             fontWeight: 'medium',
                             mb: 2,
@@ -106,7 +106,7 @@ const Footer = () => {
                             sx={{
                                 fontSize: '16px',
                                 fontFamily: 'Poppins',
-                                fontWeight: 'bold',
+                                fontWeight: 500,
                                 marginY: {
                                     xs: '30px',
                                     md: 1
@@ -127,7 +127,7 @@ const Footer = () => {
                             sx={{
                                 fontSize: '16px',
                                 fontFamily: 'Poppins',
-                                fontWeight: 'bold',
+                                fontWeight: 500,
                                 marginY: {
                                     xs: '30px',
                                     md: 1
@@ -150,7 +150,7 @@ const Footer = () => {
                             sx={{
                                 fontSize: '16px',
                                 fontFamily: 'Poppins',
-                                fontWeight: 'bold',
+                                fontWeight: 500,
                                 marginY: {
                                     xs: '30px',
                                     md: 1

@@ -205,23 +205,23 @@ const Testimonials = () => {
 
     return (
         <Container className='testimonialcontainer' maxWidth={false} >
-       <Box sx={{height:'200%',top:'-20%'}}
+       <Box className='bg-img' sx={{height:'200%',top:'-50%'}}
         component="img"
         src={bg2}
       />
-            <Typography variant="h4" component="h2" sx={{ color: '#00A3FF', fontWeight: 'bold', textAlign: 'center', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px',fontSize: {xs: '28px',sm: '32px',md: '40px',} }}>
+            <Typography variant="h4" component="h2" sx={{ color: '#00A3FF', fontWeight: 'bold', textAlign: 'center', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px',fontSize: {xs: '28px',sm: '32px',} }}>
                 TESTIMONIALS
             </Typography>
             <Typography variant="body1" sx={{
                 color: '#CCCCCC', my: 3, textAlign: 'center', fontSize: {
-                    xs: '14px', sm: '16px', md: '18px'
+                    xs: '14px', sm: '16px'
                 } , fontFamily:'inter',mb:'50px'
             }}>
                 Don't just take our word for it—hear from our satisfied clients. Our testimonials highlight the positive experiences and <br />outcomes that businesses have achieved by partnering with us.
             </Typography>
 
             {/* Wrapper for both testimonial sections */}
-            <Box sx={{ position: 'relative', width: '100%' ,  overflow: 'hidden' }}>
+            <Box sx={{ position: 'relative', width:'100%' ,  overflow: 'hidden' }}>
                 {/* Left gradient box */}
                 <Box className='leftgradient-overlay'
                     sx={{
@@ -264,9 +264,9 @@ const Testimonials = () => {
                                 backgroundColor: '#101010',
                                 color: '#FFFFFF',
                                 padding: 3,
-                                borderRadius: '10px',
+                                borderRadius: '16px',
                                 width: '100%',
-                                border:'0.2px solid #707070',
+                                border:'0.2px solid #2a2a2a',
                                 maxWidth: '383px',
                                 height: '222px',
                                 display: 'flex',
@@ -304,16 +304,16 @@ const Testimonials = () => {
                                     />
                                 ))}
                             </Box>
-                            <Typography variant="body1" sx={{ mb: 2, color: '#ADADAD' ,fontFamily:'inter', fontSize:{xs:'14px', xl:'16px'} }}>
+                            <Typography variant="body1" sx={{ mb: 2, color: '#ADADAD' ,fontFamily:'inter', fontSize:'14px',lineHeight:1.5 }}>
                                 {testimonial.text}
                             </Typography>
                             <Box display="flex" alignItems="center">
                                 <Avatar src={testimonial.avatar} alt={testimonial.name} sx={{ mr: 2 }} />
                                 <Box>
-                                    <Typography variant="body2" sx={{ fontWeight: 'bold',fontFamily:'poppins' , fontSzie:{xs:'16px',xl:'18px'}}}>
+                                    <Typography variant="body2" sx={{ fontWeight: 600,fontFamily:'poppins' , fontSzie:'16px'}}>
                                         {testimonial.name}
                                     </Typography>
-                                    <Typography variant="caption" sx={{ color: '#777777',fontFamily:'inter', fontSize:{xs:'14px'} }}>
+                                    <Typography variant="caption" sx={{ color: '#777777',fontFamily:'inter', fontSize:'12px' }}>
                                         {testimonial.title}
                                     </Typography>
                                 </Box>
@@ -323,7 +323,7 @@ const Testimonials = () => {
                 </Box>
 
                 {/* Bottom testimonials */}
-                <Box className='bottomTestimonials'
+                <Box className=' bottomTestimonials'
                     sx={{
                         marginLeft: {
                             md: '-10%'
@@ -349,8 +349,8 @@ const Testimonials = () => {
                                 backgroundColor: '#101010',
                                 color: '#FFFFFF',
                                 padding: 3,
-                                borderRadius: '10px',
-                                border:'0.2px solid #707070',
+                                borderRadius: '16px',
+                                border:'0.2px solid #2a2a2a',
                                 width: '100%',
                                 maxWidth: '383px',
                                 height: '222px',
@@ -389,16 +389,16 @@ const Testimonials = () => {
                                     />
                                 ))}
                             </Box>
-                            <Typography variant="body1" sx={{ mb: 2, color: '#ADADAD', fontFamily:'inter' }}>
+                            <Typography variant="body1" sx={{ mb: 2, color: '#ADADAD', fontFamily:'inter',fontSize:'14px' }}>
                                 {testimonial.text}
                             </Typography>
                             <Box display="flex" alignItems="center">
                                 <Avatar src={testimonial.avatar} alt={testimonial.name} sx={{ mr: 2 }} />
                                 <Box>
-                                    <Typography variant="body2" sx={{ fontWeight: 'bold' ,fontFamily:'poppins' }}>
+                                <Typography variant="body2" sx={{ fontWeight: 600,fontFamily:'poppins' , fontSzie:'16px'}}>
                                         {testimonial.name}
                                     </Typography>
-                                    <Typography variant="caption" sx={{ color: '#777777',fontFamily:'inter' }}>
+                                    <Typography variant="caption" sx={{ color: '#777777',fontFamily:'inter', fontSize:'12px' }}>
                                         {testimonial.title}
                                     </Typography>
                                 </Box>

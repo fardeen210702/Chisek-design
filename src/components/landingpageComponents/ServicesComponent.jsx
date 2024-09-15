@@ -1,6 +1,8 @@
-import React from 'react';
+import React ,{useEffect}from 'react';
 import { Typography, Box, CardMedia } from '@mui/material';
 import bg2 from '../../assets/imageFiles/bg2.png';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import service1 from '../../assets/imageFiles/service1.jpg';
 import service2 from '../../assets/imageFiles/service2.jpg';
 import service3 from '../../assets/imageFiles/service3.jpg';
@@ -18,6 +20,28 @@ const ServicesComponent = () => {
     { img: service6, title: 'Technology Consulting for AI Integration', description: 'Navigate AI adoption with our expert guidance. We assess readiness, identify opportunities, and plan for success' }
   ];
 
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const serviceComponent = document.querySelector('.serviceComponent');
+
+    // Create a gsap timeline for animation
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: serviceComponent, // Trigger animation when entering the serviceComponent
+        start: '40% bottom', // Start animation when top of component reaches bottom of viewport
+      },
+    });
+
+    // Animate the entire `serviceCard` element
+    tl.fromTo(
+      serviceComponent.querySelector('.serviceCard'),
+      { y: 100,opacity:0 }, // Initial position: 100px off-screen (y-axis)
+      { y: 0,opacity:1, duration: 1, ease: 'power3.out' } // Animate smoothly
+    );
+  }, []);
+
   return (
     <Box className='serviceComponent' >
       {/* Background Image */}
@@ -29,14 +53,14 @@ const ServicesComponent = () => {
       </Typography>
 
       {/* Description */}
-      <Typography className='serviceDesc' variant="body1" align="center" sx={{ mb: 4, fontSize: { xs: '14px', sm: '16px', md: '18px', lg: '18px' }, fontFamily: 'Inter' }}>
+      <Typography className='serviceDesc' variant="body1" align="center" sx={{ mb: 4, fontSize: { xs: '14px', sm: '16px' }, fontFamily: 'Inter' }}>
         Empower your business with our transformative AI services. From automating routine tasks to unlocking deep insights from data, our solutions are designed to drive growth and innovation.
       </Typography>
 
       {/* Service Cards */}
       <Box className='serviceCard'>
         {serviceData.map((el, id) => {
-          return <Box className='box' key={id} sx={{ width: { xs: '350px', xl: '384px' }, height: { xs: '440px', xl: '480px' }}}>
+          return <Box className='box9' key={id} sx={{ width: { xs: '350px', xl: '384px' }, height: { xs: '440px', xl: '480px' }}}>
 
             {/* Image */}
             <Box className='img-box1' >
@@ -45,7 +69,7 @@ const ServicesComponent = () => {
 
             {/* Text Section */}
             <Box className='text-section' >
-              <Typography className='typography1' variant="h5" sx={{ fontWeight: 700, lineHeight: '36px', fontFamily: 'Poppins', wordWrap: 'break-word', fontSize: { xs: '18px', lg: '20px', xl: '22px' } }}>
+              <Typography className='typography1' variant="h5" sx={{ fontWeight: 600, lineHeight: '36px', fontFamily: 'Poppins', wordWrap: 'break-word', fontSize: '18px' }}>
                 {el.title}
               </Typography>
               <Typography className='typodesc' variant="body1" sx={{ fontWeight: 400, lineHeight: '25.60px', fontFamily: 'Inter', fontSize: { xs: '14px', lg: '14px', xl: '16px' }, wordWrap: 'break-word' }}>
