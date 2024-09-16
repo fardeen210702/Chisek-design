@@ -44,7 +44,7 @@ const BusinessTransformation = () => {
             </Typography>
 
             <Box 
-                sx={{ height: { xs: '500px', sm: '400px', lg: '362px' }, marginTop: { xs: '50px', md: '100px ', lg: '166px' },  flexDirection: { xs: 'column', sm: 'row' } }}
+                sx={{ height: { xs: '500px', sm: '400px', lg: '362px' }, marginTop: { xs: '50px', md: '70px ' },  flexDirection: { xs: 'column', sm: 'row' } }}
                 className="box-main"
             >
                 <Box sx={{ display: 'flex', flexDirection: 'column', paddingY: { xs: '20px', lg: '38px' }, gap: { xs: '20px', lg: '40px' }, flex: 1 }}>
@@ -77,7 +77,7 @@ const BusinessTransformation = () => {
 
             <Box className='step-box-container' sx={{  flexDirection: { xs: 'column', sm: 'row' } }}>
                 {steps.map((step, index) => (
-                    <Box key={index} sx={{ width: { xs: '360px', sm: '384px' },}} className="step-box">
+                    <Box key={index} sx={{ width: { xs: '360px', sm: '384px' },}} className="step-box ">
                         <Box  className="step-icon">
                             
                             <Box className="step-header">

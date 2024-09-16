@@ -22,6 +22,8 @@ import './Navbar.css'; // Import the updated CSS file
 const Navbar = () => {
   const { show, setShow } = useGLobalContext();
   const [isDropdownVal, setIsDropdownVal] = useState('')
+  const [color, setColor] = useState('')
+  const [route, setRoute] = useState([]);
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
 
@@ -52,14 +54,11 @@ const Navbar = () => {
     ]
   };
 
-  const [route, setRoute] = useState([]);
 
   function handleShow(e) {
     const value = e.target.textContent;
     setIsDropdownVal(value)
     const key = Object.keys(obj).find(el => el === value);
-  
-
     if (key) {
       setRoute(obj[key]);
     } else {
@@ -73,22 +72,17 @@ const Navbar = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
 
-
-  window.onload = toTop() // scroll to top of the window when page refreshes
-function toTop(){
-  
-    if(isDropdownVal==''){
-        window.scrollTo(0,0)
-      }   
- 
-}
-
   useEffect(() => {
     const handleScroll = () => {
       window.scrollY == 0 ? setIsScrolled(false) : setIsScrolled(true);
     };
 
     window.addEventListener('scroll', handleScroll);
+  
+    // Prevent browser from restoring scroll position
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual'; 
+    }  
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -96,7 +90,11 @@ function toTop(){
   }, []);
 
 
+  function colorChange(detail){
+    setColor(detail)
+    window.scrollTo(0,0)
 
+  }
 
   return (
     <AppBar position="sticky" className="appbar" style={{ backgroundColor: isScrolled ? '#000' : 'transparent', }} sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
@@ -118,7 +116,7 @@ function toTop(){
         ) : (
           <Box className="tabsContainer">
 
-            <Box component={Link} to='/' onClick={() => setShow(false)} className="logoContainer">
+            <Box component={Link} to='/' onClick={() => window.scrollTo(0,0)} className="logoContainer">
               <Box className="logoImage">
                 <img src={frame} alt="Decorative" />
               </Box>
@@ -129,45 +127,48 @@ function toTop(){
 
             <ul className="nav" >
 
-              <li className="nav-item1"  ><Link to={'/'}>Home</Link></li>
+              <Link className={`nav-item ${color=='Home' ? 'apply' : ''}`}  onClick={()=>colorChange('Home')} to={'/'}>Home</Link>
+
               <li onMouseEnter={handleShow} onMouseLeave={handleHide}
-                className="nav-item">Services
+                className={`nav-item ${color=='Services' ? 'apply' : ''}`}  onClick={()=>colorChange('Services')}>Services 
+                <li className="arrowdown-icon"><KeyboardArrowDownIcon/></li>
                 {
                   isDropdownVal == 'Services' && <ul className="menuitem">
+                    <li className="triangle"></li>
                     {
-                      route.map((el, id) => (<li key={id} >
-                        <Link to={el.link} onClick={handleHide}>{el.path}</Link>
-                      </li>))
+                      route.map((el, id) => (<MenuItem className="menulists" sx={{borderLeft:el.brColor,borderRadius:'4px',fontWeight:500,fontSize:'14px',color:'white'}} key={id} component={Link} to={el.link} onClick={()=>setIsDropdownVal(false)}>{el.path}</MenuItem>))
                     }
                   </ul>
                 }
               </li>
               <li onMouseEnter={handleShow} onMouseLeave={handleHide}
-                className="nav-item">Industries
+                className={`nav-item ${color=='Industries' ? 'apply' : ''}`}  onClick={()=>colorChange('Industries')}>Industries
+                <li className="arrowdown-icon"><KeyboardArrowDownIcon/></li>
                 {
                   isDropdownVal == 'Industries' && <ul className="menuitem">
+                    <li className="triangle"></li>
                     {
-                      route.map((el, id) => (<li key={id} >
-                        <Link to={el.link} onClick={handleHide}>{el.path}</Link>
-                      </li>))
+                      route.map((el, id) => (<MenuItem className="menulists" sx={{borderLeft:el.brColor,borderRadius:'4px',fontWeight:500,fontSize:'14px',color:'white'}} key={id} component={Link} to={el.link} onClick={()=>setIsDropdownVal(false)}>{el.path}</MenuItem>))
                     }
                   </ul>
                 }
               </li>
-              <li onMouseEnter={handleShow} onMouseLeave={handleHide}
-                className="nav-item">Technologies
+              <li  onMouseEnter={handleShow} onMouseLeave={handleHide}
+                className={`nav-item ${color=='Technologies' ? 'apply' : ''}`}  onClick={()=>colorChange('Technologies')}>Technologies
+                <li className="arrowdown-icon"><KeyboardArrowDownIcon/></li>
                 {
                   isDropdownVal == 'Technologies' && <ul className="menuitem">
+                    <li className="triangle"></li>
                     {
-                      route.map((el, id) => (<li key={id} >
-                        <Link to={el.link} onClick={handleHide}>{el.path}</Link>
-                      </li>))
+                      route.map((el, id) => (
+                      <MenuItem className="menulists" sx={{borderLeft:el.brColor,borderRadius:'4px',fontWeight:500,fontSize:'14px',color:'white'}} key={id} component={Link} to={el.link} onClick={()=>setIsDropdownVal(false)}>{el.path}</MenuItem>
+                    ))
                     }
                   </ul>
                 }
               </li>
 
-              <li className="nav-item1" > <Link to='/blogs'>Blogs</Link></li>
+               <Link className={`nav-item ${color=='Blogs' ? 'apply' : ''}`}  onClick={()=>colorChange('Blogs')} to='/blogs'>Blogs</Link>
             </ul>
 
 

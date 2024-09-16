@@ -73,7 +73,7 @@ background: rgba(255, 255, 255, 0.05);
 
 
 .caseStudy {
-    margin: 10% 0;
+    margin-top: 10% ;
     width: 100%;
     height: auto;
     display: flex;
@@ -117,7 +117,7 @@ background: rgba(255, 255, 255, 0.05);
 }
 
 .box2 .inneritems{
-    border: 0.20px rgba(112.31, 112.31, 112.31, 0.70) solid;
+    border: 0.20px solid #1e1e1e;
     border-radius: 16px;
     width: 100%;
     height: 100%;
@@ -132,9 +132,9 @@ padding-top: 20px ;
     height: 100%;
     background: linear-gradient(0deg, 0%, 100%);
     box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.01) inset;
-    border-radius: 8px; /* Corresponds to `borderRadius: 2` (assuming 8px unit) */
+    border-radius: 16px; /* Corresponds to `borderRadius: 2` (assuming 8px unit) */
     overflow: hidden;
-    border: 0.20px rgba(112.31, 112.31, 112.31, 0.70) solid;
+    border: 0.20px solid #1e1e1e;
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -165,11 +165,13 @@ padding-top: 20px ;
 
 .case-container {
     align-self: stretch;
-    height: 409px;
+    height: 360px;
     display: flex;
+
     flex-direction: column;
-    gap: 18px; /* Default for xs */
-    /* border: 1px solid red; Adding the red border */
+    justify-content: flex-start;
+    gap: 30px; /* Default for xs */
+   
 }
 
 .case-title {
@@ -188,7 +190,7 @@ padding-top: 20px ;
     background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #ffffff 0%, #ffffff 100%);
     box-shadow: 4px 0px 9px 2px #bcbcbc33 inset;
     border-radius: 9999px;
-    border: 0.08px solid #000;
+    border: 0.08px solid #1e1e1e;
 }
 
  .responsive-box1 {
@@ -198,6 +200,7 @@ padding-top: 20px ;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 14px;
+    
     display:flex;
     flex-direction: row;
     /* border: 1px solid green; */
@@ -256,7 +259,7 @@ padding-top: 20px ;
     /* border: 1px solid red; Red border */
     overflow: hidden;
     border-radius: 16px;
-    border: 0.20px rgba(112, 112, 112, 0.70) solid;
+    border: 0.20px solid #1e1e1e;
 }
 
 .arrow-container {
@@ -291,7 +294,7 @@ padding-top: 20px ;
 /* Implementation css */
 
 .implementcontainer {
-    margin-top: 10%;
+    /* margin-top: 10%; */
     width: 100%;
     height: auto;
     display: flex;
@@ -339,7 +342,7 @@ padding-top: 20px ;
     box-shadow: 0px 0px 0px #FFFFFF inset;
     border-radius: 16px;
     overflow: hidden;
-    border: 0.20px solid #707070;
+    border: 0.20px solid #1e1e1e;
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -363,9 +366,9 @@ height: 100%;
 
 .mapbox .stepbox{
 
-    border-radius: 8px;
+    border-radius: 16px;
     overflow: hidden;
-    border: 0.10px solid #A0A0A0;
+    border: 0.10px solid #1e1e1e;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -425,6 +428,7 @@ height: 100%;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    
     /* border: 1px solid red; */
 }
 
@@ -442,7 +446,7 @@ height: 100%;
     box-shadow: 0px 0px 0px #FFFFFF inset;
     border-radius: 16px;
     overflow: hidden;
-    border: 0.20px solid #707070;
+    border: 0.20px solid #1e1e1e;
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -488,6 +492,7 @@ height: 100%;
     display: flex;
     align-items: flex-start;
     gap: 8px;
+    margin: 5px 0;
     /* border: 1px solid red; */
 }
 
@@ -613,20 +618,19 @@ height: 100%;
 .endcontainer > .firstcontainer , .nextcontainer{
     width: 100%;
     max-width: 588px;
-    height: 100%;
+    height: 'fit-content';
     padding: 24px;
     background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%);
     border-radius: 16px;
     box-shadow: 0px 0px 0px inset;
     overflow: hidden;
-    border: 0.2px solid #000;
+    border: 0.2px solid #ffeeee;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
     align-items: flex-start;
     gap: 24px;
-    /* border: 1px solid red;    */
 }
 
 .aspect-ratio-box {
@@ -642,9 +646,10 @@ height: 100%;
 
 .column-box {
     align-self: stretch;
-    height: auto;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 8px;
 
 }
@@ -721,7 +726,7 @@ height: 100%;
   }
   
   .box-main .box-container{
-  border: 0.20px solid #707070;
+  border: 0.20px solid #282828;
   background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%);
   display: inline-flex;
   box-shadow: 0px 0px 0px #FFFFFF inset;
@@ -756,7 +761,7 @@ height: 100%;
     padding: 24px 16px;
     border-radius: 8px;
     overflow: hidden;
-    border:0.10px solid #A0A0A0 ;
+    border:0.20px solid #1e1e1e ;
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -832,10 +837,10 @@ height: 100%;
     /* border: 1px solid red; */
 }
 
-.styled-box {
+.styled-box21 {
     background-color: #101010;
     border-radius: 16px;
-    border: 0.20px solid #707070;
+    border: 0.20px solid #1e1e1e;
     padding: 56px 16px 32px 16px;
     display: flex;
     flex-direction: column;
@@ -859,7 +864,7 @@ height: 100%;
     text-align: center;
 }
 
-.styled-box .response-box{
+.styled-box21 .response-box{
         height: auto;
         border-radius: 8px;
         display: flex;

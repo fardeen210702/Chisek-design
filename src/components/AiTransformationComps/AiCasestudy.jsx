@@ -55,10 +55,10 @@ const AiCasestudy = () => {
         <Container maxWidth={false}
             className='caseStudy'>
 
-            <Typography className='case-studies-title' variant="h4" component="h2" align="center" gutterBottom sx={{ fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px', md: '40px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}>
+            <Typography className='case-studies-title' variant="h4" component="h2" align="center" gutterBottom sx={{ fontWeight: '600', fontSize: { xs: '28px', sm: '32px',  }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}>
                 Case Studies: AI Success Stories
             </Typography>
-            <Typography className='impact-description' variant="body1" align="center" sx={{ fontFamily: 'inter', fontSize: { xs: '14px', md: '14px', lg: '18px' } }}>
+            <Typography className='impact-description' variant="body1" align="center" sx={{ fontFamily: 'inter', fontSize: { xs: '14px', md: '14px', lg: '16px',lineHeight:'26px' } }}>
                 To illustrate the impact of AI-powered business transformation, we've compiled real-world examples of how our clients have successfully <br /> leveraged AI to overcome challenges and achieve remarkable results.
             </Typography>
 
@@ -80,12 +80,12 @@ const AiCasestudy = () => {
                                 <Box component={'img'} src={casestudy} sx={{ width: 24, height: 24 }} />
                             </Box>
                             <Box className='case-study-box '>
-                                <Typography className='case-study-text ' sx={{ fontSize: { xs: '14px', md: '18px' }, fontWeight: 400, lineHeight: '27px' }}>Case Study #1</Typography>
+                                <Typography className='case-study-text ' sx={{ fontSize: { xs: '14px', md: '16px' }, fontWeight: 400, lineHeight: '27px' }}>Case Study #1</Typography>
                             </Box>
                         </Box>
 
                         <Box className='case-container'>
-                            <Typography className='case-title' sx={{ fontSize: { xs: '20px', md: 22, lg: 24 }, fontWeight: 700, lineHeight: '36px' }}>{caseData.title}</Typography>
+                            <Typography className='case-title' sx={{ fontSize: { xs: '20px', md: 22, lg: '24px' }, fontWeight: 600, lineHeight: '36px',fontFamily: 'inter' }}>{caseData.title}</Typography>
 
                             {caseData.sections.map((section, index) => (
                                 <Box className='section-container ' key={index}>
@@ -93,8 +93,8 @@ const AiCasestudy = () => {
                                         <CheckIcon sx={{ color: '#117DCC', fontSize: 15 }} />
                                     </IconButton>
                                     <Typography className="section-text">
-                                        <Typography component="span" sx={{ color: 'rgba(255, 255, 255, 0.90)', fontSize: { xs: '14px', md: 16, lg: 18 }, fontWeight: 500 }}>{section.label}</Typography>
-                                        <Typography component="span" sx={{ color: '#ADADAD', fontSize: { xs: '14px', md: 16, lg: 18 } }}>{section.description}</Typography>
+                                        <Typography component="span" sx={{ color: 'rgba(255, 255, 255, 0.90)', fontSize: { xs: '14px', md:'16px' }, fontWeight: 600 ,fontFamily: 'inter'}}>{section.label}</Typography>
+                                        <Typography component="span" sx={{ color: '#ADADAD', fontSize: { xs: '14px', md: '16px',fontFamily: 'inter' } }}>{section.description}</Typography>
                                     </Typography>
                                 </Box>
                             ))}
@@ -105,12 +105,12 @@ const AiCasestudy = () => {
                                 <React.Fragment key={index}>
                                     <Box className='res-content'>
                                         <Box className='inline-flex-box'>
-                                            <Typography sx={{ color: '#479A55', fontSize: { xs: '16px', md: '18px', lg: '24px' }, fontFamily: 'Inter', fontWeight: 700, lineHeight: '36px' }}>{item.percentage}</Typography>
-                                            <Box sx={{ width: { xs: 20, lg: '32px' }, height: { xs: 20, lg: '32px' } }}>
+                                            <Typography sx={{ color: '#479A55', fontSize: { xs: '16px', md: '18px', lg: '20px' }, fontFamily: 'Inter', fontWeight: 700, lineHeight: '36px' }}>{item.percentage}</Typography>
+                                            <Box sx={{ width: { xs: 20, lg: '25px' }, height: { xs: 20, lg: '25px' } }}>
                                                 <Box component={'img'} src={item.img} sx={{ width: '100%', height: '100%' }} />
                                             </Box>
                                         </Box>
-                                        <Typography sx={{ color: '#ADADAD', fontSize: { xs: '12px', md: '16px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '24px', wordWrap: 'break-word' }}>{item.label}</Typography>
+                                        <Typography sx={{ color: '#ADADAD', fontSize: { xs: '12px', md: '14px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '24px', wordWrap: 'break-word' }}>{item.label}</Typography>
                                     </Box>
                                     {index !== caseData.stats.length - 1 && (<Box sx={{ width: '1px', alignSelf: 'stretch', background: 'rgba(217, 217, 217, 0.40)' }} />)}
                                 </React.Fragment>

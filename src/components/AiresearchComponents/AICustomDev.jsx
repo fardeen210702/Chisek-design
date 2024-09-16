@@ -30,10 +30,10 @@ const AICustomDev = () => {
                 <Box className='right-container1' sx={{ width: { xs: '100%', sm: '80%', md: '597px' }, height: { xs: 'auto', sm: 'auto', md: '541px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
                     <Box sx={{ width: '100%' }}>
 
-                        <Typography className='text' component="span" sx={{ fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '51.20px' }}>✨ Custom AI Solution Development</Typography>
+                        <Typography className='text' component="span" sx={{ fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: '51.20px' }}>✨ Custom AI Solution Development</Typography>
                     </Box>
                     <Box sx={{ width: '100%' }}>
-                        <Typography sx={{ color: '#ADADAD', fontSize: { xs: '16px', lg: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px', wordWrap: 'break-word' }}>We develop bespoke AI solutions tailored to address your unique business challenges, ensuring that you gain a competitive edge</Typography>
+                        <Typography sx={{ color: '#ADADAD', fontSize: { xs: '16px', lg: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px', wordWrap: 'break-word' }}>We develop bespoke AI solutions tailored to address your unique business challenges, ensuring that you gain a competitive edge</Typography>
                     </Box>
                     {arr.map((el, id) => (
                         <Box key={id} className='mapcontainer'>

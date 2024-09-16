@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import { Container, Typography, Button, Box } from '@mui/material';
 import EastIcon from '@mui/icons-material/East';
 import Frame from '../../assets/imageFiles/Frame24.png';

@@ -26,18 +26,18 @@ const ServiceHeroSection = () => {
         variant="h3"
         component="h2"
         gutterBottom
-        sx={{ fontWeight: 600,  fontSize: { xs: '1.8rem', md: '2rem', lg: '3rem', xl: '48px' }, fontFamily: 'inter' }}
+        sx={{ fontWeight: 600,  fontSize: { xs: '1.8rem', md: '2rem', lg:'40px' }, fontFamily: 'inter',lineHeight:1.2 }}
       >
      AI-Powered Business Transformation <br />
      Services
-        <Box component={'img'} src={vector} sx={{ width: { xs: '15px', md: '18px', lg: '26px' }, position: 'absolute', right: { lg: '290px' } , bottom:{xs:'18px',lg:"30px"} }} />
+        <Box component={'img'} src={vector} sx={{ width: { xs: '15px', md: '18px', lg: '26px' }, position: 'absolute', right: { lg: '280px' } , bottom:{xs:'18px',lg:"25px"} }} />
       </Typography>
 
       <Typography
       className='heading-text'
         variant="body1"
         component="p"
-        sx={{fontSize: { xs: '14px', sm: '16px' },fontFamily:'inter' }}
+        sx={{fontSize: { xs: '14px', sm: '16px' },fontFamily:'inter',lineHeight:1.5 }}
       >
      Revolutionize Your Operations, Enhance Customer Experiences, and drive Innovation with Chisel's <br />
      Tailored AI Solutions
@@ -47,7 +47,7 @@ const ServiceHeroSection = () => {
     <Button className='btn1'
       variant="outlined"
       color="secondary"
-      sx={{ color:'#117DCC',backgroundColor:'#a0a0a028',marginTop:'48px',padding:'15px',border:'1px solid #a0a0a028',borderRadius:'8px',textTransform: 'capitalize', fontWeight: 500, fontSize: { xl: '18px' } }}
+      sx={{ color:'#117DCC',backgroundColor:'#a0a0a028',marginTop:'48px',padding:'15px',border:'1px solid #a0a0a028',borderRadius:'8px',textTransform: 'capitalize', fontWeight: 500, fontSize:'14px' }}
     >
        Get Started Today <EastIcon />
     </Button>

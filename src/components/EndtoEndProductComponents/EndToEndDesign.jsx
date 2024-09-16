@@ -31,10 +31,10 @@ const EndToEndDesign = () => {
 
                     <Box sx={{ width: '100%' }}>
 
-                        <Typography className='text' component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '51.20px' }}>✨Design and Prototyping</Typography>
+                        <Typography className='text' component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: '51.20px' }}>✨Design and Prototyping</Typography>
                     </Box>
                     <Box sx={{ width: '100%' }}>
-                        <Typography sx={{ color: '#ADADAD', fontSize: {xs:'16px', lg:'20px'}, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px', wordWrap: 'break-word' }}>Our design and prototyping phase brings your concept to life, focusing on user experience, functionality, and aesthetic appeal</Typography>
+                        <Typography sx={{ color: '#ADADAD', fontSize: {xs:'16px', lg:'18px'}, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px', wordWrap: 'break-word' }}>Our design and prototyping phase brings your concept to life, focusing on user experience, functionality, and aesthetic appeal</Typography>
                     </Box>
                     {arr.map((el, id) => (
                         <Box  key={id}  className='mapcontainer'>
@@ -43,9 +43,9 @@ const EndToEndDesign = () => {
                                 <CheckIcon className='checkbtn' sx={{ fontSize: 15, color: '#117DCC', }} />
                             </IconButton>
                             <Box sx={{ flex: '1 1 0' }}>
-                                <Typography sx={{ fontSize: '18px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
-                                    <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600' }}>{el.title}</Typography>
-                                    <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400' }}>{el.description}</Typography>
+                                <Typography sx={{ fontSize: '16px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
+                                    <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600',fontFamily: 'Inter' }}>{el.title}</Typography>
+                                    <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400' ,fontFamily: 'Inter'}}>{el.description}</Typography>
                                 </Typography>
                             </Box>
                         </Box>)

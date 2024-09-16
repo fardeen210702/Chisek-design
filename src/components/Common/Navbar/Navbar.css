@@ -10,16 +10,6 @@
   border: none;
 }
 
-.triangle {
-  position: absolute;
-  top: -12px;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0 8px 13px 8px;
-  border-color: transparent transparent #ff4532 transparent;
-  transform: rotate(0deg);
-}
 
 .toolbar {
   display: flex;
@@ -68,32 +58,83 @@
 }
 
 .nav {
-  padding: 0 25px;
+  padding: 0 30px;
   width: 800px;
   display: flex;
   align-items: center;
   list-style: none;
   justify-content: space-around;
-  color: #ADADAD;
-
-text-align: center;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 150%; /* 24px */
+  color: #adadad;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+.arrowdown-icon{
+  /* border: 1px solid red; */
+  margin-left: 4px;
+  height: 25px;
 }
 .nav-item {
   position: relative;
   cursor: pointer;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ADADAD;
+
 }
-.nav-item1{
-  cursor: pointer;
+
+.nav-item.apply{
+  color: white;
 }
-.menuitem {
+
+
+.triangle {
   position: absolute;
-  top: 100%;
-  left: 0;
+  z-index: -1;
+  top: -7.5px;
+  left: 50px;
+  list-style: none;
+  border: 0.2px solid rgba(50, 50, 50, 0.7);
+  height: 16px;
+  width: 16px;
+  transform: rotate(45deg);
+  background-color:#101010;
+stroke-width: 0.1px;
+stroke: rgba(112, 112, 112, 0.70);
+box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.14) inset;
+ 
+ 
+}
+
+
+.menuitem {
+
+  padding: 24px;
+  align-items: flex-start;
+  align-self: stretch;
+  position: absolute;
+  top: 55px;
+  left: -20px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 16px;
+  border: 0.1px solid rgba(50, 50, 50, 0.7);
+  background: linear-gradient(
+      142deg,
+      rgba(255, 255, 255, 0.01) 2.63%,
+      rgba(255, 255, 255, 0.01) 98.96%
+    ),
+    #101010;
+  box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.14) inset;
 }
 
 .tabsContainer {
