@@ -205,11 +205,11 @@ const Testimonials = () => {
 
     return (
         <Container className='testimonialcontainer' maxWidth={false} >
-       <Box className='bg-img' sx={{height:'200%',top:'-50%'}}
+       {/* <Box className='bg-img' sx={{height:'200%',top:'-50%'}}
         component="img"
         src={bg2}
-      />
-            <Typography variant="h4" component="h2" sx={{ color: '#00A3FF', fontWeight: 'bold', textAlign: 'center', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px',fontSize: {xs: '28px',sm: '32px',} }}>
+      /> */}
+            <Typography variant="h4" component="h2" sx={{ color: '#00A3FF', fontWeight: 600, textAlign: 'center', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px',fontSize: {xs: '28px',sm: '32px',} }}>
                 TESTIMONIALS
             </Typography>
             <Typography variant="body1" sx={{

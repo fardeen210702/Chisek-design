@@ -15,25 +15,24 @@ common css for all pages inside service folder
     /* border: 1px solid red; */
 }
 
-.hero-box1 {
+.hero-box11{
     width: 149px;
     height: 32px;
-    padding-left: 16px; /* pl: 2 */
-    padding-right: 16px; /* pr: 2 */
-    padding-top: 4px; /* pt: 0.5 */
-    padding-bottom: 4px; /* pb: 0.5 */
-    background: #a0a0a028;
+    padding: 4px 16px;
+    /* background: #a0a0a028; */
     color: #117DCC;
     border-radius: 8px;
-    border: 0.5px solid gray;
+    /* border: 0.2px solid rgb(35, 35, 35); */
     border-width: 0.2px;  
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px; /* gap: 1 */
-    /* border: 1px solid red; */
+    gap: 8px; 
+    border-radius: var(--Space-8, 8px);
+background: rgba(255, 255, 255, 0.05);
+    
 
 }
 
@@ -687,7 +686,7 @@ height: 100%;
 /* business transformation css */
 
 .container{
-    margin: 10%;
+    margin: 100px 0 0 0;
     width: 100%;
     height: auto;
     display: flex;

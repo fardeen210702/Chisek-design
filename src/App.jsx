@@ -1,7 +1,7 @@
 import Navbar from "../src/components/Common/Navbar/Navbar";
 import { Container, Box } from "@mui/material";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import '@fontsource/inter';
 import '@fontsource/bebas-neue';
 import '@fontsource/poppins';
@@ -29,8 +29,6 @@ import NLPComputerVision from "./pages/Technologies/NLPComputerVision/NLPCompute
 
 
 const App = () => {
-
-
   return (
     < >
       <Container  maxWidth={false} style={{ backgroundColor: '#000', padding: 0, margin: 0, display: 'flex', flexDirection:'column' , alignItems:'center' }}>

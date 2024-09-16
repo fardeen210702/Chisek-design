@@ -8,6 +8,7 @@ const ContextApp = ({children}) => {
     
 function handleHide(){
 setShow(false)
+
 }
 
   return (

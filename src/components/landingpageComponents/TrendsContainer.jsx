@@ -55,7 +55,7 @@ const TrendsContainer = () => {
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: '.trendscontainer',
-            start: '40% bottom',
+            start: '30% bottom',
         }
     })
 
@@ -90,7 +90,7 @@ const TrendsContainer = () => {
         <Typography
           sx={{
             fontFamily: 'Bebas Neue, sans-serif',
-            fontWeight: 400,
+            fontWeight: 600,
             fontSize: {
               xs: '28px',
               sm: '32px',

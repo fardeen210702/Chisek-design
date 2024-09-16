@@ -20,7 +20,7 @@ useEffect(() => {
     const tl = gsap.timeline({
         scrollTrigger:{
             trigger:'.AIcontainer',
-            start:'40% bottom'
+            start:'30% bottom'
         }
     })
 
@@ -40,7 +40,7 @@ useEffect(() => {
     return (
         <Container className='AIcontainer'
             maxWidth={false}
-            sx={{ padding: { xs: 2, sm: 4, md: 0 }}}
+            sx={{ padding: { xs: 2, sm: 4, md: 0 }, zIndex:1}}
         >
             <Box className='bg-img'
                 component="img"
@@ -52,7 +52,7 @@ useEffect(() => {
             >
                 <Typography className='aitypo'
                     variant="h2"
-                    sx={{  fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px', fontSize: { xs: '24px', sm: '28px', md: '32px', lg: '36px', xl: '40px' }, fontWeight: 'bold' }}
+                    sx={{  fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px', fontSize: { xs: '24px', sm: '28px', md: '32px',  }, fontWeight: 600 }}
                 >
                     AI TECHNOLOGIES WE MASTER
                 </Typography>
@@ -110,8 +110,8 @@ useEffect(() => {
                             ✨ Custom vocabulary integration for industry-specific terminology
                         </Typography>
                         <Button size='medium'
-                            variant="contained"
-                            sx={{ width: 175, height: 56, padding: '12px 24px', fontFamily: 'Poppins', fontWeight: 600, mt: 2, background: 'rgba(255, 255, 255, 0.04)', borderRadius: 1, color: '#117DCC', textTransform: 'none', display: 'flex', gap: '5px', alignItems: 'center', fontSize: '16px' }}
+                            variant="contained" onClick={()=>console.log('true its wokring')}
+                            sx={{ width: 175, height: 56, padding: '12px 24px', fontFamily: 'Poppins', fontWeight: 600, mt: 2, background: 'rgba(255, 255, 255, 0.04)', borderRadius: 1, color: '#117DCC', textTransform: 'none', display: 'flex', gap: '5px', alignItems: 'center', fontSize: '16px',zIndex:1 }}
                         >
                             View Demo <EastIcon />
                         </Button>
