@@ -37,13 +37,13 @@ const IntelligentAIimplement = () => {
 
                         <Typography className='text'
                             component="span"
-                            sx={{ fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: { xs: '36px', sm: '42px', md: '51.20px' } }}
+                            sx={{ fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: { xs: '36px', sm: '42px', md: '51.20px' } }}
                         >
                             ✨Continuous Optimization and <br /> Scaling
                         </Typography>
                     </Box>
                     <Box className='desc'
-                        sx={{ fontSize: { xs: '14px', sm: '16px', md: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', sm: '30px', md: '34px' } }}
+                        sx={{ fontSize: { xs: '14px', sm: '16px', md: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', sm: '30px', md: '34px' } }}
                     >
                         We provide ongoing support to refine, optimize, and scale automation solutions, ensuring sustained efficiency and growth
                     </Box>
@@ -64,14 +64,14 @@ const IntelligentAIimplement = () => {
             <Box className='mapbox' sx={{ gap: { xs: '16px', sm: '24px' }, flexDirection: { xs: 'column', sm: 'row' }, justifyContent: { xs: 'center', sm: 'center' }, padding: { xs: '16px', xl: '24px' } }}>
 
                  {steps.map((step, index) => (
-                    <Box className='stepbox' key={index} sx={{ width: { xs: '100%', sm: '384px' }, height: { xs: 'auto', sm: '405px' }, padding: { xs: '16px', sm: '24px 16px' }, gap: { xs: '16px', sm: '24px' } }}>
+                    <Box className='stepbox' key={index} sx={{ width: { xs: '100%',sm:'370px' ,xl: '384px' }, height: { xs: 'auto', sm: '405px' }, padding: { xs: '16px', sm: '24px 16px' }, gap: { xs: '16px', sm: '24px' } }}>
 
                          <Box sx={{ height: { xs: 'auto', sm: '240px' } }} className='mapcontent'>
                             <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={step.img} alt="Placeholder" />
                         </Box>
 
                         <Box className='mapdetails' sx={{ height: { xs: 'auto', sm: '93px' } }}>
-                        <Typography className='title' sx={{ fontSize: { xs: '18px', sm: '22px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '33px'}}>{step.title}</Typography>
+                        <Typography className='title' sx={{ fontSize: { xs: '18px', sm: '20px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: '33px'}}>{step.title}</Typography>
 
                             <Typography className='desc' sx={{ fontSize: { xs: '14px', sm: '16px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: '25.60px' }}>{step.description}</Typography>
                         </Box>
