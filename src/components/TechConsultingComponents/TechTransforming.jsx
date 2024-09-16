@@ -30,14 +30,14 @@ const TechTransforming = () => {
             className="container"
         >
             <Typography variant="h4" component="h2" align="center" gutterBottom 
-                sx={{ fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px', md: '40px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}
+                sx={{ fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}
                 className="typography-h4"
             >
                Our Approach to Technology Consulting for AI Integration
             </Typography>
             
             <Typography variant="body1" align="center" 
-                sx={{ mb: 4, fontFamily: 'inter', fontSize: { xs: '14px', md: '14px', lg: '18px' } }}
+                sx={{ mb: 4, fontFamily: 'inter', fontSize: { xs: '14px', md: '14px', lg: '18px' },lineHeight:'27px'   }}
                 className="typography-body1"
             >
                 Our tailored approach ensures your business is AI-ready, from assessing current capabilities to <br /> identifying opportunities and crafting a strategic roadmap
@@ -52,13 +52,13 @@ const TechTransforming = () => {
                         
                         <Typography
                             component="span"
-                            sx={{ color: '#FFFFFF', fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: { xs: '36px', sm: '42px', md: '51.20px' }, wordWrap: 'break-word' }}
+                            sx={{ color: '#FFFFFF', fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: { xs: '36px', sm: '42px', md: '51.20px' }, wordWrap: 'break-word' }}
                         >
                            ✨ AI Readiness Assessment
                         </Typography>
                     </Box>
                     <Box
-                        sx={{  color: '#ADADAD', fontSize: { xs: '14px', sm: '16px', md: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', sm: '30px', md: '34px' }, wordWrap: 'break-word' }}
+                        sx={{  color: '#ADADAD', fontSize: { xs: '14px', sm: '16px', md: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', sm: '30px', md: '34px' }, wordWrap: 'break-word' }}
                         className="box-description"
                     >
                         We start by evaluating your organization’s current capabilities, identifying gaps, and determining your readiness for AI adoption

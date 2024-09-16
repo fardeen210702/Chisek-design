@@ -19,11 +19,11 @@ const TechTransformation = () => {
     return (
         <Container maxWidth={false} className='aiContainer'
         >
-            <Typography className='h2' variant="h4" component="h2" align="center" gutterBottom sx={{ fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px', md: '40px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}>
+            <Typography className='h2' variant="h4" component="h2" align="center" gutterBottom sx={{ fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}>
             Key Benefits of Technology Consulting for AI Integration
             </Typography>
 
-            <Typography className='h22' variant="body1" align="center" sx={{ mb: 4, fontFamily: 'inter', fontSize: { xs: '14px', md: '14px', lg: '18px' } }}>
+            <Typography className='h22' variant="body1" align="center" sx={{ mb: 4, fontFamily: 'inter', fontSize: { xs: '14px', md: '14px', lg: '18px' },lineHeight:'27px' }}>
             Our expert guidance ensures you make informed decisions, optimize implementation, and achieve <br /> sustainable growth.
 
             </Typography>
@@ -36,7 +36,7 @@ const TechTransformation = () => {
                 <Box className='leftcontainer' sx={{ width: { xs: '100%', sm: '80%', md: '597px' }, height: { xs: 'auto', sm: 'auto', md: '541px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
 
                     <Box sx={{ width: '100%' }}>
-                        <Typography component="span" sx={{ color: '#FFFFFF', fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '51.20px', wordWrap: 'break-word' }}>✨ Informed Decision-Making</Typography>
+                        <Typography component="span" sx={{ color: '#FFFFFF', fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: '51.20px', wordWrap: 'break-word' }}>✨ Informed Decision-Making</Typography>
                     </Box>
                     <Box sx={{ width: '100%' }}>
 
@@ -50,9 +50,9 @@ const TechTransformation = () => {
                             </IconButton>
 
                             <Box sx={{ flex: '1 1 0' }}>
-                                <Typography sx={{ fontSize: '18px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
-                                    <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600' }}>{el.title}</Typography>
-                                    <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400' }}>{el.description}</Typography>
+                                <Typography sx={{ fontSize: '16px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
+                                    <Typography component="span" sx={{ fontFamily: 'Inter', color: '#FFFFFFE6', fontWeight: '600' }}>{el.title}</Typography>
+                                    <Typography component="span" sx={{  fontFamily: 'Inter',color: '#ADADAD', fontWeight: '400' }}>{el.description}</Typography>
                                 </Typography>
                             </Box>
                         </Box>
@@ -72,7 +72,7 @@ const TechTransformation = () => {
 
 
             {/* end container */}
-            <Box className='endcontainer' sx={{ height: { xs: 'fit-content', md: '735px' }, flexDirection: { xs: 'column', md: 'row' }, gap: { xs: '20px', md: '24px' }, boxShadow: '0px 0px 0px #FFFFFF inset', }} >
+            <Box className='endcontainer' sx={{ height: { xs: 'fit-content', md: '720px' }, flexDirection: { xs: 'column', md: 'row' }, gap: { xs: '20px', md: '24px' }, boxShadow: '0px 0px 0px #FFFFFF inset', }} >
 
                 <Box className='firstcontainer' sx={{ '@media (max-width: 600px)': { padding: '16px', gap: '16px' } }}>
 
@@ -83,7 +83,7 @@ const TechTransformation = () => {
 
                     <Box className='column-box ' >
 
-                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 700, lineHeight: '36px' }}>
+                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 600, lineHeight: '36px' }}>
                         ✨ Optimized AI Implementation
                         </Typography>
 
@@ -99,10 +99,10 @@ const TechTransformation = () => {
                                     <IconButton className='checkicon' >
                                         <CheckIcon className='checkbtn' sx={{  fontSize: 15 }} />
                                     </IconButton>
-                                    <Typography className='item-title' sx={{  fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px' }}>
+                                    <Typography className='item-title' sx={{  fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px',marginY:'4px' }}>
                                         {item.title}: <Typography 
                                         className='item-description'
-                                        component="span" sx={{  fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
+                                        component="span" sx={{  fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
                                     </Typography>
                                 </Box>
                             ))}
@@ -118,7 +118,7 @@ const TechTransformation = () => {
 
                     <Box className='column-box ' >
 
-                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 700, lineHeight: '36px' }}>
+                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 600, lineHeight: '36px' }}>
                         ✨ Sustainable Growth and Innovation
                         </Typography>
                         <Typography className='description-typography ' sx={{  fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px'}}>
@@ -135,10 +135,10 @@ const TechTransformation = () => {
                                    <IconButton className='checkicon' >
                                         <CheckIcon className='checkbtn' sx={{  fontSize: 15 }} />
                                     </IconButton>
-                                    <Typography className='item-title' sx={{  fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px' }}>
+                                    <Typography className='item-title' sx={{  fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px' }}>
                                         {item.title}: <Typography 
                                         className='item-description'
-                                        component="span" sx={{  fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
+                                        component="span" sx={{  fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
                                     </Typography>
                                 </Box>
                             ))}

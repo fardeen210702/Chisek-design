@@ -42,6 +42,11 @@ const DrawerComponent = () => {
     { path: 'NLP Computer Vision', link: '/nlp-computer-vision' },
   ];
 
+  function scrollTop(){
+    window.scrollTo(0,0)
+  
+  }
+
   return (
     <>
       <Drawer
@@ -55,7 +60,7 @@ const DrawerComponent = () => {
               key={id}
               LinkComponent={Link}
               to={el.link}
-              onClick={() => setOpenDrawer(false)}
+              onClick={() => {setOpenDrawer(false),scrollTop()}}
               className="listItemButton"
             >
               <ListItemIcon className="iconColor">
@@ -79,7 +84,7 @@ const DrawerComponent = () => {
                   LinkComponent={Link}
                   to={el.link}
                   key={id}
-                  onClick={() => setOpenDrawer(false)}
+                  onClick={() => {setOpenDrawer(false),scrollTop()}}
                   className="listItemButton"
                 >
                   <ListItemIcon className="iconColor">
@@ -105,7 +110,7 @@ const DrawerComponent = () => {
                   LinkComponent={Link}
                   to={el.link}
                   key={id}
-                  onClick={() => setOpenDrawer(false)}
+                  onClick={() =>{setOpenDrawer(false),scrollTop()}}
                   className="listItemButton"
                 >
                   <ListItemIcon className="iconColor">
@@ -131,7 +136,7 @@ const DrawerComponent = () => {
                   LinkComponent={Link}
                   to={el.link}
                   key={id}
-                  onClick={() => setOpenDrawer(false)}
+                  onClick={() => {setOpenDrawer(false),scrollTop()}}
                   className="listItemButton"
                 >
                   <ListItemIcon className="iconColor">

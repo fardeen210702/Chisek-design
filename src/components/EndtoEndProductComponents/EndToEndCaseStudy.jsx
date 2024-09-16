@@ -55,10 +55,10 @@ const EndToEndCaseStudy = () => {
         <Container maxWidth={false}
         className='caseStudy'>
 
-        <Typography className='case-studies-title' variant="h4" component="h2" align="center" gutterBottom sx={{ fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px', md: '40px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}>
+        <Typography className='case-studies-title' variant="h4" component="h2" align="center" gutterBottom sx={{ fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px' }}>
         Case Studies: End-to-End Product Development Success Stories
         </Typography>
-        <Typography className='impact-description' variant="body1" align="center" sx={{ fontFamily: 'inter', fontSize: { xs: '14px', md: '14px', lg: '18px' } }}>
+        <Typography className='impact-description' variant="body1" align="center" sx={{ fontFamily: 'inter', fontSize: { xs: '14px', md: '14px', lg: '16px' },lineHeight:'27px' }}>
         To illustrate the impact of our End-to-End Product Development services, here are a few case studies from clients who have <br /> successfully brought their ideas to life.
         </Typography>
 
@@ -85,7 +85,7 @@ const EndToEndCaseStudy = () => {
                     </Box>
 
                     <Box className='case-container'>
-                        <Typography className='case-title' sx={{ fontSize: { xs: '20px', md: 22, lg: 24 }, fontWeight: 700, lineHeight: '36px' }}>{caseData.title}</Typography>
+                        <Typography className='case-title' sx={{ fontSize: { xs: '20px', md: 22, lg: 24 }, fontWeight: 600, lineHeight: '36px',fontFamily:'poppins' }}>{caseData.title}</Typography>
 
                         {caseData.sections.map((section, index) => (
                             <Box className='section-container ' key={index}>
@@ -93,8 +93,8 @@ const EndToEndCaseStudy = () => {
                                     <CheckIcon sx={{ color: '#117DCC', fontSize: 15 }} />
                                 </IconButton>
                                 <Typography className="section-text">
-                                    <Typography component="span" sx={{ color: 'rgba(255, 255, 255, 0.90)', fontSize: { xs: '14px', md: 16, lg: 18 }, fontWeight: 500 }}>{section.label}</Typography>
-                                    <Typography component="span" sx={{ color: '#ADADAD', fontSize: { xs: '14px', md: 16, lg: 18 } }}>{section.description}</Typography>
+                                    <Typography component="span" sx={{ color: 'rgba(255, 255, 255, 0.90)',fontFamily:'inter', fontSize: { xs: '14px', md:'16px' }, fontWeight: 500 }}>{section.label}</Typography>
+                                    <Typography component="span" sx={{ color: '#ADADAD', fontSize: { xs: '14px', md: '16px',fontFamily:'inter' } }}>{section.description}</Typography>
                                 </Typography>
                             </Box>
                         ))}
@@ -105,12 +105,12 @@ const EndToEndCaseStudy = () => {
                             <React.Fragment key={index}>
                                 <Box className='res-content'>
                                     <Box className='inline-flex-box'>
-                                        <Typography sx={{ color: '#479A55', fontSize: { xs: '16px', md: '18px', lg: '24px' }, fontFamily: 'Inter', fontWeight: 700, lineHeight: '36px' }}>{item.percentage}</Typography>
-                                        <Box sx={{ width: { xs: 20, lg: '32px' }, height: { xs: 20, lg: '32px' } }}>
+                                        <Typography sx={{ color: '#479A55', fontSize: { xs: '16px', md: '18px', lg: '20px' }, fontFamily: 'Inter', fontWeight: 700, lineHeight: '36px' }}>{item.percentage}</Typography>
+                                        <Box sx={{ width: { xs: 20, lg: '25px' }, height: { xs: 20, lg: '25px' } }}>
                                             <Box component={'img'} src={item.img} sx={{ width: '100%', height: '100%' }} />
                                         </Box>
                                     </Box>
-                                    <Typography sx={{ color: '#ADADAD', fontSize: { xs: '12px', md: '16px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '24px', wordWrap: 'break-word' }}>{item.label}</Typography>
+                                    <Typography sx={{ color: '#ADADAD', fontSize: { xs: '12px', md: '14px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '24px', wordWrap: 'break-word' }}>{item.label}</Typography>
                                 </Box>
                                 {index !== caseData.stats.length - 1 && (<Box sx={{ width: '1px', alignSelf: 'stretch', background: 'rgba(217, 217, 217, 0.40)' }} />)}
                             </React.Fragment>

@@ -5,13 +5,13 @@ import { Container, Box, Typography, InputBase, Button } from '@mui/material';
 const EleveateCustomerExperience = () => {
     return (
         <Container className="businesscontainer" sx={{ width: { xs: '100%', xl: '1200px' },  height: { lg: '447px', xs: 'auto' }, gap: { xs: '16px', lg: '56px' } }}>
-        <Box className="styled-box" sx={{  height: { lg: '447px', xs: 'auto' }, gap: { xs: '16px', lg: '56px' } }}>
+        <Box className="styled-box21" sx={{  height: { lg: '447px', xs: 'auto' }, gap: { xs: '16px', lg: '56px' } }}>
             <Box className="flex-content" sx={{  gap: { xs: '10px', lg: '24px' } }}>
                 
-                <Typography className="extraordinary-text" sx={{ width: { xs: '100%', lg: '1004px' }, height: { xs: '70px', lg: '140px' }, fontFamily: 'Inter, sans-serif', fontWeight: 600, fontSize: { xs: '20px', sm: '25px', lg: '48px' }, lineHeight: { xs: '30px', lg: '70px' }}}>
+                <Typography className="extraordinary-text" sx={{ width: { xs: '100%', lg: '1004px' }, height: { xs: '70px', lg: '140px' }, fontFamily: 'Inter, sans-serif', fontWeight: 600, fontSize: { xs: '20px', sm: '25px', lg: '40px' }, lineHeight: { xs: '30px', lg: '70px' }}}>
                 Ready to Elevate Your  Customer <br /> Experience?
                 </Typography>
-                <Typography className="project-description"  sx={{ width: { xs: '100%', lg: '832px' }, height: { xs: '140px', lg: '60px' }, fontFamily: 'Inter, sans-serif', fontWeight: 400, fontSize: { xs: '14px', lg: '20px' }, lineHeight: '30px' }}>
+                <Typography className="project-description"  sx={{ width: { xs: '100%', lg: '832px' }, height: { xs: '140px', lg: '60px' }, fontFamily: 'Inter, sans-serif', fontWeight: 400, fontSize: { xs: '14px', lg: '16px' }, lineHeight: '30px' }}>
                 Contact us today to discover how we can help you create personalized, efficient, and engaging customer interactions that drive loyalty and growth.
                 </Typography>
             </Box>
