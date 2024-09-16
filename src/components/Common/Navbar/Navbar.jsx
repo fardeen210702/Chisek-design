@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
@@ -9,18 +9,19 @@ import {
   useTheme,
   useMediaQuery,
   Typography,
+  MenuItem, Menu
 } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import frame from "../../../assets/imageFiles/Frame.png";
-import Polygon from "../../../assets/imageFiles/Polygon.png";
 import DrawerComponent from "../DrawerComponent/DrawerComponent";
 import { Link } from "react-router-dom";
 import { useGLobalContext } from "../../../context/ContextApi";
 import './Navbar.css'; // Import the updated CSS file
 
+
 const Navbar = () => {
-  const {show, setShow} = useGLobalContext();
-  const [value, setValue] = useState(0);
+  const { show, setShow } = useGLobalContext();
+  const [isDropdownVal, setIsDropdownVal] = useState('')
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
 
@@ -52,13 +53,12 @@ const Navbar = () => {
   };
 
   const [route, setRoute] = useState([]);
-  const [left, setLeft] = useState(null);
 
   function handleShow(e) {
-    setShow(true);
     const value = e.target.textContent;
+    setIsDropdownVal(value)
     const key = Object.keys(obj).find(el => el === value);
-    setLeft(e.target.offsetLeft  );
+  
 
     if (key) {
       setRoute(obj[key]);
@@ -67,14 +67,26 @@ const Navbar = () => {
       setRoute([]);
     }
   }
+  function handleHide() {
+    setIsDropdownVal(null)
+  }
 
-  window.onload = window.scrollTo(0,0) // scroll to top of the window when page refreshes
   const [isScrolled, setIsScrolled] = useState(false);
+
+
+  window.onload = toTop() // scroll to top of the window when page refreshes
+function toTop(){
+  
+    if(isDropdownVal==''){
+        window.scrollTo(0,0)
+      }   
+ 
+}
 
   useEffect(() => {
     const handleScroll = () => {
-      window.scrollY == 0 ? setIsScrolled(false): setIsScrolled(true);
-    };  
+      window.scrollY == 0 ? setIsScrolled(false) : setIsScrolled(true);
+    };
 
     window.addEventListener('scroll', handleScroll);
 
@@ -83,11 +95,11 @@ const Navbar = () => {
     };
   }, []);
 
-  
-  
+
+
 
   return (
-    <AppBar position="sticky" className="appbar" style={{ backgroundColor: isScrolled ? '#000' : 'transparent', }} sx={{backgroundColor:'transparent', boxShadow:'none'}}>
+    <AppBar position="sticky" className="appbar" style={{ backgroundColor: isScrolled ? '#000' : 'transparent', }} sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
       <Toolbar className="toolbar">
         {isMatch ? (
           <Box className="drawerContainer">
@@ -105,25 +117,7 @@ const Navbar = () => {
           </Box>
         ) : (
           <Box className="tabsContainer">
-            {show && (
-              <Box className="dropdownMenu" style={{ opacity: show ? 1 : 0, transition: 'opacity 0.5s' }}>
-                <Box component='img' src={Polygon} className="dropdownArrow" sx={{position:'absolute' , left:left,top:'-10px'}} />
-                <Box className="dropdownContent">
-                  {route.map((el, id) => (
-                    <Typography
-                      key={id}
-                      onClick={() => setShow(false)}
-                      className="dropdownItem"
-                      component={Link}
-                      to={el.link}
-                      sx={{ borderLeft:el.brColor ,fontWeight: 600}}
-                    >
-                      {el.path}
-                    </Typography>
-                  ))}
-                </Box>
-              </Box>
-            )}
+
             <Box component={Link} to='/' onClick={() => setShow(false)} className="logoContainer">
               <Box className="logoImage">
                 <img src={frame} alt="Decorative" />
@@ -132,66 +126,69 @@ const Navbar = () => {
                 Chisel Solutions
               </Box>
             </Box>
-            <Tabs  
-              value={value}
-              onChange={(e, value) => setValue(value)}
-              textColor="inherit"
-              
-              TabIndicatorProps={{
-                style: {
-                  backgroundColor: "transparent",
-                  height: "3px",
-                  
-                },
-              }}
-              className="tabStyles"
-            >
-              <Tab label="Home" component={Link} to="/" onClick={() => setShow(false)}
-                sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5,marginRight:'20px' }}
-                className='tab'
-              />
-              <Tab
-                label="Services"
-                onClick={handleShow}
-                icon={<KeyboardArrowDownIcon />}
-                iconPosition="end"
-                sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5,marginRight:'20px' }}
-                className='tab'
-              />
-              <Tab
-                label="Industries"
-                onClick={handleShow}
-                icon={<KeyboardArrowDownIcon />}
-                iconPosition="end"
-                sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5,marginRight:'20px' }}
-                className='tab'
-              />
-              <Tab
-                label="Technologies"
-                onClick={handleShow}
-                icon={<KeyboardArrowDownIcon />}
-                iconPosition="end"
-                sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5,marginRight:'20px' }}
-                className='tab'
-              />
-              <Tab label="Blogs" component={Link} to="/blogs" onClick={() => setShow(false)} 
-                sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5,marginRight:'20px' }}
-                className='tab'
-              />
-            </Tabs>
+
+            <ul className="nav" >
+
+              <li className="nav-item1"  ><Link to={'/'}>Home</Link></li>
+              <li onMouseEnter={handleShow} onMouseLeave={handleHide}
+                className="nav-item">Services
+                {
+                  isDropdownVal == 'Services' && <ul className="menuitem">
+                    {
+                      route.map((el, id) => (<li key={id} >
+                        <Link to={el.link} onClick={handleHide}>{el.path}</Link>
+                      </li>))
+                    }
+                  </ul>
+                }
+              </li>
+              <li onMouseEnter={handleShow} onMouseLeave={handleHide}
+                className="nav-item">Industries
+                {
+                  isDropdownVal == 'Industries' && <ul className="menuitem">
+                    {
+                      route.map((el, id) => (<li key={id} >
+                        <Link to={el.link} onClick={handleHide}>{el.path}</Link>
+                      </li>))
+                    }
+                  </ul>
+                }
+              </li>
+              <li onMouseEnter={handleShow} onMouseLeave={handleHide}
+                className="nav-item">Technologies
+                {
+                  isDropdownVal == 'Technologies' && <ul className="menuitem">
+                    {
+                      route.map((el, id) => (<li key={id} >
+                        <Link to={el.link} onClick={handleHide}>{el.path}</Link>
+                      </li>))
+                    }
+                  </ul>
+                }
+              </li>
+
+              <li className="nav-item1" > <Link to='/blogs'>Blogs</Link></li>
+            </ul>
+
+
+
             <Button
               variant="contained"
               className="contactButton"
               component={Link}
               to="/contact"
               onClick={() => setShow(false)}
-              sx={{fontWeight:600,fontFamily:'poppins',textTransform:'capitalize',fontSize:'14px',lineHeight:1.5}}
+              sx={{ fontWeight: 600, fontFamily: 'poppins', textTransform: 'capitalize', fontSize: '14px', lineHeight: 1.5, borderRadius: '10px' }}
             >
               Contact Us
             </Button>
           </Box>
         )}
+
+
       </Toolbar>
+
+
     </AppBar>
   );
 };

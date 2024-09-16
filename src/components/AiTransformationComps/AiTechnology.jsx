@@ -35,7 +35,7 @@ const AiTechnology = () => {
                         <Typography className='text' component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '51.20px' }}>✨Seamless AI Technology Integration</Typography>
                     </Box>
                     <Box sx={{ width: '100%' }}>
-                        <Typography sx={{ color: '#ADADAD', fontSize: {xs:'16px', lg:'20px'}, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px', wordWrap: 'break-word' }}>We integrate cutting-edge AI technologies into your existing systems, enhancing efficiency and innovation without disrupting your operations</Typography>
+                        <Typography sx={{ color: '#ADADAD', fontSize: {xs:'16px', lg:'18px'}, fontFamily: 'Inter', fontWeight: '400', lineHeight: '30px', wordWrap: 'break-word' }}>We integrate cutting-edge AI technologies into your existing systems, enhancing efficiency and innovation without disrupting your operations</Typography>
                     </Box>
                     {arr.map((el, id) => (
                         <Box  key={id}  className='mapcontainer'>
