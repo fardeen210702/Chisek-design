@@ -204,7 +204,7 @@ const Footer = () => {
                     © 2024 All rights reserved
                 </Typography>
 
-                <Box sx={{display:'flex' , gap:'10px'}}>
+                <Box sx={{display:'flex' , gap:'10px' ,justifyContent:'center'}}>
                     <Typography sx={{
                         fontSize: '14px',
                         fontFamily: 'Poppins',

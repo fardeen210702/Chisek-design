@@ -26,17 +26,17 @@ const IndustryHeroSection = () => {
         variant="h3"
         component="h2"
         gutterBottom
-        sx={{ fontWeight: 'bold',  fontSize: { xs: '1.8rem', md: '2rem', lg: '3rem', xl: '48px' }, fontFamily: 'inter' }}
+        sx={{ fontWeight: 'bold',  fontSize: { xs: '1.8rem', md: '36px', lg: '40px' }, fontFamily: 'inter',lineHeight:1.4 }}
       >
      Modernize Your Banking Services with <br/> AI 
-        <Box component={'img'} src={vector} sx={{ width: { xs: '15px', md: '18px', lg: '26px' }, position: 'absolute', right: { lg: '380px' } , bottom:{xs:'18px',lg:"40px"} }} />
+        <Box component={'img'} src={vector} sx={{ width: { xs: '15px', md: '18px', lg: '26px' }, position: 'absolute', right: { lg: '335px' } , bottom:{xs:'18px',lg:"40px"} }} />
       </Typography>
 
       <Typography
       className='heading-text'
         variant="body1"
         component="p"
-        sx={{fontSize: { xs: '14px', sm: '16px', md: '18px', lg: '18px' } }}
+        sx={{fontSize: { xs: '14px', sm: '16px', md: '16px' },fontFamily: 'inter' }}
       >
      Revolutionize Your Operations, Enhance Customer Experiences, and drive Innovation with Chisel's <br /> Tailored AI Solutions
       </Typography>
@@ -45,7 +45,7 @@ const IndustryHeroSection = () => {
     <Button className='btn1'
       variant="outlined"
       color="secondary"
-      sx={{ color:'#117DCC',backgroundColor:'#a0a0a028',marginTop:'48px',padding:'15px',border:'1px solid gray',borderRadius:'8px',textTransform: 'capitalize', fontWeight: 'bolder', fontSize: { xl: '18px' } }}
+      sx={{ color:'#117DCC',backgroundColor:'#a0a0a028',marginTop:'48px',padding:'15px',border:'1px solid #2e2e2e',borderRadius:'8px',textTransform: 'capitalize', fontWeight: 'bolder', fontSize: { xl: '18px' } }}
     >
        Get Started Today <EastIcon />
     </Button>

@@ -11,7 +11,7 @@ const FinancialProducts = () => {
             maxWidth={false}
             className='top-container'
         >
-            <Box className='endcontainer' sx={{ height: { xs: 'fit-content', md: '735px' }, flexDirection: { xs: 'column', md: 'row' }, gap: { xs: '20px', md: '24px' }, boxShadow: '0px 0px 0px #FFFFFF inset', }} >
+            <Box className='endcontainer' sx={{ height: { xs: 'fit-content', md: '720px' }, flexDirection: { xs: 'column', md: 'row' }, gap: { xs: '20px', md: '24px' }, boxShadow: '0px 0px 0px #FFFFFF inset', }} >
 
                 <Box className='firstcontainer' sx={{ '@media (max-width: 600px)': { padding: '16px', gap: '16px' } }}>
 
@@ -22,7 +22,7 @@ const FinancialProducts = () => {
 
                     <Box className='column-box ' >
 
-                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 700, lineHeight: '36px' }}>
+                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 600, lineHeight: '36px' }}>
                         ✨ Accelerated Compliance and Reporting
                         </Typography>
 
@@ -38,10 +38,10 @@ const FinancialProducts = () => {
                                     <IconButton className='checkicon' >
                                         <CheckIcon className='checkbtn' sx={{ fontSize: 15,color:'#0BFFF0' }} />
                                     </IconButton>
-                                    <Typography className='item-title' sx={{ fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px' }}>
+                                    <Typography className='item-title' sx={{ fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px' }}>
                                         {item.title}: <Typography
                                             className='item-description'
-                                            component="span" sx={{ fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
+                                            component="span" sx={{ fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
                                     </Typography>
                                 </Box>
                             ))}
@@ -57,7 +57,7 @@ const FinancialProducts = () => {
 
                     <Box className='column-box ' >
 
-                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 700, lineHeight: '36px' }}>
+                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 600, lineHeight: '36px' }}>
                         ✨ Innovative Financial Products
                         </Typography>
                         <Typography className='description-typography ' sx={{ fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>
@@ -74,10 +74,10 @@ const FinancialProducts = () => {
                                     <IconButton className='checkicon' >
                                         <CheckIcon className='checkbtn' sx={{ fontSize: 15,color:'#0BFFF0' }} />
                                     </IconButton>
-                                    <Typography className='item-title' sx={{ fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px' }}>
+                                    <Typography className='item-title' sx={{ fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px' }}>
                                         {item.title}: <Typography
                                             className='item-description'
-                                            component="span" sx={{ fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
+                                            component="span" sx={{ fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
                                     </Typography>
                                 </Box>
                             ))}

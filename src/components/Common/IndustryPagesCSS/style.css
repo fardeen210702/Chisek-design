@@ -25,7 +25,9 @@ common css for all pages inside Industries folder
     background: #a0a0a028;
     color: #117DCC;
     border-radius: 8px;
-    border: 0.5px solid gray;
+  
+    border-radius: var(--Space-8, 8px);
+background: rgba(255, 255, 255, 0.05);
     border-width: 0.2px;  
     margin-top: 20px;
     margin-bottom: 20px;
@@ -146,13 +148,13 @@ common css for all pages inside Industries folder
 }
 
 
-.right-container{
+.right-container0{
     padding: 16px;
     background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%);
     box-shadow: 0px 0px 0px #FFFFFF inset;
     border-radius: 16px;
     overflow: hidden;
-    border: 0.1px solid rgba(112, 112, 112, 0.70);
+    border: 0.1px solid #1e1e1e;
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -194,7 +196,7 @@ common css for all pages inside Industries folder
     display: flex;
 }
 
-.box-gradient {
+.box-gradient9 {
     width: 100%;
     max-width: 472px;
     height: 100%;
@@ -203,7 +205,7 @@ common css for all pages inside Industries folder
     box-shadow: 0px 0px 0px #FFFFFF inset;
     border-radius: 16px;
     overflow: hidden;
-    border: 0.20px solid #707070; /* Original border color */
+    border: 0.20px solid #1e1e1e; 
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -255,11 +257,11 @@ common css for all pages inside Industries folder
     flex-wrap: wrap;
 }
 
-.box-card {
+.box-card8 {
     padding: 24px 16px;
     border-radius: 8px;
     overflow: hidden;
-    border: 0.10px solid #A0A0A0; 
+    border: 0.10px solid #2e2e2e; 
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -397,13 +399,13 @@ common css for all pages inside Industries folder
     border-radius: 50%;
 }
 
-.box-container3 {
+.box-container37{
    padding: 16px;
     background: linear-gradient(0deg, #101010 0%, #101010 100%), linear-gradient(142deg, #FFFFFF 0%, #FFFFFF 100%);
     box-shadow: 0px 0px 0px #FFFFFF inset;
     border-radius: 16px;
     overflow: hidden;
-    border: 0.20px solid #707070; /* Border color specified */
+    border: 0.20px solid #2e2e2e; /* Border color specified */
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -679,10 +681,10 @@ common css for all pages inside Industries folder
     /* border: 1px solid red; */
 }
 
-.styled-box {
+.styled-box1 {
     background-color: #101010;
     border-radius: 16px;
-    border: 0.20px solid #707070;
+    border: 0.20px solid #2e2e2e;
     padding: 56px 16px 32px 16px;
     display: flex;
     flex-direction: column;
@@ -706,7 +708,7 @@ common css for all pages inside Industries folder
     text-align: center;
 }
 
-.styled-box .response-box{
+.styled-box1 .response-box{
         height: auto;
         border-radius: 8px;
         display: flex;

@@ -107,6 +107,7 @@ background: rgba(255, 255, 255, 0.05);
     margin-bottom: 32px;
     border:none;
     background-color: transparent;
+    
 }
 
 .icon-container {
@@ -124,7 +125,6 @@ background: rgba(255, 255, 255, 0.05);
     padding: 16px;
     display: flex;
     justify-content: space-between;
-   /* border: 1px solid green;  */
 }
 
 .first-inner-item {
@@ -165,14 +165,20 @@ padding-top: 20px ;
 
 .case-container {
     align-self: stretch;
-    height: 360px;
+    height: fit-content;
     display: flex;
-
     flex-direction: column;
     justify-content: flex-start;
     gap: 30px; /* Default for xs */
    
 }
+
+@media (min-width: 639px) {
+    .case-container{
+        height: 360px;
+        
+    }
+  }
 
 .case-title {
     color: rgba(255, 255, 255, 0.90);
@@ -200,8 +206,8 @@ padding-top: 20px ;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 14px;
-    
     display:flex;
+    
     flex-direction: row;
     /* border: 1px solid green; */
  /* Adding the red border */

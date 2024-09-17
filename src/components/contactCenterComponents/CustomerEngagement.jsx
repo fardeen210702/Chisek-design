@@ -24,11 +24,11 @@ const CustomerEngagement = () => {
 
                 <Box  sx={{ width: { xs: '100%', lg: '642px' }, }}>
 
-                    <Typography className="customer-insights-text" component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '51.20px' }}> ✨Proactive Customer Engagement</Typography>
+                    <Typography className="customer-insights-text" component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: '51.20px' }}> ✨Proactive Customer Engagement</Typography>
                 </Box>
 
                 <Box sx={{ width: '100%' }}>
-                    <Typography className="insights-text" sx={{fontSize: { xs: '16px', lg: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px' }}>Utilize AI-driven predictive analytics to anticipate customer needs and engage them proactively. AI can identify patterns and trends, enabling contact centers to address issues before they escalate</Typography>
+                    <Typography className="insights-text" sx={{fontSize: { xs: '16px', lg: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px' }}>Utilize AI-driven predictive analytics to anticipate customer needs and engage them proactively. AI can identify patterns and trends, enabling contact centers to address issues before they escalate</Typography>
                 </Box>
                 {arr.map((el, id) => (
                     <Box key={id} className="map-box"
@@ -41,8 +41,8 @@ const CustomerEngagement = () => {
 
                         <Box sx={{ flex: '1 1 0' }}>
                             <Typography sx={{ fontSize: '18px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
-                                <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600' }}>{el.title}</Typography>
-                                <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400' }}>{el.description}</Typography>
+                                <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600' , fontFamily: 'Inter'}}> {el.title}</Typography>
+                                <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400' , fontFamily: 'Inter'}}> {el.description}</Typography>
                             </Typography>
                         </Box>
                     </Box>)

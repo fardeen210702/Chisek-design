@@ -28,17 +28,17 @@ const ContactCenterHeroSection = () => {
         variant="h3"
         component="h2"
         gutterBottom
-        sx={{ fontWeight: 'bold',  fontSize: { xs: '1.8rem', md: '2rem', lg: '3rem', xl: '48px' }, fontFamily: 'inter' }}
+        sx={{ fontWeight: 'bold',  fontSize: { xs: '1.8rem', md: '36px', lg: '40px' }, fontFamily: 'inter' ,lineHeight:1.3 }}
       >
      Upgrade Your Contact Center with AI <br /> Solutions
-        <Box component={'img'} src={vector} sx={{ width: { xs: '15px', md: '18px', lg: '26px' }, position: 'absolute', right: { lg: '344px' } , bottom:{xs:'18px',lg:"32px"} }} />
+        <Box component={'img'} src={vector} sx={{ width: { xs: '15px', md: '18px', lg: '26px' }, position: 'absolute', right: { lg: '334px' } , bottom:{xs:'18px',lg:"24px"}}} />
       </Typography>
 
       <Typography
       className='heading-text'
         variant="body1"
         component="p"
-        sx={{fontSize: { xs: '14px', sm: '16px', md: '18px', lg: '18px' } }}
+        sx={{fontSize: { xs: '14px', sm: '16px' },fontFamily:'inter' }}
       >
     Chisel’s AI solutions empower healthcare providers to improve patient outcomes, streamline operations, and deliver <br /> personalized care
       </Typography>
@@ -47,7 +47,7 @@ const ContactCenterHeroSection = () => {
     <Button className='btn1'
       variant="outlined"
       color="secondary"
-      sx={{ color:'#117DCC',backgroundColor:'#a0a0a028',marginTop:'48px',padding:'15px',border:'1px solid gray',borderRadius:'8px',textTransform: 'capitalize', fontWeight: 'bolder', fontSize: { xl: '18px' } }}
+      sx={{ color:'#117DCC',backgroundColor:'#a0a0a028',marginTop:'48px',padding:'15px',border:'1px solid #2e2e2e',borderRadius:'8px',textTransform: 'capitalize', fontWeight: 'bolder', fontSize: { xl: '18px' } }}
     >
        Get Started Today <EastIcon />
     </Button>
