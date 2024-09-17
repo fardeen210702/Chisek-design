@@ -26,17 +26,17 @@ const MarketingHeroSection = () => {
         variant="h3"
         component="h2"
         gutterBottom
-        sx={{ fontWeight: 'bold',  fontSize: { xs: '1.8rem', md: '2rem', lg: '3rem', xl: '48px' }, fontFamily: 'inter' }}
+        sx={{ fontWeight: 'bold',  fontSize: { xs: '36px', md: '38px', lg: '40px' }, fontFamily: 'inter',lineHeight:'50px' }}
       >
      Supercharge Your Marketing <br /> with AI 
-        <Box component={'img'} src={m2} sx={{ width: { xs: '15px', md: '18px', lg: '26px' }, position: 'absolute', right: { lg: '380px' } , bottom:{xs:'18px',lg:"40px"} }} />
+        <Box component={'img'} src={m2} sx={{ width: { xs: '15px', md: '18px', lg: '24px' }, position: 'absolute', right: { lg: '369px' } , bottom:{xs:'18px',lg:"34px"} }} />
       </Typography>
 
       <Typography
       className='heading-text'
         variant="body1"
         component="p"
-        sx={{fontSize: { xs: '14px', sm: '16px', md: '18px', lg: '18px' } }}
+        sx={{ lineHeight: 1.5, fontSize: { xs: '14px', sm: '16px',fontWeight:500,fontFamily:'inter' } }}
       >
      Chisel’s AI solutions empower marketing teams to optimize campaigns, personalize customer interactions, and make <br /> data-driven decisions
       </Typography>
@@ -45,7 +45,7 @@ const MarketingHeroSection = () => {
     <Button className='btn1'
       variant="outlined"
       color="secondary"
-      sx={{ color:'#117DCC',backgroundColor:'#a0a0a028',marginTop:'48px',padding:'15px',border:'1px solid gray',borderRadius:'8px',textTransform: 'capitalize', fontWeight: 'bolder', fontSize: { xl: '18px' } }}
+      sx={{ color:'#117DCC',backgroundColor:'#a0a0a028',marginTop:'48px',padding:'15px',border:'1px solid #343434',borderRadius:'8px',textTransform: 'capitalize', fontWeight: 'bolder', fontSize: { xl: '18px' } }}
     >
        Get Started Today <EastIcon />
     </Button>

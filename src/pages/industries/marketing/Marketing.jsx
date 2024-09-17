@@ -1,4 +1,4 @@
-import React from 'react'
+  import React from 'react'
 import { Box } from '@mui/material'
 import bg1 from '../../../assets/imageFiles/bg1.png';
 import MarketingBenefits from '../../../components/MarketingComponents/MarketingBenefits'

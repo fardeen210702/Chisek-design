@@ -23,11 +23,11 @@ const MarketingFrauds = () => {
 
                     <Box  sx={{ width: { xs: '100%', lg: '642px' }, }}>
 
-                        <Typography className="customer-insights-text" component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '51.20px' }}> ✨Enhanced Customer Insights</Typography>
+                        <Typography className="customer-insights-text" component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: '51.20px' }}> ✨Enhanced Customer Insights</Typography>
                     </Box>
 
                     <Box sx={{ width: '100%' }}>
-                        <Typography className="insights-text" sx={{fontSize: { xs: '16px', lg: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px' }}>Utilize AI-driven analytics to gain deeper insights into customer behavior, preferences, and purchasing patterns. This allows marketers to better understand their audience and craft more effective strategies</Typography>
+                        <Typography className="insights-text" sx={{fontSize: { xs: '16px', lg: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px' }}>Utilize AI-driven analytics to gain deeper insights into customer behavior, preferences, and purchasing patterns. This allows marketers to better understand their audience and craft more effective strategies</Typography>
                     </Box>
                     {arr.map((el, id) => (
                         <Box key={id} className="map-box"
@@ -39,9 +39,9 @@ const MarketingFrauds = () => {
                                     </IconButton>
 
                             <Box sx={{ flex: '1 1 0' }}>
-                                <Typography sx={{ fontSize: '18px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
-                                    <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600' }}>{el.title}</Typography>
-                                    <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400' }}>{el.description}</Typography>
+                                <Typography sx={{ fontSize: '16px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
+                                    <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600', fontFamily: 'Inter' }}> {el.title}</Typography>
+                                    <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400', fontFamily: 'Inter' }}> {el.description}</Typography>
                                 </Typography>
                             </Box>
                         </Box>)
@@ -49,7 +49,7 @@ const MarketingFrauds = () => {
                 </Box>
 
                 {/* rightContainer */}
-                <Box className="box-container3" sx={{ width: { xs: '100%', sm: '80%', md: '505px' }, height: { xs: '300px', sm: '400px', md: '487px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
+                <Box className="box-container37" sx={{ width: { xs: '100%', sm: '80%', md: '505px' }, height: { xs: '300px', sm: '400px', md: '487px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
                     <Box className="inner-box" >
                         <img className="inner-img" src={m8} alt="Placeholder" />
                     </Box>

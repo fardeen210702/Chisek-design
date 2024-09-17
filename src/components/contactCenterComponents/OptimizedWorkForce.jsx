@@ -32,7 +32,7 @@ const OptimizedWorkForce = () => {
             <Box className='box-custom' sx={{ height: { xs: '500px', sm: '400px', lg: '456px' }, marginTop: { xs: '50px', md: '100px ', lg: '166px' }, flexDirection: { xs: 'column', sm: 'row' }, justifyContent: { lg: 'space-between' } }}>
 
                 {/* image component */}
-                <Box className="box-gradient" >
+                <Box className="box-gradient9" >
                     <Box className="box-img">
                         <img src={cc3} alt="Placeholder" />
                     </Box>
@@ -44,13 +44,13 @@ const OptimizedWorkForce = () => {
                         
                         <Typography  className="text-highlight"
                             component="span"
-                            sx={{ fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: { xs: '36px', sm: '42px', md: '51.20px' } }}
+                            sx={{ fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: { xs: '36px', sm: '42px', md: '51.20px' } }}
                         >
                             ✨Optimized Workforce Management
                         </Typography>
                     </Box>
                     <Box className="text-box"
-                        sx={{  paddingX: { xs: '15px' }, fontSize: { xs: '14px', sm: '16px', md: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', sm: '30px', md: '34px' } }}
+                        sx={{  paddingX: { xs: '15px' }, fontSize: { xs: '14px', sm: '16px', md: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', sm: '30px', md: '34px' } }}
                     >
                         Leverage AI-driven workforce management tools to predict call volumes, optimize staff scheduling, and ensure that the right number of agents are available at the right times</Box>
 
@@ -64,7 +64,7 @@ const OptimizedWorkForce = () => {
 
             <Box className='flex-box' sx={{ flexDirection: { xs: 'column', sm: 'row' } }} >
                 {steps.map((step, index) => (
-                    <Box key={index} className="box-card" sx={{ width: { xs: '360px', sm: '384px' }, height: { xs: 'fit-content', lg: '164px' }}}>
+                    <Box key={index} className="box-card8" sx={{ width: { xs: '360px', sm: '384px' }, height: { xs: 'fit-content', lg: '164px' }}}>
 
 
                         <Box className="flex-column-stretch">
@@ -74,7 +74,7 @@ const OptimizedWorkForce = () => {
                                 <Avatar className="avatar-wrapper" >
                                     <img src={step.img} alt="icon" />
                                 </Avatar>
-                                <Typography className="typography-text" sx={{ fontSize: '20px', fontFamily: 'Poppins', fontWeight: '700', lineHeight: '30px' }}>
+                                <Typography className="typography-text" sx={{ fontSize: '20px', fontFamily: 'Poppins', fontWeight: '600', lineHeight: '30px' }}>
                                     {step.title}
                                 </Typography>
                             </Box>

@@ -12,8 +12,8 @@ const ContactCenterBenefits = () => {
         { title: 'Increased Satisfaction  :', description: '  Improve customer satisfaction with responsive and efficient service' },
     ]
     return (
-        <Container maxWidth={false} className='benefits-container' sx={{marginTop:{md:'3%',xl:'7%'}}}>
-        <Typography className='typography-h4 ' variant="h4" component="h2" align="center" gutterBottom sx={{  fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px', md: '40px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px,', mb:'120px' }}>
+        <Container maxWidth={false} className='benefits-container' sx={{marginTop:{md:'2%'}}}>
+        <Typography className='typography-h4 ' variant="h4" component="h2" align="center" gutterBottom sx={{  fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px', mb:'100px' }}>
         Benefits of AI in Contact Centers
 
     </Typography>
@@ -28,10 +28,10 @@ const ContactCenterBenefits = () => {
 
             <Box sx={{ width: {xs:'100%',lg:'642px'}, }}>
 
-                <Typography className='opt-campaign' component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '51.20px' }}> ✨ Enhanced Customer Experience</Typography>
+                <Typography className='opt-campaign' component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: '51.20px' }}> ✨ Enhanced Customer Experience</Typography>
             </Box>
             <Box sx={{ width: '100%', }}>
-                <Typography  className="desc-text" sx={{ fontSize: {xs:'16px', lg:'20px'}, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px'}}>Implement AI-powered conversational agents and chatbots to provide personalized, efficient, and responsive customer service. These tools handle common inquiries, offer tailored assistance, and ensure customers receive timely support  </Typography>
+                <Typography  className="desc-text" sx={{ fontSize: {xs:'16px', lg:'18px'}, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px'}}>Implement AI-powered conversational agents and chatbots to provide personalized, efficient, and responsive customer service. These tools handle common inquiries, offer tailored assistance, and ensure customers receive timely support  </Typography>
             </Box>
             {arr.map((el, id) => (
                 <Box key={id} className="flex-start-box" >
@@ -41,9 +41,9 @@ const ContactCenterBenefits = () => {
                                 <CheckIcon  className='checkbtn' sx={{ fontSize: 15,color:'#117DCC', }} />
                             </IconButton>
                     <Box sx={{ flex: '1 1 0' }}>
-                        <Typography sx={{ fontSize: '18px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
-                            <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600' }}>{el.title}</Typography>
-                            <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400' }}>{el.description}</Typography>
+                        <Typography sx={{ fontSize: '16px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
+                            <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600', fontFamily: 'Inter' }}> {el.title}</Typography>
+                            <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400', fontFamily: 'Inter' }}> {el.description}</Typography>
                         </Typography>
                     </Box>
                 </Box>)
@@ -51,7 +51,7 @@ const ContactCenterBenefits = () => {
         </Box>
 
         {/* rightContainer */}
-        <Box className="right-container" sx={{ width: { xs: '100%', sm: '80%', md: '505px' }, height: { xs: '300px', sm: '400px', md: '487px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
+        <Box className="right-container0" sx={{ width: { xs: '100%', sm: '80%', md: '505px' }, height: { xs: '300px', sm: '400px', md: '487px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
             <Box className="flex-container">
                 <img className="image"  src={cc2} alt="Placeholder" />
             </Box>

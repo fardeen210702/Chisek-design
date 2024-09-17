@@ -24,11 +24,11 @@ const EcommerceRetention = () => {
 
                     <Box  sx={{ width: { xs: '100%', lg: '642px' }, }}>
 
-                        <Typography className="customer-insights-text" component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '51.20px' }}> ✨ Enhanced Customer Retention</Typography>
+                        <Typography className="customer-insights-text" component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: '51.20px' }}> ✨ Enhanced Customer <br /> Retention</Typography>
                     </Box>
 
                     <Box sx={{ width: '100%' }}>
-                        <Typography className="insights-text" sx={{fontSize: { xs: '16px', lg: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px' }}>Use AI-powered predictive modeling and conversational AI to identify customers at risk of churning and implement targeted retention strategies. Automated cart recovery systems help re-engage customers and reduce cart abandonment</Typography>
+                        <Typography className="insights-text" sx={{fontSize: { xs: '16px', lg: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px' }}>Use AI-powered predictive modeling and conversational AI to identify customers at risk of churning and implement targeted retention strategies. Automated cart recovery systems help re-engage customers and reduce cart abandonment</Typography>
                     </Box>
                     {arr.map((el, id) => (
                         <Box key={id} className="map-box"
@@ -40,9 +40,9 @@ const EcommerceRetention = () => {
                                     </IconButton>
 
                             <Box sx={{ flex: '1 1 0' }}>
-                                <Typography sx={{ fontSize: '18px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
-                                    <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600' }}>{el.title}</Typography>
-                                    <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400' }}>{el.description}</Typography>
+                                <Typography sx={{ fontSize: '16px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
+                                    <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600', fontFamily: 'Inter' }}>{el.title}</Typography>
+                                    <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400' , fontFamily: 'Inter'}}>{el.description}</Typography>
                                 </Typography>
                             </Box>
                         </Box>)
@@ -50,7 +50,7 @@ const EcommerceRetention = () => {
                 </Box>
 
                 {/* rightContainer */}
-                <Box className="box-container3" sx={{ width: { xs: '100%', sm: '80%', md: '505px' }, height: { xs: '300px', sm: '400px', md: '487px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
+                <Box className="box-container37" sx={{ width: { xs: '100%', sm: '80%', md: '505px' }, height: { xs: '300px', sm: '400px', md: '487px' }, gap: { xs: '8px', sm: '12px', md: '16px' } }}>
                     <Box className="inner-box" >
                         <img className="inner-img" src={ec8} alt="Placeholder" />
                     </Box>

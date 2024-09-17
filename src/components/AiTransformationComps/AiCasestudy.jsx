@@ -84,7 +84,7 @@ const AiCasestudy = () => {
                             </Box>
                         </Box>
 
-                        <Box className='case-container'>
+                        <Box className='case-container' >
                             <Typography className='case-title' sx={{ fontSize: { xs: '20px', md: 22, lg: '24px' }, fontWeight: 600, lineHeight: '36px',fontFamily: 'inter' }}>{caseData.title}</Typography>
 
                             {caseData.sections.map((section, index) => (

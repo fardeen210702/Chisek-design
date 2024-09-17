@@ -64,7 +64,7 @@ const IntelligentCasestudy = () => {
         </Typography>
 
 
-        <Box className='box2' sx={{ height: { xs: 'fit-content', sm: '600px', md: '643px' } }}
+        <Box className='box2' sx={{ height: { xs: 'fit-content', sm: '600px', md: '643px'} }}
         >
 
             <Box className='icon-container ' sx={{ marginX: { xl: '5px' } }}>

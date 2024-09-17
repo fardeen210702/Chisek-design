@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import bg1 from '../../../assets/imageFiles/bg1.png';
 import EcommerceHeroSection from '../../../components/EcommerceRetailComponents/EcommerceHeroSection'
 import EcommerceBenefits from '../../../components/EcommerceRetailComponents/EcommerceBenefits'
 import EcommerceImprovedManagement from '../../../components/EcommerceRetailComponents/EcommerceImprovedManagement'
