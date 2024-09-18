@@ -25,7 +25,7 @@ const HeroSection = () => {
                             <Box src={vector} component={'img'} sx={{ position: 'absolute', right: { lg: '430px' }, bottom: { xs: '25px', lg: "35px" }, width: { xs: '16px', md: '30px' } }} />
                         </Typography>
                     </Box>
-                    <Typography sx={{ width: { xs: '100%', lg: '1112px' }, textAlign: 'center', color: '#ADADAD', fontSize: { xs: '16px', lg: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', lg: '32px' }, wordWrap: 'break-word' }}>
+                    <Typography sx={{ width: { xs: '100%', lg: '1112px' }, textAlign: 'center', color: '#ADADAD', fontSize:'16px', fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', lg: '32px' }, wordWrap: 'break-word' }}>
                         Chisel’s Large Language Models help businesses to leverage advanced natural language processing for content generation, customer interaction, and more. From automating tasks to providing insightful data analysis, our Large Language Model solutions are designed to drive efficiency and innovation
                     </Typography>
                 </Box>
@@ -35,7 +35,7 @@ const HeroSection = () => {
 
             <Box className='speechGenrerate' >
                 <Box className='box-inner' sx={{
-                    border: { xs: '0', md: '0.20px #70707070 solid' }, height: { xs: 'fit-content', lg: '696px' }, gap: { xs: '20px', md: 0 }
+                    border: { xs: '0', md: '0.20px #1e1e1e solid' }, height: { xs: 'fit-content', lg: '696px' }, gap: { xs: '20px', md: 0 }
                 }}>
 
                     <Box className='speech-info'>
@@ -70,7 +70,7 @@ const HeroSection = () => {
                                 <Typography sx={{color:'#ADADAD',fontFamily:'inter',fontSize:'14px',fontStyle:'normal',fontWeight:500,lineHeight:'150%'}}>
                                     Select Use Case
                                 </Typography>
-                                <select name="" id="" className='select-tag' >
+                                <select name="" id="" className='select-tag'  >
                                     <option value="">Personalised Policy Management</option>
                                     
                                 </select>
@@ -88,17 +88,17 @@ const HeroSection = () => {
 
                             <Box className='Box-with-img'>
                                 <Box component={'img'} src={chaticon} sx={{ width: '64px', height: '64px' }} />
-                                <Typography sx={{ fontFamily: 'poppins', fontWeight: 600, fontSize: '16px', fontStyle: 'normal', lineHeight: '160%', marginY: '3px', color: '#ADADAD' }}>
+                                <Typography sx={{ fontFamily: 'poppins', fontWeight: 500, fontSize: '16px', fontStyle: 'normal', lineHeight: '160%', marginY: '3px', color: '#ADADAD' }}>
                                     Select or Enter your prompts to get started
                                 </Typography>
                             </Box>
 
                             <Box className='policydetails' sx={{ flexDirection: { xs: 'column', md: 'row' }, display: { xs: 'none', md: 'flex' } }}>
-                                <Typography sx={{ fontFamily: 'inter', fontWeight: 500, fontSize: '16px', fontStyle: 'normal', lineHeight: '20px', marginRight: '3px', color: '#ADADAD' }}>Sample Prompts : </Typography>
+                                <Typography sx={{ fontFamily: 'inter', fontWeight: 500, fontSize: '14px', fontStyle: 'normal', lineHeight: '20px', marginRight: '3px', color: '#ADADAD' }}>Sample Prompts : </Typography>
                                 <Typography sx={{ fontFamily: 'inter', fontWeight: 500, fontSize: '14px', fontStyle: 'normal', lineHeight: '20px', marginY: '3px', color: '#ADADAD' }} className='flexit'>
                                     {
                                         ['Check my policy details', 'Renew my Policy', 'Cancel my Policy'].map((el, id) => {
-                                            return <Typography className='map-typo' key={id}>{el}</Typography>
+                                            return <Typography className='map-typo' key={id}sx={{fontSize:'14px',fontFamily:'inter'}}>{el}</Typography>
                                         })
                                     }
 

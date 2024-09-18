@@ -38,7 +38,7 @@ function AIbankingandFinance() {
 
             <Typography className="typography-body"
                 variant="body1"
-                sx={{ fontSize: { xs: '14px', sm: '1rem', md: '16px' }, lineHeight: 1.5, fontFamily: 'inter',lineHeight:'27px' }}
+                sx={{ fontSize: { xs: '14px', sm: '1rem', md: '16px' }, fontFamily: 'inter',lineHeight:'27px' }}
             >
               Discover our expertise in AI technologies, including predictive modeling, image recognition, speech-to-text, and conversational AI, tailored to <br /> boost efficiency and innovation.
             </Typography>

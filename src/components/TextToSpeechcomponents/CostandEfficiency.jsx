@@ -23,11 +23,11 @@ const CostandEfficiency = () => {
 
                 <Box  sx={{ width: { xs: '100%', lg: '642px' }, }}>
 
-                    <Typography className="customer-insights-text" component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '51.20px' }}> ✨Time and Cost Efficiency</Typography>
+                    <Typography className="customer-insights-text" component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: '51.20px' }}> ✨Time and Cost Efficiency</Typography>
                 </Box>
 
                 <Box sx={{ width: '100%' }}>
-                    <Typography className="insights-text" sx={{fontSize: { xs: '16px', lg: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px' }}>Automate the process of converting text to speech, saving time and resources. Text to Speech technology eliminates the need for voice actors and reduces production time for audio content</Typography>
+                    <Typography className="insights-text" sx={{fontSize: { xs: '16px', lg: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px' }}>Automate the process of converting text to speech, saving time and resources. Text to Speech technology eliminates the need for voice actors and reduces production time for audio content</Typography>
                 </Box>
                 {arr.map((el, id) => (
                     <Box key={id} className="map-box"
@@ -39,9 +39,9 @@ const CostandEfficiency = () => {
                                 </IconButton>
 
                         <Box sx={{ flex: '1 1 0' }}>
-                            <Typography sx={{ fontSize: '18px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
-                                <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600' }}>{el.title}</Typography>
-                                <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400' }}>{el.description}</Typography>
+                            <Typography sx={{ fontSize: '16px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
+                                <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600', fontFamily: 'Inter' }}>{el.title}</Typography>
+                                <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400', fontFamily: 'Inter' }}>{el.description}</Typography>
                             </Typography>
                         </Box>
                     </Box>)

@@ -21,7 +21,7 @@ const  StreamlineOperations = () => {
 
                     <Box className='column-box ' >
 
-                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 700, lineHeight: '36px' }}>
+                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 600, lineHeight: '36px' }}>
                         ✨ Streamlined Operations
                         </Typography>
 
@@ -37,10 +37,10 @@ const  StreamlineOperations = () => {
                                     <IconButton className='checkicon' >
                                         <CheckIcon className='checkbtn' sx={{ fontSize: 15,color:'#117DCC' }} />
                                     </IconButton>
-                                    <Typography className='item-title' sx={{ fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px' }}>
+                                    <Typography className='item-title' sx={{ fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px' }}>
                                         {item.title}: <Typography
                                             className='item-description'
-                                            component="span" sx={{ fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
+                                            component="span" sx={{ fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
                                     </Typography>
                                 </Box>
                             ))}
@@ -56,7 +56,7 @@ const  StreamlineOperations = () => {
 
                     <Box className='column-box ' >
 
-                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 700, lineHeight: '36px' }}>
+                        <Typography className='custom-typography' sx={{ fontSize: '24px', fontFamily: 'Poppins', fontWeight: 600, lineHeight: '36px' }}>
                         ✨ Enhanced Security and Surveillance
                         </Typography>
                         <Typography className='description-typography ' sx={{ fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>
@@ -73,10 +73,10 @@ const  StreamlineOperations = () => {
                                     <IconButton className='checkicon' >
                                         <CheckIcon className='checkbtn' sx={{ fontSize: 15,color:'#117DCC' }} />
                                     </IconButton>
-                                    <Typography className='item-title' sx={{ fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px' }}>
+                                    <Typography className='item-title' sx={{ fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 600, lineHeight: '27px' }}>
                                         {item.title}: <Typography
                                             className='item-description'
-                                            component="span" sx={{ fontSize: { xs: '14px', lg: '18px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
+                                            component="span" sx={{ fontSize: { xs: '14px', lg: '16px' }, fontFamily: 'Inter', fontWeight: 400, lineHeight: '27px' }}>{item.description}</Typography>
                                     </Typography>
                                 </Box>
                             ))}

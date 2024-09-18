@@ -15,12 +15,10 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import frame from "../../../assets/imageFiles/Frame.png";
 import DrawerComponent from "../DrawerComponent/DrawerComponent";
 import { Link } from "react-router-dom";
-import { useGLobalContext } from "../../../context/ContextApi";
 import './Navbar.css'; // Import the updated CSS file
 
 
 const Navbar = () => {
-  const { show, setShow } = useGLobalContext();
   const [isDropdownVal, setIsDropdownVal] = useState('')
   const [color, setColor] = useState('')
   const [route, setRoute] = useState([]);
@@ -136,7 +134,7 @@ const Navbar = () => {
                   isDropdownVal == 'Services' && <ul className="menuitem">
                     <li className="triangle"></li>
                     {
-                      route.map((el, id) => (<MenuItem className="menulists" sx={{borderLeft:el.brColor,borderRadius:'4px',fontWeight:500,fontSize:'14px',color:'white'}} key={id} component={Link} to={el.link} onClick={()=>setIsDropdownVal(false)}>{el.path}</MenuItem>))
+                      route.map((el, id) => (<MenuItem className="menulists" sx={{borderLeft:el.brColor,height:'20px',fontWeight:500,fontSize:'14px',color:'white',fontFamily:'poppins'}} key={id} component={Link} to={el.link} onClick={()=>setIsDropdownVal(false)}>{el.path}</MenuItem>))
                     }
                   </ul>
                 }
@@ -148,7 +146,7 @@ const Navbar = () => {
                   isDropdownVal == 'Industries' && <ul className="menuitem">
                     <li className="triangle"></li>
                     {
-                      route.map((el, id) => (<MenuItem className="menulists" sx={{borderLeft:el.brColor,borderRadius:'4px',fontWeight:500,fontSize:'14px',color:'white'}} key={id} component={Link} to={el.link} onClick={()=>setIsDropdownVal(false)}>{el.path}</MenuItem>))
+                      route.map((el, id) => (<MenuItem className="menulists" sx={{borderLeft:el.brColor,height:'20px',fontWeight:500,fontSize:'14px',color:'white',fontFamily:'poppins'}} key={id} component={Link} to={el.link} onClick={()=>setIsDropdownVal(false)}>{el.path}</MenuItem>))
                     }
                   </ul>
                 }
@@ -161,7 +159,7 @@ const Navbar = () => {
                     <li className="triangle"></li>
                     {
                       route.map((el, id) => (
-                      <MenuItem className="menulists" sx={{borderLeft:el.brColor,borderRadius:'4px',fontWeight:500,fontSize:'14px',color:'white'}} key={id} component={Link} to={el.link} onClick={()=>setIsDropdownVal(false)}>{el.path}</MenuItem>
+                      <MenuItem className="menulists" sx={{borderLeft:el.brColor,height:'20px',fontWeight:500,fontSize:'14px',color:'white',fontFamily:'poppins'}} key={id} component={Link} to={el.link} onClick={()=>setIsDropdownVal(false)}>{el.path}</MenuItem>
                     ))
                     }
                   </ul>
@@ -178,7 +176,7 @@ const Navbar = () => {
               className="contactButton"
               component={Link}
               to="/contact"
-              onClick={() => setShow(false)}
+              onClick={() => window.scrollTo(0,0)}
               sx={{ fontWeight: 600, fontFamily: 'poppins', textTransform: 'capitalize', fontSize: '14px', lineHeight: 1.5, borderRadius: '10px' }}
             >
               Contact Us

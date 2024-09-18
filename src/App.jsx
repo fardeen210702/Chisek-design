@@ -26,6 +26,7 @@ import SpeechToText from "./pages/Technologies/SpeechToText/SpeechToText";
 import NLPAnalysis from "./pages/Technologies/NLPAnalysis/NLPAnalysis";
 import Chatbot from "./pages/Technologies/Chatbot/Chatbot";
 import NLPComputerVision from "./pages/Technologies/NLPComputerVision/NLPComputerVision";
+import Contact from "./pages/Contact/Contact";
 
 
 const App = () => {
@@ -56,6 +57,8 @@ const App = () => {
               <Route path="/product-development" element={<EndtoEndProductdev />} />
               <Route path="/customer-experience" element={<CustomerSolution  />} />
               <Route path="/banking-finance" element={<BankingAndFinance />} />
+              <Route path="/contact" element={<Contact />} />
+
             </Routes>
             <Footer/>
           </Router>

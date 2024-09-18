@@ -31,14 +31,14 @@ function UseCaseTtoS() {
             >
                 <Typography className="typography-heading"
                     variant="h2"
-                    sx={{ fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px', fontSize: { xs: '24px', sm: '28px', md: '32px', lg: '36px', xl: '40px' }, fontWeight: 'bold' }}
+                    sx={{ fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px', fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontWeight: 'bold',lineHeight:1.6 }}
                 >
                    Use Cases of Text to Speech Technology
                 </Typography>
 
                 <Typography className="typography-body"
                     variant="body1"
-                    sx={{ fontSize: { xs: '14px', sm: '1rem', md: '1.2rem', xl: '18px' }, lineHeight: 1.5, fontFamily: 'inter' }}
+                    sx={{ fontSize: { xs: '14px',  md: '16px'}, lineHeight: 1.5, fontFamily: 'inter' }}
                 >
                    Discover our expertise in AI technologies, including predictive modeling, image recognition, speech-to-text, and conversational <br /> AI, tailored to boost efficiency and innovation
                 </Typography>
@@ -52,7 +52,7 @@ function UseCaseTtoS() {
                         <Button className='animatingBtn'
                             key={index}
                             onClick={() => handleButtonClick(index)}
-                            sx={{color:'#ADADAD', fontFamily: 'poppins', border: '1px solid #80808081', width: { xs: 'calc(100% - 1px)', sm: '373.33px' }, textTransform: 'capitalize',fontSize: { xs: '0.9rem', sm: 'clamp(0.9rem, 1.5vw, 0.9rem)', xl: '16px' }, fontWeight: 'bold', mb: { xs: 1, sm: 0 }, '&:before': { content: '""', position: 'absolute', bottom: 0, left: 0, width: '100%', height: '2px', backgroundColor: activeButton === index ? '#117DCC' : 'transparent', transition: 'background-color 0.3s ease' }, '&:hover:before': { backgroundColor: '#117DCC' } }}
+                            sx={{color:'#ADADAD', fontFamily: 'poppins', border: '1px solid #1e1e1e', width: { xs: 'calc(100% - 1px)', sm: '373.33px' }, textTransform: 'capitalize',fontSize: { xs: '0.9rem', sm: 'clamp(0.9rem, 1.5vw, 0.9rem)', xl: '16px' }, fontWeight: '500', mb: { xs: 1, sm: 0 }, '&:before': { content: '""', position: 'absolute', bottom: 0, left: 0, width: '100%', height: '2px', backgroundColor: activeButton === index ? '#117DCC' : 'transparent', transition: 'background-color 0.3s ease' }, '&:hover:before': { backgroundColor: '#117DCC' } }}
                         >
                             {label}
                         </Button>
@@ -69,7 +69,7 @@ function UseCaseTtoS() {
                                 <Box  component={'img'} src={t10} sx={{ width: 43.64, height: 43.64 }} />
                             </Box>
                             <Typography  className="typography-header"
-                            variant="h4" sx={{ fontFamily: 'poppins',  fontWeight: 700, fontSize: { xs: '20px', md: '24px', lg: '26px', xl: '28px' } }}>
+                            variant="h4" sx={{ fontFamily: 'poppins',  fontWeight: 600, fontSize: { xs: '20px', md: '24px' } }}>
                             Enhancing Customer Service
                             </Typography>
                         </Box>
@@ -87,17 +87,17 @@ function UseCaseTtoS() {
                                     </IconButton>
                             </Box>
                             <Box sx={{ flex: '1 1 0' }}>
-                                <Typography sx={{ fontSize: '18px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
-                                    <Typography className="typography-title2" component="span" sx={{ fontWeight: '600' }}>{el.title}</Typography>
+                                <Typography sx={{ fontSize: '16px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
+                                    <Typography className="typography-title2" component="span" sx={{ fontWeight: '600', fontFamily: 'Inter' }}> {el.title}</Typography>
 
-                                    <Typography className="typography-description2" component="span" sx={{ fontWeight: '400' }}>{el.description}</Typography>
+                                    <Typography className="typography-description2" component="span" sx={{ fontWeight: '400', fontFamily: 'Inter' }}> {el.description}</Typography>
                                 </Typography>
                             </Box>
                         </Box>)
                     )}
                         <Button 
                             variant="contained"
-                            sx={{  height: {xs:'fit-content',md:32}, fontFamily: 'Poppins', fontWeight: '400', mt: 2, background: 'rgba(255, 255, 255, 0.04)', borderRadius: 1, color: '#117DCC', textTransform: 'none', display: 'flex', gap: '5px', alignItems: {xs:'start',md:'center'},justifyContent:'start', fontSize: '16px',marginTop:'50px' }}
+                            sx={{  height: {xs:'fit-content',md:32}, fontFamily: 'Poppins', fontWeight: '400', mt: 2, background: 'rgba(255, 255, 255, 0.04)', borderRadius: 1, color: '#117DCC', textTransform: 'none', display: 'flex', gap: '5px', alignItems: {xs:'start',md:'center'},justifyContent:'start', fontSize: '14px',marginTop:'20px' }}
                         >
                             <Box component={'img'} src={I10} />
 
