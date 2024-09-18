@@ -78,7 +78,7 @@
     box-shadow: 0px 0px 0px #FFFFFF inset;
     border-radius: 16px;
     overflow: hidden;
-    border: 0.1px solid rgba(112, 112, 112, 0.70);
+    border: 0.2px solid #1e1e1e;
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -128,7 +128,7 @@
     box-shadow: 0px 0px 0px #FFFFFF inset;
     border-radius: 16px;
     overflow: hidden;
-    border: 0.20px solid #707070; /* Original border color */
+    border: 0.20px solid #1e1e1e; /* Original border color */
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -184,7 +184,7 @@
     padding: 24px 16px;
     border-radius: 8px;
     overflow: hidden;
-    border: 0.10px solid #A0A0A0; 
+    border: 0.10px solid #1e1e1e; 
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -328,7 +328,7 @@
     box-shadow: 0px 0px 0px #FFFFFF inset;
     border-radius: 16px;
     overflow: hidden;
-    border: 0.20px solid #707070; /* Border color specified */
+    border: 0.20px solid #1e1e1e; /* Border color specified */
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -483,7 +483,7 @@
 }
 
 .box-border {
-    border: 0.2px solid #8080803b;
+    border: 0.2px solid #1e1e1e;
     padding: 24px 16px;
     border-radius: 10px;
 }
@@ -607,7 +607,7 @@
 .styled-box {
     background-color: #101010;
     border-radius: 16px;
-    border: 0.20px solid #707070;
+    border: 0.20px solid #1e1e1e;
     padding: 56px 16px 32px 16px;
     display: flex;
     flex-direction: column;

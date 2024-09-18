@@ -13,9 +13,9 @@ const Benefits = () => {
         { title: 'Time Savings :', description: 'Save time by automating the conversion of speech into text' },
     ]
     return (
-        <Container maxWidth={false} className='benefits-container' sx={{marginTop:{md:'3%',xl:'7%'}}}>
+        <Container maxWidth={false} className='benefits-container' sx={{marginTop:'100px'}}>
             
-        <Typography className='typography-h4 ' variant="h4" component="h2" align="center" gutterBottom sx={{  fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px', md: '40px' }, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px,', mb:'120px' }}>
+        <Typography className='typography-h4 ' variant="h4" component="h2" align="center" gutterBottom sx={{  fontWeight: 'bold', fontSize: { xs: '28px', sm: '32px'}, fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '1.6px', mb:'120px' }}>
         Benefits of Speech to Text Technology
     </Typography>
 
@@ -29,10 +29,10 @@ const Benefits = () => {
 
             <Box sx={{ width: {xs:'100%',lg:'642px'}, }}>
 
-                <Typography className='opt-campaign' component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: '51.20px' }}>✨ Increased Productivity</Typography>
+                <Typography className='opt-campaign' component="span" sx={{  fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: '51.20px' }}>✨ Increased Productivity</Typography>
             </Box>
             <Box sx={{ width: '100%', }}>
-                <Typography  className="desc-text" sx={{ fontSize: {xs:'16px', lg:'20px'}, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px'}}>Speech to Text technology boosts productivity by enabling faster and more efficient transcription of spoken words into text. Whether for meetings, interviews, or dictation, Speech to Text allows users to capture information quickly and accurately</Typography>
+                <Typography  className="desc-text" sx={{ fontSize: {xs:'16px', lg:'18px'}, fontFamily: 'Inter', fontWeight: '400', lineHeight: '34px'}}>Speech to Text technology boosts productivity by enabling faster and more efficient transcription of spoken words into text. Whether for meetings, interviews, or dictation, Speech to Text allows users to capture information quickly and accurately</Typography>
             </Box>
             {arr.map((el, id) => (
                 <Box key={id} className="flex-start-box" >
@@ -43,8 +43,8 @@ const Benefits = () => {
                             </IconButton>
                     <Box sx={{ flex: '1 1 0' }}>
                         <Typography sx={{ fontSize: '18px', fontFamily: 'Inter', lineHeight: '27px', wordWrap: 'break-word' }}>
-                            <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600' }}>{el.title}</Typography>
-                            <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400' }}>{el.description}</Typography>
+                            <Typography component="span" sx={{ color: '#FFFFFFE6', fontWeight: '600', fontFamily: 'Inter' }}>{el.title}</Typography>
+                            <Typography component="span" sx={{ color: '#ADADAD', fontWeight: '400', fontFamily: 'Inter' }}> {el.description}</Typography>
                         </Typography>
                     </Box>
                 </Box>)

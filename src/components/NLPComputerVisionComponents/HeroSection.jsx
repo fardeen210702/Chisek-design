@@ -22,13 +22,13 @@ const HeroSection = () => {
 
                     <Box className='box-inner' sx={{ marginBottom: '50px' }} >
 
-                        <Typography className='text-typo' sx={{ width: { xs: '100%', lg: '1048px' }, fontSize: { xs: '24px', lg: '40px' }, fontFamily: 'Inter', fontWeight: '600', lineHeight: { xs: '48px', lg: '70px' }, position: 'relative' }}>
+                        <Typography className='text-typo' sx={{ width: { xs: '100%', lg: '1048px' }, fontSize: { xs: '24px', lg: '40px' }, fontFamily: 'Inter', fontWeight: '600', lineHeight: { xs: '48px', lg: '50px' }, position: 'relative' }}>
 
                             Transform Visual Data with Advanced Image <br /> Processing
-                            <Box src={vector} component={'img'} sx={{ position: 'absolute', right: { lg: 'auto' }, bottom: { xs: '25px', lg: "40px" }, width: { xs: '16px', md: '30px' } }} />
+                            <Box src={vector} component={'img'} sx={{ position: 'absolute', right: { lg: 'auto' }, bottom: { xs: '25px', lg: "25px" }, width: { xs: '16px', md: '30px' } }} />
                         </Typography>
                     </Box>
-                    <Typography sx={{ width: { xs: '100%', lg: '1112px' }, textAlign: 'center', color: '#ADADAD', fontSize: { xs: '16px', lg: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', lg: '32px' }, wordWrap: 'break-word' }}>
+                    <Typography sx={{ width: { xs: '100%', lg: '1112px' }, textAlign: 'center', color: '#ADADAD', fontSize:'16px', fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', lg: '32px' }, wordWrap: 'break-word' }}>
                         Chisel’s Image Processing technology empowers businesses to analyze, enhance, and interpret visual data with unparalleled accuracy. From automating quality control to unlocking new insights in visual content, our solutions are designed to drive efficiency and innovation across industries
                     </Typography>
                 </Box>
@@ -38,7 +38,7 @@ const HeroSection = () => {
 
             <Box className='speechGenrerate' >
                 <Box className='box-inner' sx={{
-                    border: { xs: '0', md: '0.20px #70707070 solid' }, height: { xs: 'fit-content', lg: '696px' }, gap: { xs: '20px', md: 0 }
+                    border: { xs: '0', md: '0.20px #1e1e1e solid' }, height: { xs: 'fit-content', lg: '696px' }, gap: { xs: '20px', md: 0 }
                 }}>
 
                     <Box className='speech-info'>
@@ -57,7 +57,7 @@ const HeroSection = () => {
 
                         <Box className='nlp-item1' sx={{ width: { xs: '100%', md: '572px' }, height: { xs: 'fit-content', md: '618px' } }}>
 
-                            <Typography className='img-typo' sx={{ color: '#FFF', fontFamily: 'inter', fontSize: '18px', lineHeight: '150%', fontWeight: '400%', textAlign: 'center' }}>
+                            <Typography className='img-typo' sx={{ color: '#FFF', fontFamily: 'inter', fontSize: '16px', lineHeight: '150%', fontWeight: '400%', textAlign: 'center' }}>
 
                                 <Box component={'img'} src={t16} />
                                 Computer Vision
@@ -77,7 +77,7 @@ const HeroSection = () => {
 
                             <Box sx={{ display: 'flex',flexDirection:{xs:'column',md:'row'}, justifyContent: 'space-between', height: { xs: 'fit-content', alignItems: 'center', md: '24px' } }}>
                                 <Typography sx={{
-                                    color: '#ADADAD', fontSize: '18px', fontFamily: 'Inter',
+                                    color: '#ADADAD', fontSize: '16px', fontFamily: 'Inter',
                                     fontWeight: 500, lineHeight: '27px'
                                 }}>
                                     Enter Image prompt
@@ -97,14 +97,14 @@ const HeroSection = () => {
                                         placeholder="Enter text here..."
                                         style={{ width: '100%', borderRadius: 4, color: 'white', fontSize: 16, fontWeight: '400', lineHeight: '27.20px', wordWrap: 'break-word', backgroundColor: 'transparent', padding: '8px', border: 'none', resize: 'none' }}
                                     />
-                                    <Button startIcon={<RefreshIcon />} className='reset' sx={{ fontFamily: 'poppins', fontWeight: 400, textTransform: 'capitalize', color: '#ADADAD', fontSize: '16px',textAlign:'end', width: 'fit-content' }}>
+                                    <Button startIcon={<RefreshIcon />} className='reset' sx={{ fontFamily: 'poppins', fontWeight: 400, textTransform: 'capitalize', color: '#ADADAD', fontSize: '14px',textAlign:'end', width: 'fit-content' }}>
                                         Reset
                                     </Button>
 
                                 </Box>
 
 
-                                <Button variant='contained' sx={{marginTop:'60px',padding:'16px 14px', fontFamily: 'poppins', fontWeight: 700, textTransform: 'capitalize', color: '#FFF', fontSize: '16px',}}>
+                                <Button variant='contained' sx={{marginTop:'60px',padding:'16px 14px', fontFamily: 'poppins', fontWeight: 500, textTransform: 'capitalize', color: '#FFF', fontSize: '16px',}}>
                                     Generate Image
 
                                 </Button>
@@ -117,7 +117,7 @@ const HeroSection = () => {
 
 
                         <Box className='nlp-item2' sx={{ width: { xs: '100%', md: '572px' }, height: { xs: 'fit-content', md: '618px' } }}>
-                            <Typography className='nlp-typo' sx={{ fontFamily: 'inter', fontWeight: 400, fontStyle: 'normal', fontSize: { xs: '14px', md: '18px' }, lineHeight: '24px', color: '#FFF' }}>
+                            <Typography className='nlp-typo' sx={{ fontFamily: 'inter', fontWeight: 400, fontStyle: 'normal', fontSize: { xs: '14px', md: '16px' }, lineHeight: '24px', color: '#FFF' }}>
                                 <Box component={'img'} src={gallery} />
                                 Output
                             </Typography>

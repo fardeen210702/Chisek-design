@@ -35,10 +35,10 @@ const TechHeroSection = () => {
                         <Typography className='text-typo' sx={{ width: { xs: '100%', lg: '1048px' }, fontSize: { xs: '24px', lg: '40px' }, fontFamily: 'Inter', fontWeight: '600', lineHeight: { xs: '48px', lg: '70px' },position:'relative'}}>
 
                             Bring Your Words to Life with Text to Speech
-                            <Box src={vector} component={'img'}  sx={{ position: 'absolute', right: { lg: '95px' } , bottom:{xs:'25px',lg:"34px"}, width:{xs:'16px'}}}  />
+                            <Box src={vector} component={'img'}  sx={{ position: 'absolute', right: { lg: '95px' } , bottom:{xs:'25px',lg:"34px"}, width:{xs:'16px',md:'25px'}}}  />
                         </Typography>
                     </Box>
-                    <Typography sx={{ width: { xs: '100%', lg: '1112px' }, textAlign: 'center', color: '#ADADAD', fontSize: { xs: '16px', lg: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', lg: '32px' }, wordWrap: 'break-word' }}>
+                    <Typography sx={{ width: { xs: '100%', lg: '1112px' }, textAlign: 'center', color: '#ADADAD', fontSize:'16px', fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', lg: '32px' }, wordWrap: 'break-word' }}>
                         Chisel’s Text to Speech technology enables you to convert written content into lifelike speech, enhancing accessibility and engagement. From improving user experiences to supporting inclusivity, our Text to Speech solutions are designed to meet the diverse needs of modern businesses
                     </Typography>
                 </Box>
@@ -48,7 +48,7 @@ const TechHeroSection = () => {
 
             <Box className='speechGenrerate' >
                 <Box className='box-inner' sx={{
-                    border: {xs:'0' , md:'0.20px #70707070 solid'},height: { xs: 'fit-content', lg: '696px' },gap: { xs: '20px', md: 0 }
+                    border: {xs:'0' , md:'0.20px #1e1e1e solid'},height: { xs: 'fit-content', lg: '696px' },gap: { xs: '20px', md: 0 }
                 }}>
                     <Box  className='inner-details'
                         sx={{
@@ -85,9 +85,9 @@ const TechHeroSection = () => {
                         <Box className='textcontainer' sx={{width: { xs: '100%', md: '716px'} }}>
 
                             <Box className='box-bottom'>
-                                <Box component={'img'} src={t13} />
+                                <Box component={'img'} src={t13} width={'23px'} />
                                 <Typography sx={{
-                                    color: 'white', fontSize: '18px', fontFamily: 'Inter',
+                                    color: 'white', fontSize: '16px', fontFamily: 'Inter',
                                     fontWeight: '400', lineHeight: '27px'
                                 }}>
                                     Text
@@ -96,7 +96,7 @@ const TechHeroSection = () => {
 
                             <Box sx={{ display: 'flex', justifyContent: 'space-between', height: { xs: 'fit-content', alignItems: 'center', md: '24px' } }}>
                                 <Typography sx={{
-                                    color: '#ADADAD', fontSize: '18px', fontFamily: 'Inter',
+                                    color: '#ADADAD', fontSize: '16px', fontFamily: 'Inter',
                                     fontWeight: '400', lineHeight: '27px'
                                 }}>
                                     Write Text
@@ -116,10 +116,10 @@ const TechHeroSection = () => {
                                     placeholder="Enter text here..."
                                     onChange={handleChange}
                                     maxLength={maxLength} 
-                                    style={{ width: '100%', borderRadius: 4, color: 'white', fontSize: 16, fontWeight: '400', lineHeight: '27.20px', wordWrap: 'break-word', backgroundColor: 'transparent', padding: '8px', border: 'none',resize:'none' }}
+                                    style={{ width: '100%', borderRadius: 4, color: 'white', fontSize: '16px', fontWeight: '400', lineHeight: '27.20px', wordWrap: 'break-word', backgroundColor: 'transparent', padding: '8px', border: 'none',resize:'none' }}
                                 />
 
-                                <Typography sx={{ color: '#ADADAD', fontSize: 16, fontFamily: 'Inter', fontWeight: '600', lineHeight: '27.20px', width: '100%', textAlign: 'end', marginY: '20px', paddingX: '20px' }}>
+                                <Typography sx={{ color: '#ADADAD', fontSize: '14px', fontFamily: 'Inter', fontWeight: '600', lineHeight: '27.16px', width: '100%', textAlign: 'end', marginY: '20px', paddingX: '20px' }}>
                                     {str.length}/ {maxLength}
                                 </Typography>
 
@@ -157,7 +157,7 @@ const TechHeroSection = () => {
                                     <Typography
                                         variant="h6"
                                         sx={{
-                                            color: 'white', fontSize: '18px', fontWeight: '400', lineHeight: '27px', textAlign: 'center'
+                                            color: 'white', fontSize: '16px', fontWeight: '400', lineHeight: '27px'
                                         }}
                                     >
                                         Configuration
@@ -184,7 +184,7 @@ const TechHeroSection = () => {
                                           
                                             <Select
                                                 defaultValue="en"
-                                                sx={{ height: '40px', border: '0.20px #ADADAD solid',color:'white' }}
+                                                sx={{ height: '40px', border: '0.20px #1e1e1e solid',color:'white' }}
                                             >
                                                 <MenuItem value="en">🇺🇸 English (US)</MenuItem>
                                                 <MenuItem value="es">🇪🇸 Spanish</MenuItem>
@@ -207,7 +207,7 @@ const TechHeroSection = () => {
                                             <Select
                                                 label="Select Speaker"
                                                 defaultValue="harry"
-                                                sx={{ height: '40px', border: '0.20px #ADADAD solid' }}
+                                                sx={{ height: '40px', border: '0.20px #1e1e1e    solid' }}
                                             >
                                                 <MenuItem value="harry">
                                                     <Box
@@ -261,7 +261,7 @@ const TechHeroSection = () => {
                                 className ='generate-speech'
                                     variant="contained"
                                     sx={{
-                                         fontSize: '18px', fontFamily: 'Poppins', fontWeight: '700', textTransform: 'none'
+                                         fontSize: '16px', fontFamily: 'Poppins', fontWeight: '500', textTransform: 'none'
                                     }}
                                 >
                                     Generate Speech

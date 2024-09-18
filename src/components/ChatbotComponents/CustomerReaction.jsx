@@ -44,13 +44,13 @@ const CustomerReaction = () => {
                         
                         <Typography  className="text-highlight"
                             component="span"
-                            sx={{ fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '700', lineHeight: { xs: '36px', sm: '42px', md: '51.20px' } }}
+                            sx={{ fontSize: { xs: '24px', sm: '28px', md: '32px' }, fontFamily: 'Poppins', fontWeight: '600', lineHeight: { xs: '36px', sm: '42px', md: '51.20px' } }}
                         >
                             ✨ Improved Customer Interaction
                         </Typography>
                     </Box>
                     <Box className="text-box"
-                        sx={{  paddingX: { xs: '15px' }, fontSize: { xs: '14px', sm: '16px', md: '20px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', sm: '30px', md: '34px' } }}
+                        sx={{  paddingX: { xs: '15px' }, fontSize: { xs: '14px', sm: '16px', md: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', sm: '30px', md: '34px' } }}
                     >
                         Implement Large Language Models to enhance customer support and engagement by providing intelligent, context-aware responses. Large Language Models can handle a wide range of inquiries, improving customer satisfaction and reducing response times</Box>
 
@@ -74,7 +74,7 @@ const CustomerReaction = () => {
                                 <Avatar className="avatar-wrapper" >
                                     <img src={step.img} alt="icon" />
                                 </Avatar>
-                                <Typography className="typography-text" sx={{ fontSize: '20px', fontFamily: 'Poppins', fontWeight: '700', lineHeight: '30px' }}>
+                                <Typography className="typography-text" sx={{ fontSize: '20px', fontFamily: 'Poppins', fontWeight: '600', lineHeight: '30px' }}>
                                     {step.title}
                                 </Typography>
                             </Box>

@@ -98,7 +98,7 @@ const BlogHeroSection = () => {
                         </Typography>
                     </Box>
 
-                    <Typography sx={{ width: { xs: '100%', lg: '1112px' }, textAlign: 'center', color: '#ADADAD', fontSize: { xs: '16px', lg: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', lg: '32px' }, wordWrap: 'break-word' }}>
+                    <Typography sx={{ width: { xs: '100%', lg: '1112px' }, textAlign: 'center', color: '#ADADAD', fontSize: '16px', fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', lg: '32px' }, wordWrap: 'break-word' }}>
                         Check out some of our latest news, press releases and updates
                     </Typography>
                 </Box>
@@ -113,12 +113,12 @@ const BlogHeroSection = () => {
 
                         <Box className='blogsdetails' >
 
-                            <Typography sx={{ textAlign: 'center', color: 'white', fontSize: { xs: '18px', md: '24px' }, fontFamily: 'Inter', fontWeight: '700', textTransform: 'capitalize', lineHeight: '36px', wordWrap: 'break-word' }}>
+                            <Typography sx={{ textAlign: 'center', color: 'white', fontSize: { xs: '18px', md: '24px' }, fontFamily: 'Inter', fontWeight: '600', textTransform: 'capitalize', lineHeight: '36px', wordWrap: 'break-word' }}>
                                 All Blogs
                             </Typography>
 
                             <Box className='typographybox' >
-                                <Typography sx={{ color: '#117DCC', fontSize: { xs: '16px', md: '18px' }, fontFamily: 'Inter', fontWeight: '600', wordWrap: 'break-word' }}>06</Typography>
+                                <Typography sx={{ color: '#117DCC', fontSize: { xs: '16px' }, fontFamily: 'Inter', fontWeight: '600', wordWrap: 'break-word' }}>06</Typography>
                             </Box>
                         </Box>
 
@@ -143,7 +143,7 @@ const BlogHeroSection = () => {
                             <Grid2 item xs={12} sm={6} md={4} key={index}>
                                 <Paper
                                 //unable to access external css to paper
-                                sx={{ textAlign: 'start', width: '100%', maxWidth: { xs: '330px', sm: '350px', lg: '370px', xl: '378.67px' }, height: { xs: 'auto', md: '553px', lg: '553px' }, borderRadius: '16px', border: '0.2px solid #707070', p: '24px 16px', display: 'flex', flexDirection: 'column', backgroundColor: '#101010', color: 'white', gap: '6px' }} elevation={3}>
+                                sx={{ textAlign: 'start', width: '100%', maxWidth: { xs: '330px', sm: '350px', lg: '370px', xl: '378.67px' }, height: { xs: 'auto', md: '553px', lg: '553px' }, borderRadius: '16px', border: '0.2px solid #1e1e1e', p: '24px 16px', display: 'flex', flexDirection: 'column',justifyContent:'space-between', backgroundColor: '#101010', color: 'white', gap: '6px' }} elevation={3}>
 
                                     <img className='image-boxx' src={trend.img} alt={trend.text}  />
 
@@ -153,13 +153,13 @@ const BlogHeroSection = () => {
                                             {trend.button.title}
                                         </Button>
                                     </Box>
-                                    <Typography sx={{ fontFamily: 'Poppins, sans-serif', fontWeight: 700, fontSize: { xs: '16px', sm: '18px', md: '20px', xl: '22px' }, lineHeight: '1.5' }}>
+                                    <Typography sx={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600, fontSize: { xs: '16px', sm: '18px', md: '20px', xl: '22px' }, lineHeight: '1.5' }}>
                                         {trend.text}
                                     </Typography>
-                                    <Typography sx={{ fontSize: { xs: '14px', sm: '14px', md: '16px' }, lineHeight: '1.5', color: '#ADADAD', fontFamily: 'inter' }}>
+                                    <Typography sx={{ fontSize: { xs: '14px',md: '16px' }, lineHeight: '1.5', color: '#ADADAD', fontFamily: 'inter' }}>
                                         {trend.desc}
                                     </Typography>
-                                    <Button className='iconbutton3' endIcon={<EastIcon />} sx={{  fontWeight: 'bold', fontFamily: 'poppins', fontSize: { xs: '12px', sm: '14px', md: '16px', xl: '18px' } }}>
+                                    <Button className='iconbutton3' endIcon={<EastIcon />} sx={{  fontWeight: '500', fontFamily: 'poppins', fontSize: { xs: '12px', sm: '14px', md: '16px', xl: '18px' } }}>
                                         {trend.btn2}
                                     </Button>
                                 </Paper>
