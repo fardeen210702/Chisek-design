@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, Container } from '@mui/material'
-import { useGLobalContext } from '../../../context/ContextApi';
 import HeroSection from '../../../components/ChatbotComponents/HeroSection'
 import Benefits from '../../../components/ChatbotComponents/Benefits'
 import CustomerReaction from '../../../components/ChatbotComponents/CustomerReaction'
@@ -12,9 +11,8 @@ import '../../../components/Common/TechnologyPagesCSS/style.css'
 import './Chatbot.css'
 
 const Chatbot = () => {
-  const {handleHide} = useGLobalContext()
   return (
-    <Box onClick={handleHide}  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 200vh'}}} >
+    <Box   className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 200vh'}}} >
       <Box className="content-box">
         <HeroSection />
         <Benefits />

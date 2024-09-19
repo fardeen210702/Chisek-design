@@ -62,15 +62,17 @@ const BlogHeroSection = () => {
 
     return (
         <>
-            <Container maxWidth={false} sx={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', marginBottom: '197px', paddingTop: { xs: '150px', sm: '230px', lg: '190px' } }}>
-                <Box sx={{ width: '100%', height: '116px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '24px' }}>
-                    <Box sx={{ alignSelf: 'stretch', height: '70px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: '16px' }}>
-                        <Typography sx={{ width: { xs: '100%', lg: '1048px' }, position: 'relative', textAlign: 'center', color: '#F9F9F9', fontSize: { xs: '20px', lg: '40px' }, fontFamily: 'Inter', fontWeight: '600', lineHeight: { xs: '48px', lg: '70px' }, wordWrap: 'break-word' }}>
+            <Container className='privacy-policy-container' maxWidth={false} sx={{ paddingTop: { xs: '150px', sm: '230px', lg: '190px' } }}>
+                <Box className='privacy-policy-innercontainer' >
+
+                    <Box className='typography-container'>
+
+                        <Typography className='typography-privacy' sx={{ width: { xs: '100%', lg: '1048px' }, fontSize: { xs: '20px', lg: '40px' }, fontFamily: 'Inter', fontWeight: '600', lineHeight: { xs: '48px', lg: '70px' } }}>
                             Our Commitment to Privacy
                             <Box src={vector} component={'img'} sx={{ width: { xs: '24px', md: '27.5px' }, height: { xs: '20px', md: '28.5px' }, position: 'absolute', right: 'auto' }} />
                         </Typography>
                     </Box>
-                    <Typography sx={{ width: { xs: '100%', lg: '1112px' }, textAlign: 'center', color: '#ADADAD', fontSize: { xs: '16px', lg: '18px' }, fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', lg: '32px' }, wordWrap: 'break-word' }}>
+                    <Typography sx={{ width: { xs: '100%', lg: '1112px' }, textAlign: 'center', color: '#ADADAD', fontSize:'16px', fontFamily: 'Inter', fontWeight: '400', lineHeight: { xs: '24px', lg: '32px' }, wordWrap: 'break-word' }}>
                         Explore our commitment to safeguarding your personal data and learn about our privacy practices to ensure transparency and trust in our services
                     </Typography>
                 </Box>
@@ -79,44 +81,42 @@ const BlogHeroSection = () => {
             </Container>
 
 
-            <Box sx={{ width: '100%', backdropFilter: 'blur(10px)', display: 'flex', flexDirection: 'column', alignItems: 'center', background: '#00000027' }}>
-                <Box sx={{ padding:{xs:'10px'},
-                    paddingBottom: '20px', width: '100%', maxWidth: '1200px',gap:'30px' ,display:'flex', flexDirection:'column'
-                }}>
-                    <Box
-                        sx={{ width: { xs: '100%', maxWidth: '1200px' }, height: '100%', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 2, display: 'flex' }}
+            <Box className='mapped-privacy-container'>
+                <Box className='privacy1' sx={{ padding:{xs:'10px'}}}>
+                    <Box className='privacy2'
+                        sx={{ width: { xs: '100%', maxWidth: '1200px' } }}
                     >
                         <Typography
                             variant="h4"
-                            sx={{ color: 'white', fontFamily: 'Poppins', fontWeight: 700, lineHeight: '42px', wordWrap: 'break-word', fontSize: { xs: '20px', sm: '24px' } }}
+                            sx={{ color: 'white', fontFamily: 'Poppins', fontWeight: 600, lineHeight: '42px', wordWrap: 'break-word', fontSize: { xs: '20px', sm: '20px' } }}
                         >
                             Privacy Policy
                         </Typography>
                         <Typography
-                            sx={{ alignSelf: 'stretch', color: '#ADADAD', fontFamily: 'Inter', fontWeight: 400, lineHeight: '32px', wordWrap: 'break-word', fontSize: { xs: '16px', sm: '18px' } }}
+                            sx={{ alignSelf: 'stretch', color: '#ADADAD', fontFamily: 'Inter', fontWeight: 400, lineHeight: '32px', wordWrap: 'break-word', fontSize: '16px'}}
                         >
                             Service Pack is committed to protecting the privacy of individuals and safeguarding their personal data. This Privacy Policy outlines our practices concerning the collection, use, security, and disclosure of personal data.
                         </Typography>
 
                     </Box>
-                    <Typography sx={{ color: 'white', fontFamily: 'Poppins', fontWeight: 700, lineHeight: '42px', wordWrap: 'break-word', fontSize: { xs: '22px', sm: '24px' }, marginY: '20px',}}>
+                    <Typography sx={{ color: 'white', fontFamily: 'Poppins', fontWeight: 600, lineHeight: '42px', wordWrap: 'break-word', fontSize: '20px', marginY: '20px',}}>
                         Collection of Personal Data
                     </Typography>
 
 
                     {
                         policies.map((el, id) => {
-                            return <Box key={id}
-                                sx={{ width: { xs: '100%', maxWidth: '1200px' }, height: '100%', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 3, display: 'flex',marginY:'15px' }}
+                            return <Box className='policies' key={id}
+                                sx={{ width: { xs: '100%', maxWidth: '1200px' } }}
                             >
                                 <Typography
                                     variant="h4"
-                                    sx={{ color: 'white', fontFamily: 'Poppins', fontWeight: 700, lineHeight: '42px', wordWrap: 'break-word', fontSize: { xs: '20px', sm: '24px' } }}
+                                    sx={{ color: 'white', fontFamily: 'Poppins', fontWeight: 600, lineHeight: '42px', wordWrap: 'break-word', fontSize: '20px'}}
                                 >
                                     {el.title}
                                 </Typography>
                                 <Typography
-                                    sx={{ alignSelf: 'stretch', color: '#ADADAD', fontFamily: 'Inter', fontWeight: 400, lineHeight: '32px', wordWrap: 'break-word', fontSize: { xs: '16px', sm: '18px' } }}
+                                    sx={{ alignSelf: 'stretch', color: '#ADADAD', fontFamily: 'Inter', fontWeight: 400, lineHeight: '32px', wordWrap: 'break-word', fontSize:'16px'}}
                                 >
                                     {el.desc} <span style={{color:'blue',textDecoration:'underline',cursor:'pointer'}}>{el.link}</span>
                                 </Typography>

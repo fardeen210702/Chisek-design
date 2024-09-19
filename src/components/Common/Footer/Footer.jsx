@@ -160,11 +160,11 @@ const Footer = () => {
                         >
                             Company
                         </Typography>
-                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '32px' }} onClick={scrollToTop}>
                             <Typography sx={{ color: '#adadad', fontSize: '14px', fontFamily: 'Inter' }}>About Us</Typography>
-                            <Typography sx={{ color: '#adadad', fontSize: '14px', fontFamily: 'Inter' }}>Blog</Typography>
+                            <Typography sx={{ color: '#adadad', fontSize: '14px', fontFamily: 'Inter',textDecoration:'none' }}component={Link} to='/blogs'>Blog</Typography>
                             <Typography sx={{ color: '#adadad', fontSize: '14px', fontFamily: 'Inter' }}>Careers</Typography>
-                            <Typography sx={{ color: '#adadad', fontSize: '14px', fontFamily: 'Inter' }}>Contact Us</Typography>
+                            <Typography component={Link} to='/contact' sx={{ color: '#adadad', fontSize: '14px', fontFamily: 'Inter', textDecoration:'none' }}>Contact Us</Typography>
                         </Box>
                     </Box>
                 </Box>

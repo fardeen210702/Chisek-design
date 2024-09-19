@@ -7,14 +7,12 @@ import EcommerceRetention from '../../../components/EcommerceRetailComponents/Ec
 import EcommercePricingStrategies from '../../../components/EcommerceRetailComponents/EcommercePricingStrategies';
 import EcommerceUseCase from '../../../components/EcommerceRetailComponents/EcommerceUseCase'
 import EcommerceServices from '../../../components/EcommerceRetailComponents/EcommerceServices'
-import { useGLobalContext } from '../../../context/ContextApi';
 import '../../../components/Common/IndustryPagesCSS/style.css'
 import './EcommerceRetail.css'
 
 const EcommerceRetail = () => {
-  const {handleHide} = useGLobalContext()
   return (
-    <Box onClick={handleHide}  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
+    <Box   className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
       <Box className="content-box">
        
        <EcommerceHeroSection/>

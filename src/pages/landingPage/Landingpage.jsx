@@ -9,14 +9,13 @@ import Testimonials from '../../components/landingpageComponents/Testimonials'
 import TrendsContainer from '../../components/landingpageComponents/TrendsContainer'
 import ExploreAI from '../../components/landingpageComponents/ExploreAI'
 import CaseStudy from '../../components/landingpageComponents/CaseStudy'
-import { useGLobalContext } from '../../context/ContextApi'
 import './Landingpage.css'
 
 
 const Landingpage = () => {
-  const {handleHide} = useGLobalContext()
+  
   return (
-    <Box onClick={handleHide}  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
+    <Box   className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
       <Box className="content-box">
 
       <HeroSection/>

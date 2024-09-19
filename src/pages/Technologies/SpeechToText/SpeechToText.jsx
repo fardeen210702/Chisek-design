@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { useGLobalContext } from '../../../context/ContextApi';
 import '../../../components/Common/TechnologyPagesCSS/style.css'
 import './SpeechToText.css'
 import HeroSection from '../../../components/SpeechToTextcomponents/HeroSection';
@@ -12,9 +11,8 @@ import SpeechUseCase from '../../../components/SpeechToTextcomponents/SpeechUseC
 import CommunicationWithAi from '../../../components/SpeechToTextcomponents/CommunicationWithAi';
 
 const SpeechToText = () => {
-  const {handleHide} = useGLobalContext()
   return (
-    <Box onClick={handleHide}  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 200vh'}}} >
+    <Box  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 200vh'}}} >
       <Box className="content-box">
         <HeroSection/>
         <Benefits/>

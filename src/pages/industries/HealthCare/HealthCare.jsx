@@ -7,14 +7,12 @@ import HealthCareEngagement from '../../../components/HealthCareComponents/Healt
 import HealthCareAccess from '../../../components/HealthCareComponents/HealthCareAccess'
 import HealthCareUseCase from '../../../components/HealthCareComponents/HealthCareUseCase'
 import HealthCareServices from '../../../components/HealthCareComponents/HealthCareServices'
-import { useGLobalContext } from '../../../context/ContextApi';
 import '../../../components/Common/IndustryPagesCSS/style.css'
 import './HealthCare.css'
 
 const HealthCare = () => {
-  const {handleHide} = useGLobalContext()
   return (
-    <Box onClick={handleHide}  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
+    <Box   className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
       <Box className="content-box">
        
        <HealthCareHeroSection/>

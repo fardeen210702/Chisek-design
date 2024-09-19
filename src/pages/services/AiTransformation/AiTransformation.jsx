@@ -10,12 +10,10 @@ import { Box, Container } from '@mui/material';
 import '../../../components/Common/ServicepagesCSS/style.css'
 import './AiTransformation.css'
 
-import { useGLobalContext } from '../../../context/ContextApi'
 
 const Services = () => {
-  const {handleHide} = useGLobalContext()
   return (
-    <Box onClick={handleHide}  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
+    <Box  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
       <Box className="content-box">
         <ServiceHeroSection />
         <BusinessTransformation />

@@ -1,0 +1,127 @@
+.container-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../../assets/imageFiles/bg1.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: transparent;
+    margin-top: -7.5%;
+
+  }
+  
+  @media (max-width: 1600px) {
+    .container-box {
+      margin-top: -9%;
+
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .container-box {
+      margin-top: -12%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container-box {
+      margin-top: -29.5%;
+
+    }
+  }
+  
+  .content-box {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  /* PRIVACY POLICY HEROSECTION CSS */
+
+
+  .privacy-policy-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 197px;
+
+  }
+
+  .privacy-policy-innercontainer{
+    width: 100%;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+
+  }
+
+
+  .typography-container{
+    align-self: stretch;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+
+  }
+
+  .typography-privacy{
+    position: relative;
+    text-align: center;
+    color: #F9F9F9;
+    word-wrap: break-word;
+  }
+
+
+  .mapped-privacy-container{
+    width: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #00000027;
+  }
+
+  .privacy1{
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .privacy2{
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    gap: 2;
+    display: flex;
+  }
+
+
+  .policies{
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3;
+    display: flex;
+    margin: 10px 0;
+  }
+
+
+  

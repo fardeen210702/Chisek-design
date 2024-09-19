@@ -10,16 +10,14 @@ import TechTransforming from '../../../components/TechConsultingComponents/TechT
 import TechImplementation from '../../../components/TechConsultingComponents/TechImplementation';
 import '../../../components/Common/ServicepagesCSS/style.css'
 import './TechConsulting.css'
-import { useGLobalContext } from '../../../context/ContextApi';
 
 
 
 const TechConsulting = () => {
-  const {handleHide} = useGLobalContext()
 
   
   return (
-    <Box onClick={handleHide} className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
+    <Box className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
       <Box className="content-box">
         <TechHeroSection />
         <TechTransforming />

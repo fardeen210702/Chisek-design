@@ -9,13 +9,11 @@ import IntelligentTech from '../../../components/IntelligentAutomation/Intellige
 import IntelligentCasestudy from '../../../components/IntelligentAutomation/IntelligentCasestudy'
 import './IntelligentAutomation.css'
 import '../../../components/Common/ServicepagesCSS/style.css'
-import { useGLobalContext } from '../../../context/ContextApi'
 
 const Services = () => {
-  const {handleHide} = useGLobalContext()
 
   return (
-    <Box onClick={handleHide} className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
+    <Box  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
       <Box className="content-box">
       <IntelligentHeroSection/>
        <IntelligentAITransformation/>
