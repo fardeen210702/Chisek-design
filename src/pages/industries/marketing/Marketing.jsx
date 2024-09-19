@@ -8,15 +8,14 @@ import MarketingFrauds from '../../../components/MarketingComponents/MarketingFr
 import MarketingContent from '../../../components/MarketingComponents/MarketingContent';
 import MarketingUseCase from '../../../components/MarketingComponents/MarketingUseCase'
 import MarketingStrategies from '../../../components/MarketingComponents/MarketingStrategies'
-import { useGLobalContext } from '../../../context/ContextApi'
 import '../../../components/Common/IndustryPagesCSS/style.css'
 import './Marketing.css'
 
 
 const Marketing = () => {
-  const {handleHide} = useGLobalContext()
+  
   return (
-    <Box onClick={handleHide}  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
+    <Box   className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
       <Box className="content-box">
        <MarketingHeroSection/>
        <MarketingBenefits/>

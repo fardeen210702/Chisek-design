@@ -9,14 +9,12 @@ import EleveateCustomerExperience from '../../../components/CustomerSolutionsCom
 import CustomerCaseStudy from '../../../components/CustomerSolutionsComponents/CustomerCaseStudy'
 import '../../../components/Common/ServicepagesCSS/style.css'
 import './CustomerSolution.css'
-import { useGLobalContext } from '../../../context/ContextApi'
 
 
 
 const EndtoEndProductdev = () => {
-  const {handleHide} = useGLobalContext()
   return (
-    <Box onClick={handleHide} className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
+    <Box  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
       <Box className="content-box">
         <CustomerHeroSection />
         <CustomerExp />

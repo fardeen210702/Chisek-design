@@ -8,15 +8,14 @@ import EnhancedFraud from '../../../components/BankingAndFinanceComponents/Enhan
 import FinancialProducts from '../../../components/BankingAndFinanceComponents/FinancialProducts';
 import Revolutionize from '../../../components/BankingAndFinanceComponents/Revolutionize';
 import AIbankingandFinance from '../../../components/BankingAndFinanceComponents/AIbankingandFinance';
-import { useGLobalContext } from '../../../context/ContextApi'
 import '../../../components/Common/IndustryPagesCSS/style.css'
 import './BankingAndFinance.css'
 
 
 const BankingAndFinance = () => {
-  const {handleHide} = useGLobalContext()
+  
   return (
-    <Box onClick={handleHide}  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
+    <Box  className="container-box" sx={{backgroundSize:{xs:'250% 120vh' , md:'100% 110vh',lg:'100% 150vh'}}} >
       <Box className="content-box">
        
        <IndustryHeroSection/>
